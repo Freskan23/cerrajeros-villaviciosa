@@ -12,17 +12,16 @@ import { WeatherProvider } from "@/context/WeatherContext";
 
 // Lazy loading for other pages to reduce initial JS bundle
 const Centro = lazy(() => import("./pages/Centro"));
-const SanNicasio = lazy(() => import("./pages/SanNicasio"));
-const ElCarrascal = lazy(() => import("./pages/ElCarrascal"));
-const LaFortuna = lazy(() => import("./pages/LaFortuna"));
-const Villaviciosa del OdónNorte = lazy(() => import("./pages/Villaviciosa del OdónNorte"));
-const ArroyoCulebro = lazy(() => import("./pages/ArroyoCulebro"));
-const La Vega = lazy(() => import("./pages/La Vega"));
-const VeredaEstudiantes = lazy(() => import("./pages/VeredaEstudiantes"));
-const LosSantos = lazy(() => import("./pages/LosSantos"));
-const Dehesa del Sotillo = lazy(() => import("./pages/Dehesa del Sotillo"));
+const ElBosque = lazy(() => import("./pages/SanNicasio"));
+const Campodon = lazy(() => import("./pages/ElCarrascal"));
+const Castillo = lazy(() => import("./pages/LaFortuna"));
+const CasaDeRoque = lazy(() => import("./pages/LeganesNorte"));
+const RioGuadarrama = lazy(() => import("./pages/ArroyoCulebro"));
+const LaVega = lazy(() => import("./pages/Valdepelayo"));
+const Monreal = lazy(() => import("./pages/VeredaEstudiantes"));
+const Sacedon = lazy(() => import("./pages/LosSantos"));
+const DehesaDelSotillo = lazy(() => import("./pages/Solagua"));
 const PozaDelAgua = lazy(() => import("./pages/PozaDelAgua"));
-const Centro = lazy(() => import("./pages/Centro"));
 const Urgencias24h = lazy(() => import("./pages/Urgencias24h"));
 const AperturaPuertas = lazy(() => import("./pages/AperturaPuertas"));
 const CambioCerraduras = lazy(() => import("./pages/CambioCerraduras"));
@@ -63,18 +62,17 @@ function Router() {
       <Suspense fallback={<PageLoader />}>
         <Switch>
           <Route path={"/"} component={Home} />
-          <Route path="/cerrajeros-zarzaquemada" component={Centro} />
-          <Route path="/cerrajeros-san-nicasio" component={SanNicasio} />
-          <Route path="/cerrajeros-el-carrascal" component={ElCarrascal} />
-          <Route path="/cerrajeros-la-fortuna" component={LaFortuna} />
-          <Route path="/cerrajeros-villaviciosa del odón-norte" component={Villaviciosa del OdónNorte} />
-          <Route path="/cerrajeros-arroyo-culebro" component={ArroyoCulebro} />
-          <Route path="/cerrajeros-valdepelayo" component={La Vega} />
-          <Route path="/cerrajeros-vereda-estudiantes" component={VeredaEstudiantes} />
-          <Route path="/cerrajeros-los-santos" component={LosSantos} />
-          <Route path="/cerrajeros-solagua" component={Dehesa del Sotillo} />
-          <Route path="/cerrajeros-poza-del-agua" component={PozaDelAgua} />
           <Route path="/cerrajeros-centro" component={Centro} />
+          <Route path="/cerrajeros-el-bosque" component={ElBosque} />
+          <Route path="/cerrajeros-campodon" component={Campodon} />
+          <Route path="/cerrajeros-castillo" component={Castillo} />
+          <Route path="/cerrajeros-casa-de-roque" component={CasaDeRoque} />
+          <Route path="/cerrajeros-rio-guadarrama" component={RioGuadarrama} />
+          <Route path="/cerrajeros-la-vega" component={LaVega} />
+          <Route path="/cerrajeros-monreal" component={Monreal} />
+          <Route path="/cerrajeros-sacedon" component={Sacedon} />
+          <Route path="/cerrajeros-dehesa-del-sotillo" component={DehesaDelSotillo} />
+          <Route path="/cerrajeros-poza-del-agua" component={PozaDelAgua} />
           <Route path="/urgencias-24h" component={Urgencias24h} />
           <Route path="/apertura-puertas" component={AperturaPuertas} />
           <Route path="/cambio-cerraduras" component={CambioCerraduras} />
@@ -124,4 +122,3 @@ function App() {
 }
 
 export default App;
-
