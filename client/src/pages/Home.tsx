@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ServicesCarousel from "@/components/ServicesCarousel";
 import { Link } from "wouter";
 import React from "react";
 
@@ -142,14 +143,23 @@ export default function Home() {
 
         {/* Servicios Section */}
         <section id="servicios" className="section-spacing bg-white">
-          <div className="container">
+          {/* Título - solo visible en desktop */}
+          <div className="container hidden md:block">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-6xl font-bold mb-6">Nuestros Servicios</h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 Soluciones profesionales de cerrajería para hogares y negocios en {APP_LOCATION}
               </p>
             </div>
+          </div>
 
+          {/* Carousel para móvil */}
+          <div className="md:hidden">
+            <ServicesCarousel />
+          </div>
+
+          {/* Grid para desktop */}
+          <div className="hidden md:block container">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Servicio 1 */}
               <div className="card-tesla p-8 group">
