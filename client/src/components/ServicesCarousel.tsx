@@ -14,42 +14,42 @@ const services: Service[] = [
   {
     id: 1,
     title: "Apertura de Puertas",
-    subtitle: "Sin daños en su cerradura",
-    price: "Desde 90€",
+    subtitle: "Servicio urgente 24h",
+    price: "Precio cerrado · Sin daños",
     image: "/servicio-apertura-puertas.jpg",
   },
   {
     id: 2,
     title: "Instalación de Cerraduras",
-    subtitle: "Alta seguridad para su hogar",
+    subtitle: "Alta seguridad",
     price: "Consultar precio",
     image: "/instalacion-cerraduras.jpg",
   },
   {
     id: 3,
     title: "Reparación y Mantenimiento",
-    subtitle: "Servicio completo de cerrajería",
+    subtitle: "Servicio completo",
     price: "Desde 60€",
     image: "/cerraduras-seguridad.jpg",
   },
   {
     id: 4,
     title: "Servicio de Emergencia",
-    subtitle: "Disponible las 24 horas",
+    subtitle: "Disponible 24/7",
     price: "Desde 120€",
     image: "/cerrajero-emergencia.jpg",
   },
   {
     id: 5,
     title: "Seguridad Avanzada",
-    subtitle: "Sistemas de última generación",
+    subtitle: "Última generación",
     price: "Consultar precio",
     image: "/cerraduras-seguridad.jpg",
   },
   {
     id: 6,
     title: "Duplicado de Llaves",
-    subtitle: "Servicio rápido y preciso",
+    subtitle: "Servicio rápido",
     price: "Desde 15€",
     image: "/hero-cerrajero-profesional.jpg",
   }
@@ -87,63 +87,44 @@ export default function ServicesCarousel() {
         {services.map((service) => (
           <div
             key={service.id}
-            className="min-w-[90vw] snap-center relative flex-shrink-0 rounded-2xl overflow-hidden"
-            style={{ height: '550px' }}
+            className="relative w-full max-w-sm min-w-[90vw] snap-center h-[480px] rounded-2xl overflow-hidden flex-shrink-0"
           >
-            {/* Background Image */}
-            <div className="absolute inset-0">
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-full object-cover"
-              />
-              {/* Overlay exacto como Tesla: negro sólido abajo, transparente arriba */}
-              <div 
-                className="absolute inset-0" 
-                style={{
-                  background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.2) 70%, transparent 100%)'
-                }}
-              />
-            </div>
+            {/* Imagen */}
+            <img
+              src={service.image}
+              alt={service.title}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
 
-            {/* Content - Layout exacto Tesla */}
-            <div className="relative h-full flex flex-col justify-between p-7">
-              {/* Top: Subtitle */}
+            {/* Degradado exacto Tesla */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+
+            {/* Contenido */}
+            <div className="relative h-full flex flex-col justify-between p-5 text-white">
+              {/* Texto superior */}
               <div>
-                <p className="text-sm font-medium text-white">
-                  {service.subtitle}
+                <p className="text-sm opacity-80">{service.subtitle}</p>
+                <h3 className="text-3xl font-semibold leading-tight mt-1">
+                  {service.title}
+                </h3>
+                <p className="mt-1 text-sm opacity-90">
+                  {service.price}
                 </p>
               </div>
 
-              {/* Bottom: Title + Price + Buttons */}
-              <div>
-                {/* Title gigante blanco */}
-                <h3 className="text-5xl font-bold text-white mb-2 leading-[1.1] tracking-tight">
-                  {service.title}
-                </h3>
-                
-                {/* Price blanco */}
-                <p className="text-base font-normal text-white mb-6">
-                  {service.price}
-                </p>
+              {/* Botones */}
+              <div className="flex gap-3">
+                <Link href="tel:915270049" className="flex-1">
+                  <button className="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-3 rounded-lg text-center transition-colors">
+                    Llamar
+                  </button>
+                </Link>
 
-                {/* Buttons exactos Tesla */}
-                <div className="flex gap-3">
-                  <Link href="tel:915270049" className="flex-1">
-                    <Button 
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-6 text-base rounded-md border-0"
-                    >
-                      Llamar
-                    </Button>
-                  </Link>
-                  <Link href="#contacto" className="flex-1">
-                    <Button 
-                      className="w-full bg-white hover:bg-gray-100 text-gray-900 font-semibold py-6 text-base rounded-md border-0"
-                    >
-                      Saber más
-                    </Button>
-                  </Link>
-                </div>
+                <Link href="#contacto" className="flex-1">
+                  <button className="w-full bg-white text-black text-sm font-medium py-3 rounded-lg text-center hover:bg-gray-100 transition-colors">
+                    Saber más
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
