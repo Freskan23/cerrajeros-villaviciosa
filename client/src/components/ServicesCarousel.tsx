@@ -97,44 +97,48 @@ export default function ServicesCarousel() {
                 alt={service.title}
                 className="w-full h-full object-cover"
               />
-              {/* Gradiente suave arriba, negro sólido abajo */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+              {/* Overlay exacto como Tesla: negro sólido abajo, transparente arriba */}
+              <div 
+                className="absolute inset-0" 
+                style={{
+                  background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.2) 70%, transparent 100%)'
+                }}
+              />
             </div>
 
-            {/* Content */}
+            {/* Content - Layout exacto Tesla */}
             <div className="relative h-full flex flex-col justify-between p-7">
-              {/* Top: Subtitle pequeño */}
+              {/* Top: Subtitle */}
               <div>
                 <p className="text-sm font-medium text-white">
                   {service.subtitle}
                 </p>
               </div>
 
-              {/* Bottom: Fondo negro sólido para texto blanco perfecto */}
-              <div className="bg-black/80 backdrop-blur-sm rounded-xl p-6 -mx-1">
-                {/* Title muy grande */}
-                <h3 className="text-5xl font-bold text-white mb-2 leading-tight tracking-tight">
+              {/* Bottom: Title + Price + Buttons */}
+              <div>
+                {/* Title gigante blanco */}
+                <h3 className="text-5xl font-bold text-white mb-2 leading-[1.1] tracking-tight">
                   {service.title}
                 </h3>
                 
-                {/* Price */}
-                <p className="text-base font-medium text-white mb-6">
+                {/* Price blanco */}
+                <p className="text-base font-normal text-white mb-6">
                   {service.price}
                 </p>
 
-                {/* Buttons */}
+                {/* Buttons exactos Tesla */}
                 <div className="flex gap-3">
                   <Link href="tel:915270049" className="flex-1">
                     <Button 
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-6 text-base rounded-md"
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-6 text-base rounded-md border-0"
                     >
                       Llamar
                     </Button>
                   </Link>
                   <Link href="#contacto" className="flex-1">
                     <Button 
-                      variant="outline" 
-                      className="w-full border-2 border-white bg-white text-gray-900 hover:bg-gray-100 font-semibold py-6 text-base rounded-md"
+                      className="w-full bg-white hover:bg-gray-100 text-gray-900 font-semibold py-6 text-base rounded-md border-0"
                     >
                       Saber más
                     </Button>
