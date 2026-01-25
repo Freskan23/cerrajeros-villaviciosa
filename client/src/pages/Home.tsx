@@ -315,27 +315,34 @@ export default function Home() {
         </section>
 
         {/* CTA Section con imagen */}
-        <section className="relative py-32 overflow-hidden">
+        <section className="relative py-20 md:py-24 overflow-hidden">
           <div className="absolute inset-0">
             <img
               src="/cerrajero-emergencia.jpg"
               alt="Servicio de emergencia 24h"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black/75" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60" />
           </div>
-          <div className="relative z-10 container text-center text-white">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          <div className="relative z-10 container text-center">
+            <h2 
+              className="text-3xl md:text-5xl font-bold mb-4 md:mb-6"
+              style={{ color: '#FFFFFF', textShadow: '0 4px 20px rgba(0,0,0,0.9), 0 2px 10px rgba(0,0,0,0.8)' }}
+            >
               ¿Necesitas un cerrajero ahora?
             </h2>
-            <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto font-light">
+            <p 
+              className="text-lg md:text-xl mb-8 md:mb-10 max-w-2xl mx-auto"
+              style={{ color: '#FFFFFF', textShadow: '0 2px 15px rgba(0,0,0,0.9), 0 1px 8px rgba(0,0,0,0.7)' }}
+            >
               Estamos disponibles 24/7 para ayudarte. Llegamos en 20 minutos.
             </p>
             <a
               href={`tel:${APP_PHONE}`}
-              className="inline-flex items-center gap-3 bg-white text-primary px-12 py-6 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center gap-2 md:gap-3 px-8 md:px-10 py-4 md:py-5 rounded-xl text-base md:text-lg font-semibold transition-all shadow-xl hover:shadow-2xl"
+              style={{ backgroundColor: '#FFFFFF', color: '#1B4965' }}
             >
-              <Phone className="w-6 h-6" />
+              <Phone className="w-5 h-5 md:w-6 md:h-6" />
               Llamar Ahora: {APP_PHONE_DISPLAY}
             </a>
           </div>
