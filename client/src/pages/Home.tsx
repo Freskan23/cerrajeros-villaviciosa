@@ -79,7 +79,7 @@ export default function Home() {
               className="w-full h-full object-cover"
               loading="eager"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
           </div>
 
           <div className="relative z-10 container text-center">
@@ -313,7 +313,7 @@ export default function Home() {
               alt="Servicio de emergencia 24h"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-primary/90" />
+            <div className="absolute inset-0 bg-black/75" />
           </div>
           <div className="relative z-10 container text-center text-white">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
