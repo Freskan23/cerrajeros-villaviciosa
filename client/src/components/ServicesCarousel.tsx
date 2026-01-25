@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Key, Lock, Wrench, Clock, Shield, Home as HomeIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
@@ -7,52 +6,52 @@ interface Service {
   id: number;
   title: string;
   subtitle: string;
+  price: string;
   image: string;
-  icon: React.ReactNode;
 }
 
 const services: Service[] = [
   {
     id: 1,
     title: "Apertura de Puertas",
-    subtitle: "Desde 90€",
+    subtitle: "Sin daños en su cerradura",
+    price: "Desde 90€",
     image: "/servicio-apertura-puertas.jpg",
-    icon: <Key className="w-6 h-6" />,
   },
   {
     id: 2,
     title: "Instalación de Cerraduras",
-    subtitle: "Alta seguridad",
+    subtitle: "Alta seguridad para su hogar",
+    price: "Consultar precio",
     image: "/instalacion-cerraduras.jpg",
-    icon: <Lock className="w-6 h-6" />,
   },
   {
     id: 3,
     title: "Reparación y Mantenimiento",
-    subtitle: "Servicio completo",
+    subtitle: "Servicio completo de cerrajería",
+    price: "Desde 60€",
     image: "/cerraduras-seguridad.jpg",
-    icon: <Wrench className="w-6 h-6" />,
   },
   {
     id: 4,
     title: "Servicio de Emergencia",
-    subtitle: "Disponible 24/7",
+    subtitle: "Disponible las 24 horas",
+    price: "Desde 120€",
     image: "/cerrajero-emergencia.jpg",
-    icon: <Clock className="w-6 h-6" />,
   },
   {
     id: 5,
     title: "Seguridad Avanzada",
-    subtitle: "Última generación",
+    subtitle: "Sistemas de última generación",
+    price: "Consultar precio",
     image: "/cerraduras-seguridad.jpg",
-    icon: <Shield className="w-6 h-6" />,
   },
   {
     id: 6,
     title: "Duplicado de Llaves",
-    subtitle: "Servicio inmediato",
+    subtitle: "Servicio rápido y preciso",
+    price: "Desde 15€",
     image: "/hero-cerrajero-profesional.jpg",
-    icon: <HomeIcon className="w-6 h-6" />,
   }
 ];
 
@@ -78,18 +77,18 @@ export default function ServicesCarousel() {
   }, []);
 
   return (
-    <div className="relative w-full py-6">
+    <div className="relative w-full">
       {/* Carousel Container */}
       <div
         ref={scrollContainerRef}
-        className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 px-5"
+        className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-3 px-4"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {services.map((service) => (
           <div
             key={service.id}
-            className="min-w-[85vw] snap-center relative flex-shrink-0 rounded-xl overflow-hidden shadow-lg"
-            style={{ height: '420px' }}
+            className="min-w-[90vw] snap-center relative flex-shrink-0 rounded-2xl overflow-hidden"
+            style={{ height: '550px' }}
           >
             {/* Background Image */}
             <div className="absolute inset-0">
@@ -99,29 +98,35 @@ export default function ServicesCarousel() {
                 className="w-full h-full object-cover"
               />
               {/* Overlay oscuro para contraste */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/30" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
             </div>
 
             {/* Content */}
-            <div className="relative h-full flex flex-col justify-between p-6">
-              {/* Top: Subtitle */}
+            <div className="relative h-full flex flex-col justify-between p-7">
+              {/* Top: Subtitle pequeño */}
               <div>
-                <p className="text-xs font-semibold text-white tracking-widest uppercase">
+                <p className="text-sm font-medium text-white/90">
                   {service.subtitle}
                 </p>
               </div>
 
-              {/* Bottom: Title + Buttons */}
+              {/* Bottom: Title GRANDE + Price + Buttons */}
               <div>
-                <h3 className="text-3xl font-bold text-white mb-6 leading-tight">
+                {/* Title muy grande como Tesla */}
+                <h3 className="text-5xl font-bold text-white mb-2 leading-tight tracking-tight">
                   {service.title}
                 </h3>
+                
+                {/* Price */}
+                <p className="text-base font-medium text-white/90 mb-6">
+                  {service.price}
+                </p>
 
                 {/* Buttons */}
                 <div className="flex gap-3">
                   <Link href="tel:915270049" className="flex-1">
                     <Button 
-                      className="w-full bg-white text-primary hover:bg-white/90 font-semibold py-6 text-base rounded-lg"
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-6 text-base rounded-md"
                     >
                       Llamar
                     </Button>
@@ -129,7 +134,7 @@ export default function ServicesCarousel() {
                   <Link href="#contacto" className="flex-1">
                     <Button 
                       variant="outline" 
-                      className="w-full border-2 border-white bg-white/10 text-white hover:bg-white/20 font-semibold py-6 text-base rounded-lg backdrop-blur-sm"
+                      className="w-full border-2 border-white bg-white text-gray-900 hover:bg-gray-100 font-semibold py-6 text-base rounded-md"
                     >
                       Saber más
                     </Button>
@@ -142,7 +147,7 @@ export default function ServicesCarousel() {
       </div>
 
       {/* Dot Indicators */}
-      <div className="flex justify-center gap-2 mt-5">
+      <div className="flex justify-center gap-2 mt-6">
         {services.map((_, index) => (
           <button
             key={index}
@@ -155,10 +160,10 @@ export default function ServicesCarousel() {
                 });
               }
             }}
-            className={`h-1.5 rounded-full transition-all duration-300 ${
+            className={`h-2 rounded-full transition-all duration-300 ${
               index === currentIndex
-                ? 'bg-primary w-6'
-                : 'bg-gray-300 w-1.5'
+                ? 'bg-gray-800 w-2'
+                : 'bg-gray-300 w-2'
             }`}
             aria-label={`Ir al servicio ${index + 1}`}
           />
