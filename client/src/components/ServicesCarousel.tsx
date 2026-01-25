@@ -89,20 +89,20 @@ export default function ServicesCarousel() {
             key={service.id}
             className="relative w-full max-w-sm min-w-[90vw] snap-center h-[480px] rounded-2xl overflow-hidden flex-shrink-0"
           >
-            {/* Imagen */}
+            {/* Imagen - ahora ocupa todo el fondo */}
             <img
               src={service.image}
               alt={service.title}
               className="absolute inset-0 w-full h-full object-cover"
             />
 
-            {/* Degradado mejorado */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+            {/* Degradado optimizado - más oscuro arriba y abajo, más claro en medio */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/30 to-black/85" />
 
-            {/* Contenido */}
-            <div className="relative h-full flex flex-col justify-between p-5">
-              {/* Texto superior - FORZAR BLANCO PURO */}
-              <div>
+            {/* Contenido - sin justify-between, posicionamiento absoluto */}
+            <div className="relative h-full">
+              {/* Texto superior */}
+              <div className="absolute top-5 left-5 right-5">
                 <p 
                   className="text-sm font-medium"
                   style={{ 
@@ -132,8 +132,8 @@ export default function ServicesCarousel() {
                 </p>
               </div>
 
-              {/* Botones */}
-              <div className="flex gap-3">
+              {/* Botones en la parte inferior */}
+              <div className="absolute bottom-5 left-5 right-5 flex gap-3">
                 <Link href="tel:915270049" className="flex-1">
                   <button 
                     className="w-full text-sm font-medium py-3 rounded-lg text-center transition-colors"
