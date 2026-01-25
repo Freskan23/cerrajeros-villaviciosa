@@ -9,162 +9,150 @@
   --radius-xl: 20px;
 }
 
-:root {
-  /* Tesla-inspired minimalist palette */
-  --background: #FFFFFF;
-  --foreground: #171A20;
-  --primary: #171A20;
-  --primary-foreground: #FFFFFF;
-  --secondary: #F4F4F4;
-  --secondary-foreground: #171A20;
-  --accent: #3E6AE1;
-  --accent-foreground: #FFFFFF;
-  --muted: #F4F4F4;
-  --muted-foreground: #5C5E62;
-  --border: #E8E8E8;
-  --input: #E8E8E8;
-  --ring: #3E6AE1;
-  --destructive: #DC2626;
-  --destructive-foreground: #FFFFFF;
-  --card: #FFFFFF;
-  --card-foreground: #171A20;
-  --popover: #FFFFFF;
-  --popover-foreground: #171A20;
+* {
+  box-sizing: border-box;
 }
 
-@layer base {
-  * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  body {
-    @apply bg-background text-foreground;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: -0.01em;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
-    color: #171A20;
-  }
-  
-  h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 700;
-  }
-  
-  h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-  }
-  
-  h3 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-  }
-  
-  p {
-    color: #5C5E62;
-    line-height: 1.7;
-  }
-  
-  button:not(:disabled),
-  [role="button"]:not([aria-disabled="true"]),
-  [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
-    @apply cursor-pointer;
-  }
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@layer components {
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  background-color: #FFFFFF;
+  color: #171A20;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: #171A20;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+p {
+  color: #5C5E62;
+  line-height: 1.7;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
   .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 4rem;
-      padding-right: 4rem;
-      max-width: 1400px;
-    }
-  }
-  
-  /* Tesla-style button */
-  .btn-tesla {
-    @apply inline-flex items-center justify-center;
-    @apply px-8 py-3 rounded-full;
-    @apply bg-primary text-primary-foreground;
-    @apply font-medium text-sm tracking-wide uppercase;
-    @apply transition-all duration-200;
-    @apply border-2 border-transparent;
-    letter-spacing: 0.05em;
-  }
-  
-  .btn-tesla:hover {
-    @apply bg-[#000000];
-    transform: translateY(-1px);
-  }
-  
-  .btn-tesla-outline {
-    @apply btn-tesla;
-    @apply bg-transparent text-primary border-primary;
-  }
-  
-  .btn-tesla-outline:hover {
-    @apply bg-primary text-primary-foreground;
-  }
-  
-  /* Tesla-style card */
-  .card-tesla {
-    @apply bg-white rounded-2xl;
-    @apply border border-border;
-    @apply transition-all duration-300;
-  }
-  
-  .card-tesla:hover {
-    @apply shadow-lg;
-    transform: translateY(-2px);
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 1400px;
   }
-  
+}
+
+/* Tesla-style button */
+.btn-tesla {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  background-color: #171A20;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 200ms;
+  border: 2px solid transparent;
+}
+
+.btn-tesla:hover {
+  background-color: #000000;
+  transform: translateY(-1px);
+}
+
+.btn-tesla-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  background-color: transparent;
+  color: #171A20;
+  border: 2px solid #171A20;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 200ms;
+}
+
+.btn-tesla-outline:hover {
+  background-color: #171A20;
+  color: #FFFFFF;
+}
+
+/* Tesla-style card */
+.card-tesla {
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid #E8E8E8;
+  transition: all 300ms;
+}
+
+.card-tesla:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: translateY(-2px);
+}
+
+/* Utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+.section-spacing {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
   .section-spacing {
-    @apply py-20 md:py-32;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
-  
-  .grid-auto-fit {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
+}
+
+.grid-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 /* Scrollbar minimalista */
