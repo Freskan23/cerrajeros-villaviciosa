@@ -96,18 +96,29 @@ export default function ServicesCarousel() {
               className="absolute inset-0 w-full h-full object-cover"
             />
 
-            {/* Degradado exacto Tesla */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+            {/* Degradado mejorado: más oscuro también arriba */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
 
             {/* Contenido */}
-            <div className="relative h-full flex flex-col justify-between p-5 text-white">
-              {/* Texto superior */}
+            <div className="relative h-full flex flex-col justify-between p-5">
+              {/* Texto superior - BLANCO PURO con text-shadow */}
               <div>
-                <p className="text-sm opacity-80">{service.subtitle}</p>
-                <h3 className="text-3xl font-semibold leading-tight mt-1">
+                <p 
+                  className="text-sm text-white font-medium"
+                  style={{ textShadow: '0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.8)' }}
+                >
+                  {service.subtitle}
+                </p>
+                <h3 
+                  className="text-3xl font-semibold leading-tight mt-1 text-white"
+                  style={{ textShadow: '0 2px 12px rgba(0,0,0,0.95), 0 0 25px rgba(0,0,0,0.9)' }}
+                >
                   {service.title}
                 </h3>
-                <p className="mt-1 text-sm opacity-90">
+                <p 
+                  className="mt-1 text-sm text-white font-medium"
+                  style={{ textShadow: '0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.8)' }}
+                >
                   {service.price}
                 </p>
               </div>
