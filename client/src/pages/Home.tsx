@@ -74,7 +74,7 @@ export default function Home() {
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="/hero-background-minimal.jpg"
+              src="/hero-background-minimal.webp"
               alt="Cerrajeros Villaviciosa del Odón"
               className="w-full h-full object-cover"
               loading="eager"

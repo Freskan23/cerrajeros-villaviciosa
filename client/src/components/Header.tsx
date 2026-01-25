@@ -39,7 +39,7 @@ export default function Header() {
             {/* Logo minimalista */}
             <Link href="/" className="flex items-center gap-2">
               <img
-                src="/logo-cerrajeros-villaviciosa.png"
+                src="/logo-cerrajeros-villaviciosa.webp"
                 alt={APP_BUSINESS_NAME}
                 width="300"
                 height="80"
