@@ -96,28 +96,37 @@ export default function ServicesCarousel() {
               className="absolute inset-0 w-full h-full object-cover"
             />
 
-            {/* Degradado mejorado: más oscuro también arriba */}
+            {/* Degradado mejorado */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
 
             {/* Contenido */}
             <div className="relative h-full flex flex-col justify-between p-5">
-              {/* Texto superior - BLANCO PURO con text-shadow */}
+              {/* Texto superior - FORZAR BLANCO PURO */}
               <div>
                 <p 
-                  className="text-sm text-white font-medium"
-                  style={{ textShadow: '0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.8)' }}
+                  className="text-sm font-medium"
+                  style={{ 
+                    color: '#FFFFFF',
+                    textShadow: '0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.8)'
+                  }}
                 >
                   {service.subtitle}
                 </p>
                 <h3 
-                  className="text-3xl font-semibold leading-tight mt-1 text-white"
-                  style={{ textShadow: '0 2px 12px rgba(0,0,0,0.95), 0 0 25px rgba(0,0,0,0.9)' }}
+                  className="text-3xl font-semibold leading-tight mt-1"
+                  style={{ 
+                    color: '#FFFFFF',
+                    textShadow: '0 2px 12px rgba(0,0,0,0.95), 0 0 25px rgba(0,0,0,0.9)'
+                  }}
                 >
                   {service.title}
                 </h3>
                 <p 
-                  className="mt-1 text-sm text-white font-medium"
-                  style={{ textShadow: '0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.8)' }}
+                  className="mt-1 text-sm font-medium"
+                  style={{ 
+                    color: '#FFFFFF',
+                    textShadow: '0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.8)'
+                  }}
                 >
                   {service.price}
                 </p>
@@ -126,13 +135,25 @@ export default function ServicesCarousel() {
               {/* Botones */}
               <div className="flex gap-3">
                 <Link href="tel:915270049" className="flex-1">
-                  <button className="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-3 rounded-lg text-center transition-colors">
+                  <button 
+                    className="w-full text-sm font-medium py-3 rounded-lg text-center transition-colors"
+                    style={{
+                      backgroundColor: '#2563eb',
+                      color: '#FFFFFF'
+                    }}
+                  >
                     Llamar
                   </button>
                 </Link>
 
                 <Link href="#contacto" className="flex-1">
-                  <button className="w-full bg-white text-black text-sm font-medium py-3 rounded-lg text-center hover:bg-gray-100 transition-colors">
+                  <button 
+                    className="w-full text-sm font-medium py-3 rounded-lg text-center transition-colors"
+                    style={{
+                      backgroundColor: '#FFFFFF',
+                      color: '#000000'
+                    }}
+                  >
                     Saber más
                   </button>
                 </Link>
