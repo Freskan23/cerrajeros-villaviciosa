@@ -92,17 +92,18 @@ export default function ServicesCarousel() {
   }, []);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full py-8">
       {/* Carousel Container */}
       <div
         ref={scrollContainerRef}
-        className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide"
+        className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 px-4"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {services.map((service) => (
           <div
             key={service.id}
-            className="min-w-full snap-center relative h-[600px] flex-shrink-0"
+            className="min-w-[calc(100%-2rem)] snap-center relative flex-shrink-0 rounded-2xl overflow-hidden shadow-xl"
+            style={{ height: '520px' }}
           >
             {/* Background Image */}
             <div className="absolute inset-0">
@@ -111,24 +112,27 @@ export default function ServicesCarousel() {
                 alt={service.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+              {/* Overlay más oscuro para mejor legibilidad */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/40" />
             </div>
 
             {/* Content */}
             <div className="relative h-full flex flex-col justify-end p-6 pb-8 text-white">
               <div className="mb-4">
-                <p className="text-sm font-medium text-gray-300 mb-2">{service.subtitle}</p>
-                <h3 className="text-4xl font-bold mb-4 leading-tight">{service.title}</h3>
-                <p className="text-base text-gray-200 mb-6 leading-relaxed">
+                <p className="text-xs font-semibold text-gray-300 mb-2 uppercase tracking-wider">{service.subtitle}</p>
+                <h3 className="text-3xl font-bold mb-3 leading-tight" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}>
+                  {service.title}
+                </h3>
+                <p className="text-sm text-gray-100 mb-4 leading-relaxed" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.5)' }}>
                   {service.description}
                 </p>
 
                 {/* Features */}
-                <ul className="space-y-2 mb-8">
+                <ul className="space-y-2 mb-6">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-sm">
                       <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0" />
-                      <span>{feature}</span>
+                      <span className="text-gray-100" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.5)' }}>{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -137,12 +141,12 @@ export default function ServicesCarousel() {
               {/* Buttons */}
               <div className="flex gap-3">
                 <Link href={`tel:915270049`} className="flex-1">
-                  <Button className="w-full bg-accent hover:bg-accent/90 text-white font-semibold py-6 text-base">
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white font-semibold py-5 text-base rounded-lg shadow-lg">
                     Llamar
                   </Button>
                 </Link>
                 <Link href="#contacto" className="flex-1">
-                  <Button variant="outline" className="w-full border-2 border-white text-white hover:bg-white hover:text-primary font-semibold py-6 text-base">
+                  <Button variant="outline" className="w-full border-2 border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-primary font-semibold py-5 text-base rounded-lg">
                     Saber más
                   </Button>
                 </Link>
@@ -153,7 +157,7 @@ export default function ServicesCarousel() {
       </div>
 
       {/* Dot Indicators */}
-      <div className="absolute bottom-32 left-0 right-0 flex justify-center gap-2 z-20">
+      <div className="flex justify-center gap-2 mt-6">
         {services.map((_, index) => (
           <button
             key={index}
@@ -166,10 +170,10 @@ export default function ServicesCarousel() {
                 });
               }
             }}
-            className={`w-2 h-2 rounded-full transition-all ${
+            className={`h-2 rounded-full transition-all ${
               index === currentIndex
-                ? 'bg-white w-8'
-                : 'bg-white/50'
+                ? 'bg-primary w-8'
+                : 'bg-gray-300 w-2'
             }`}
             aria-label={`Ir al servicio ${index + 1}`}
           />
