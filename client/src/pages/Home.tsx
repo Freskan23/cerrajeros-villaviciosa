@@ -38,25 +38,25 @@ export default function Home() {
 
   const whyChooseUs = [
     {
-      icon: <Clock className="h-10 w-10 text-[#0A2540]" />,
+      icon: <Clock className="h-10 w-10 text-[#1B4965]" />,
       title: "Atención rápida y eficaz",
       description:
         "Llegamos volando a cualquier punto de Villaviciosa del Odón. Desde Castillo hasta Río Guadarrama en menos de 20 minutos.",
     },
     {
-      icon: <Wrench className="h-10 w-10 text-[#0A2540]" />,
+      icon: <Wrench className="h-10 w-10 text-[#1B4965]" />,
       title: "Profesionales con experiencia",
       description:
         "Somos cerrajeros de barrio, de los de toda la vida. Conocemos cada puerta y cada cerradura de nuestra ciudad.",
     },
     {
-      icon: <Shield className="h-10 w-10 text-[#0A2540]" />,
+      icon: <Shield className="h-10 w-10 text-[#1B4965]" />,
       title: "Soluciones hechas a medida",
       description:
         "Ya sea una puerta blindada antigua o una acorazada moderna, tenemos la solución exacta que necesitas.",
     },
     {
-      icon: <CheckCircle className="h-10 w-10 text-[#0A2540]" />,
+      icon: <CheckCircle className="h-10 w-10 text-[#1B4965]" />,
       title: "Transparencia y confianza",
       description:
         "Precio cerrado por teléfono. Sin letra pequeña ni sustos en la factura. Honestidad pepinera 100%.",
@@ -118,7 +118,7 @@ export default function Home() {
 
       <main>
         {/* Hero Section Nano Banana */}
-        <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-[#001529]">
+        <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-white">
           {/* Imagen de fondo cinematográfica */}
           <div className="absolute inset-0 z-0">
             <img
@@ -139,30 +139,30 @@ export default function Home() {
 
               {/* Columna Izquierda: Copy Persuasivo + CTA Masivo */}
               <div className="lg:col-span-7 space-y-8">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0A2540]/10 border border-[#0A2540]/30 backdrop-blur-sm">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1B4965]/10 border border-[#1B4965]/30 backdrop-blur-sm">
                   <span className="relative flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0A2540] opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-[#0A2540]"></span>
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1B4965] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-[#1B4965]"></span>
                   </span>
-                  <span className="text-[#0A2540] font-bold text-sm tracking-wide uppercase">Servicio Urgente 24h</span>
+                  <span className="text-[#1B4965] font-bold text-sm tracking-wide uppercase">Servicio Urgente 24h</span>
                 </div>
 
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
-                  Cerrajeros <span className="text-[#0A2540]">Villaviciosa del Odón</span> <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0A2540] to-[#D4AF37]">
+                  Cerrajeros <span className="text-[#1B4965]">Villaviciosa del Odón</span> <br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1B4965] to-[#C9A961]">
                     Urgencias 24h
                   </span>
                 </h1>
 
                 <p className="text-xl md:text-2xl text-gray-300 max-w-2xl font-light leading-relaxed">
-                  Cerrajeros en <strong className="text-white font-semibold">{APP_LOCATION}</strong>. Llegamos en <span className="text-[#0A2540] font-bold">20 minutos</span>. Sin daños, sin sorpresas.
+                  Cerrajeros en <strong className="text-white font-semibold">{APP_LOCATION}</strong>. Llegamos en <span className="text-[#1B4965] font-bold">20 minutos</span>. Sin daños, sin sorpresas.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Button
                     asChild
                     size="lg"
-                    className="bg-[#0A2540] hover:bg-[#E55A2B] text-white text-xl px-10 py-8 rounded-2xl shadow-[0_0_40px_-10px_rgba(255,107,53,0.5)] hover:shadow-[0_0_60px_-15px_rgba(255,107,53,0.6)] transition-all duration-300 transform hover:-translate-y-1"
+                    className="bg-[#1B4965] hover:bg-[#E55A2B] text-white text-xl px-10 py-8 rounded-2xl shadow-[0_0_40px_-10px_rgba(255,107,53,0.5)] hover:shadow-[0_0_60px_-15px_rgba(255,107,53,0.6)] transition-all duration-300 transform hover:-translate-y-1"
                   >
                     <a href={`tel:${APP_PHONE}`} className="flex items-center gap-3" aria-label={`Llamar a Cerrajeros Villaviciosa 24h al ${APP_PHONE_DISPLAY}`}>
                       <Phone className="h-8 w-8 animate-pulse" />
@@ -175,11 +175,11 @@ export default function Home() {
 
                   <div className="flex items-center gap-6 px-6 text-gray-400 text-sm font-medium">
                     <div className="flex items-center gap-2">
-                      <Clock className="h-5 w-5 text-[#0A2540]" />
+                      <Clock className="h-5 w-5 text-[#1B4965]" />
                       <span>Disponibles 24/7</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Shield className="h-5 w-5 text-[#0A2540]" />
+                      <Shield className="h-5 w-5 text-[#1B4965]" />
                       <span>Garantía total</span>
                     </div>
                   </div>
@@ -191,9 +191,9 @@ export default function Home() {
                 {/* Tarjeta 1: Apertura */}
                 <Link href="/apertura-puertas">
                   <div className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 p-6 hover:bg-white/10 transition-all duration-300 transform hover:scale-[1.02] cursor-pointer">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#0A2540]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#1B4965]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div className="relative flex items-center gap-4">
-                      <div className="h-12 w-12 rounded-xl bg-[#0A2540] flex items-center justify-center shadow-lg shadow-amber-500/20">
+                      <div className="h-12 w-12 rounded-xl bg-[#1B4965] flex items-center justify-center shadow-lg shadow-amber-500/20">
                         <HomeIcon className="h-6 w-6 text-white" />
                       </div>
                       <div>
@@ -253,7 +253,7 @@ export default function Home() {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
-                <h2 className="text-4xl font-bold mb-6 text-[#001529]">
+                <h2 className="text-4xl font-bold mb-6 text-[#1B4965]">
                   ¿Por qué elegirnos en Villaviciosa del Odón?
                 </h2>
                 <p className="text-xl text-gray-600 mb-8">
@@ -262,11 +262,11 @@ export default function Home() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   {whyChooseUs.map((item, index) => (
                     <div key={index} className="flex flex-col gap-4">
-                      <div className="bg-[#0A2540]/10 w-16 h-16 rounded-2xl flex items-center justify-center">
+                      <div className="bg-[#1B4965]/10 w-16 h-16 rounded-2xl flex items-center justify-center">
                         {item.icon}
                       </div>
                       <div>
-                        <h3 className="text-lg font-bold mb-2 text-[#001529]">
+                        <h3 className="text-lg font-bold mb-2 text-[#1B4965]">
                           {item.title}
                         </h3>
                         <p className="text-gray-600 text-sm leading-relaxed">
@@ -278,7 +278,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="relative">
-                <div className="absolute -inset-4 bg-[#0A2540]/20 rounded-3xl transform rotate-3"></div>
+                <div className="absolute -inset-4 bg-[#1B4965]/20 rounded-3xl transform rotate-3"></div>
                 <img
                   src="/hero-cerrajero.webp"
                   alt="Cerrajero profesional de Cerrajería Villaviciosa 24h trabajando en Villaviciosa del Odón"
@@ -293,7 +293,7 @@ export default function Home() {
                       />
                     ))}
                   </div>
-                  <p className="font-bold text-[#001529] mb-1">
+                  <p className="font-bold text-[#1B4965] mb-1">
                     "Rápidos y muy profesionales"
                   </p>
                   <p className="text-sm text-gray-500">
@@ -306,7 +306,7 @@ export default function Home() {
         </section>
 
         {/* Zones Section */}
-        <section id="zonas" className="py-20 bg-[#001529] text-white">
+        <section id="zonas" className="py-20 bg-white text-white">
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-4xl font-bold mb-4">
@@ -322,8 +322,8 @@ export default function Home() {
                 zone.url ? (
                   <Link key={index} href={zone.url}>
                     <div className="flex items-center gap-2 p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-colors backdrop-blur-sm cursor-pointer group">
-                      <MapPin className="h-5 w-5 text-[#0A2540] group-hover:scale-110 transition-transform" />
-                      <span className="font-medium text-white group-hover:text-[#0A2540] transition-colors">{zone.name}</span>
+                      <MapPin className="h-5 w-5 text-[#1B4965] group-hover:scale-110 transition-transform" />
+                      <span className="font-medium text-white group-hover:text-[#1B4965] transition-colors">{zone.name}</span>
                     </div>
                   </Link>
                 ) : (
@@ -354,7 +354,7 @@ export default function Home() {
         <section id="faq" className="py-20 bg-gray-50">
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-4xl font-bold mb-4 text-[#001529]">
+              <h2 className="text-4xl font-bold mb-4 text-[#1B4965]">
                 Preguntas Frecuentes
               </h2>
               <p className="text-xl text-gray-600">
@@ -368,8 +368,8 @@ export default function Home() {
                   key={index}
                   className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow"
                 >
-                  <h3 className="text-lg font-bold mb-3 text-[#001529] flex items-start gap-3">
-                    <span className="text-[#0A2540] text-xl">?</span>
+                  <h3 className="text-lg font-bold mb-3 text-[#1B4965] flex items-start gap-3">
+                    <span className="text-[#1B4965] text-xl">?</span>
                     {faq.question}
                   </h3>
                   <p className="text-gray-600 leading-relaxed pl-6">
@@ -384,26 +384,26 @@ export default function Home() {
         {/* CTA Final Premium */}
         <section className="py-24 bg-white">
           <div className="container px-4">
-            <div className="relative bg-[#001529] rounded-[48px] p-12 md:p-20 text-center text-white overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,21,41,0.4)]">
+            <div className="relative bg-white rounded-[48px] p-12 md:p-20 text-center text-white overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,21,41,0.4)]">
               {/* Decoración de fondo */}
-              <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#0A2540]/10 rounded-full blur-[120px] -mr-64 -mt-64"></div>
+              <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#1B4965]/10 rounded-full blur-[120px] -mr-64 -mt-64"></div>
               <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#004E89]/20 rounded-full blur-[120px] -ml-64 -mb-64"></div>
 
               <div className="relative z-10 max-w-4xl mx-auto">
-                <span className="inline-block px-4 py-1 rounded-full bg-white/10 text-[#D4AF37] text-sm font-black uppercase tracking-[0.3em] mb-8">
+                <span className="inline-block px-4 py-1 rounded-full bg-white/10 text-[#C9A961] text-sm font-black uppercase tracking-[0.3em] mb-8">
                   Atención Inmediata 24h
                 </span>
                 <h2 className="text-5xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tight italic">
-                  ¿Necesitas un <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0A2540] to-[#D4AF37]">cerrajero</span> urgente?
+                  ¿Necesitas un <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1B4965] to-[#C9A961]">cerrajero</span> urgente?
                 </h2>
 
                 <div className="flex flex-wrap justify-center gap-4 mb-10">
                   <div className="bg-white/5 border border-white/10 px-6 py-3 rounded-2xl backdrop-blur-md">
-                    <p className="text-[10px] uppercase tracking-widest text-[#0A2540] font-black mb-1">Tarifa Actual</p>
+                    <p className="text-[10px] uppercase tracking-widest text-[#1B4965] font-black mb-1">Tarifa Actual</p>
                     <p className="text-3xl font-black italic">Desde {currentPrice}€</p>
                   </div>
                   <div className="bg-white/5 border border-white/10 px-6 py-3 rounded-2xl backdrop-blur-md">
-                    <p className="text-[10px] uppercase tracking-widest text-[#0A2540] font-black mb-1">Tipo de Servicio</p>
+                    <p className="text-[10px] uppercase tracking-widest text-[#1B4965] font-black mb-1">Tipo de Servicio</p>
                     <p className="text-sm font-bold uppercase tracking-tighter">
                       {isNormalHours ? "Horario Comercial" : "Urgencia 24 Horas"}
                     </p>
@@ -417,7 +417,7 @@ export default function Home() {
                   <Button
                     asChild
                     size="lg"
-                    className="group relative bg-gradient-to-r from-[#0A2540] to-[#D4AF37] hover:scale-105 text-white text-2xl font-black px-12 py-10 rounded-full shadow-[0_20px_40px_-10px_rgba(255,107,53,0.5)] transition-all duration-500 overflow-hidden"
+                    className="group relative bg-gradient-to-r from-[#1B4965] to-[#C9A961] hover:scale-105 text-white text-2xl font-black px-12 py-10 rounded-full shadow-[0_20px_40px_-10px_rgba(255,107,53,0.5)] transition-all duration-500 overflow-hidden"
                   >
                     <a href={`tel:${APP_PHONE}`}>
                       {/* Efecto de brillo en el botón */}

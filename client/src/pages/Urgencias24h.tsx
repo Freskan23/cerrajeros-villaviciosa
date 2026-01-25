@@ -157,7 +157,7 @@ export default function Urgencias24h() {
                 <section className="py-16 bg-white">
                     <div className="container">
                         <div className="text-center mb-12">
-                            <h2 className="text-3xl font-bold text-[#001529]">Atención inmediata en todos los barrios</h2>
+                            <h2 className="text-3xl font-bold text-[#1B4965]">Atención inmediata en todos los barrios</h2>
                             <p className="text-lg text-gray-600 mt-4">Nuestros técnicos están situados cerca de:</p>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">

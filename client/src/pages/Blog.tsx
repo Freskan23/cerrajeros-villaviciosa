@@ -14,7 +14,7 @@ const blogPosts = [
     excerpt: "¿Tu llave se atasca? ¿No tienes escudo? Descubre si tu casa es un objetivo fácil para los ladrones en Villaviciosa del Odón.",
     date: "2025-11-10",
     category: "Auditoría",
-    icon: <Shield className="h-6 w-6 text-[#0A2540]" />,
+    icon: <Shield className="h-6 w-6 text-[#1B4965]" />,
     image: "/images/blog-seguridad-hogar.webp"
   },
   {
@@ -23,7 +23,7 @@ const blogPosts = [
     excerpt: "Hilos de pegamento, plásticos... Aprende a detectar si están vigilando tu casa en Villaviciosa del Odón antes de que entren.",
     date: "2025-11-08",
     category: "Prevención",
-    icon: <AlertTriangle className="h-6 w-6 text-[#0A2540]" />,
+    icon: <AlertTriangle className="h-6 w-6 text-[#1B4965]" />,
     image: "/images/blog-mantenimiento-cerradura.webp"
   },
   {
@@ -32,7 +32,7 @@ const blogPosts = [
     excerpt: "Un cerrojo barato no detiene a nadie. Te explicamos por qué necesitas un sistema antibumping y con escudo.",
     date: "2025-11-05",
     category: "Productos",
-    icon: <Lock className="h-6 w-6 text-[#0A2540]" />,
+    icon: <Lock className="h-6 w-6 text-[#1B4965]" />,
     image: "/images/blog-llaves-bombin.webp"
   },
   {
@@ -41,7 +41,7 @@ const blogPosts = [
     excerpt: "No es lo mismo blindada que acorazada. Una se abre con palanca, la otra es una muralla. Descubre cuál tienes.",
     date: "2025-11-03",
     category: "Consejos",
-    icon: <Shield className="h-6 w-6 text-[#0A2540]" />,
+    icon: <Shield className="h-6 w-6 text-[#1B4965]" />,
     image: "/images/cerrajero-villaviciosa24h.webp"
   },
   {
@@ -50,7 +50,7 @@ const blogPosts = [
     excerpt: "El 80% de las cerraduras se abren sin ruido en segundos. ¿Es tu bombín uno de ellos? Aprende a protegerte.",
     date: "2025-11-01",
     category: "Seguridad",
-    icon: <Key className="h-6 w-6 text-[#0A2540]" />,
+    icon: <Key className="h-6 w-6 text-[#1B4965]" />,
     image: "/images/blog-cerradura-inteligente.webp"
   },
   {
@@ -59,7 +59,7 @@ const blogPosts = [
     excerpt: "¿Vives en la zona de la Ronda Norte? Los trasteros son el nuevo objetivo. Descubre qué cerraduras resisten a los ladrones.",
     date: "2025-10-20",
     category: "Seguridad",
-    icon: <Shield className="h-6 w-6 text-[#0A2540]" />,
+    icon: <Shield className="h-6 w-6 text-[#1B4965]" />,
     image: "/blog-robos-trasteros.webp"
   },
   {
@@ -68,7 +68,7 @@ const blogPosts = [
     excerpt: "La mayoría de bloques en Centro tienen cerraduras de hace 20 años. El bumping las abre en segundos. ¿Es tu caso?",
     date: "2025-10-18",
     category: "Prevención",
-    icon: <Lock className="h-6 w-6 text-[#0A2540]" />,
+    icon: <Lock className="h-6 w-6 text-[#1B4965]" />,
     image: "/blog-cerradura-antibumping.webp"
   },
   {
@@ -77,7 +77,7 @@ const blogPosts = [
     excerpt: "Vivir en un chalet es genial, pero requiere seguridad extra. Cerrojos, escudos y alarmas para dormir tranquilo.",
     date: "2025-10-15",
     category: "Hogar",
-    icon: <Key className="h-6 w-6 text-[#0A2540]" />,
+    icon: <Key className="h-6 w-6 text-[#1B4965]" />,
     image: "/blog-seguridad-chalets.webp"
   },
   {
@@ -86,7 +86,7 @@ const blogPosts = [
     excerpt: "Te explicamos paso a paso qué hacer si te quedas tirado en el parking del centro comercial. Soluciones rápidas.",
     date: "2025-10-12",
     category: "Emergencias",
-    icon: <AlertTriangle className="h-6 w-6 text-[#0A2540]" />,
+    icon: <AlertTriangle className="h-6 w-6 text-[#1B4965]" />,
     image: "/blog-llaves-coche.webp"
   },
   {
@@ -95,7 +95,7 @@ const blogPosts = [
     excerpt: "Si tienes un piso cerrado en la zona antigua, cuidado. Las puertas anti-okupa son tu mejor inversión.",
     date: "2025-10-10",
     category: "Seguridad",
-    icon: <Shield className="h-6 w-6 text-[#0A2540]" />,
+    icon: <Shield className="h-6 w-6 text-[#1B4965]" />,
     image: "/blog-puerta-antiokupa.webp"
   },
   {
@@ -104,14 +104,14 @@ const blogPosts = [
     excerpt: "Analizamos las marcas que venden en ferreterías de barrio vs. lo que realmente instala un profesional.",
     date: "2025-10-08",
     category: "Consejos",
-    icon: <Lock className="h-6 w-6 text-[#0A2540]" />,
+    icon: <Lock className="h-6 w-6 text-[#1B4965]" />,
     image: "/blog-bombines-comparativa.webp"
   }
 ];
 
 export default function Blog() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#001529]">
+    <div className="min-h-screen flex flex-col bg-white">
       <SEOHead
         title={`Blog de Seguridad y Cerrajería en ${APP_LOCATION} | ${APP_BUSINESS_NAME}`}
         description={`📰 Consejos de seguridad, avisos de robos y guías de cerrajería para los vecinos de ${APP_LOCATION}. Protege tu hogar con los mejores trucos profesionales.`}
@@ -122,16 +122,16 @@ export default function Blog() {
       {/* Hero del Blog */}
       <section className="relative py-24 overflow-hidden">
         {/* Fondo con efectos de luz */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#0A2540]/20 rounded-full blur-3xl -translate-y-1/2"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#1B4965]/20 rounded-full blur-3xl -translate-y-1/2"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#004E89]/20 rounded-full blur-3xl translate-y-1/2"></div>
 
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block px-4 py-1 rounded-full bg-[#0A2540]/10 text-[#0A2540] font-bold text-sm mb-6 border border-[#0A2540]/20">
+            <span className="inline-block px-4 py-1 rounded-full bg-[#1B4965]/10 text-[#1B4965] font-bold text-sm mb-6 border border-[#1B4965]/20">
               BLOG DE SEGURIDAD
             </span>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">
-              Consejos de seguridad para <span className="text-[#0A2540]">vecinos de Villaviciosa del Odón</span>
+              Consejos de seguridad para <span className="text-[#1B4965]">vecinos de Villaviciosa del Odón</span>
             </h1>
             <p className="text-xl text-blue-100/80 leading-relaxed">
               Guías prácticas, alertas de robos en la zona y trucos de cerrajero para proteger tu casa en Centro, El Bosque o Río Guadarrama.
@@ -156,7 +156,7 @@ export default function Blog() {
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute top-4 right-4 z-20 bg-[#001529]/80 backdrop-blur-md p-2 rounded-lg border border-white/10">
+                  <div className="absolute top-4 right-4 z-20 bg-white/80 backdrop-blur-md p-2 rounded-lg border border-white/10">
                     {post.icon}
                   </div>
                 </div>
@@ -164,11 +164,11 @@ export default function Blog() {
                   <div className="flex items-center gap-2 text-sm text-blue-200/60 mb-3">
                     <Calendar className="h-4 w-4" />
                     <span>{new Date(post.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
-                    <span className="ml-auto text-[#0A2540] font-semibold px-2 py-0.5 rounded bg-[#0A2540]/10 border border-[#0A2540]/20">
+                    <span className="ml-auto text-[#1B4965] font-semibold px-2 py-0.5 rounded bg-[#1B4965]/10 border border-[#1B4965]/20">
                       {post.category}
                     </span>
                   </div>
-                  <CardTitle className="text-xl text-white group-hover:text-[#0A2540] transition-colors leading-tight">
+                  <CardTitle className="text-xl text-white group-hover:text-[#1B4965] transition-colors leading-tight">
                     <Link href={`/blog/${post.id}`}>
                       <span className="cursor-pointer">{post.title}</span>
                     </Link>
@@ -180,7 +180,7 @@ export default function Blog() {
                 <CardContent>
                   <Link href={`/blog/${post.id}`}>
                     <div className="w-full">
-                      <Button variant="ghost" className="w-full group/btn text-white hover:text-[#0A2540] hover:bg-white/5 justify-between border border-white/10 hover:border-[#0A2540]/30 cursor-pointer">
+                      <Button variant="ghost" className="w-full group/btn text-white hover:text-[#1B4965] hover:bg-white/5 justify-between border border-white/10 hover:border-[#1B4965]/30 cursor-pointer">
                         Leer artículo completo
                         <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                       </Button>
@@ -195,15 +195,15 @@ export default function Blog() {
 
       {/* CTA Final */}
       <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#0A2540]/5"></div>
+        <div className="absolute inset-0 bg-[#1B4965]/5"></div>
         <div className="container text-center relative z-10">
-          <div className="max-w-2xl mx-auto bg-[#001529] p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl shadow-black/50">
+          <div className="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl shadow-black/50">
             <h2 className="text-3xl font-bold mb-4 text-white">¿Te preocupa la seguridad de tu barrio?</h2>
             <p className="text-xl text-blue-100/80 mb-8">
               Hacemos estudios de seguridad gratuitos en Villaviciosa del Odón. Llámanos y te decimos cómo mejorar tu puerta.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-[#0A2540] hover:bg-[#E55A2B] text-white text-lg px-8 shadow-lg shadow-slate-900/20">
+              <Button size="lg" className="bg-[#1B4965] hover:bg-[#E55A2B] text-white text-lg px-8 shadow-lg shadow-slate-900/20">
                 <a href={`tel:${APP_PHONE}`} className="flex items-center gap-2">
                   📞 Llamar ahora
                 </a>

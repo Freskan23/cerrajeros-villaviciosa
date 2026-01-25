@@ -3,8 +3,8 @@ export default function BrandsSection() {
         <section className="py-16 bg-white overflow-hidden">
             <div className="container">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-black mb-4 text-[#001529] tracking-tight">
-                        Marcas de <span className="text-[#0A2540]">Confianza</span>
+                    <h2 className="text-3xl font-black mb-4 text-[#1B4965] tracking-tight">
+                        Marcas de <span className="text-[#1B4965]">Confianza</span>
                     </h2>
                     <p className="text-gray-500 max-w-2xl mx-auto font-medium">
                         Instalamos solo componentes de máxima seguridad certificados por las marcas líderes del sector.

@@ -40,8 +40,8 @@ const FloatingActionButtons = lazy(() => import("./components/FloatingActionButt
 
 // Fallback component while loading a lazy route
 const PageLoader = () => (
-  <div className="min-h-screen flex items-center justify-center bg-[#001529]">
-    <div className="h-12 w-12 border-4 border-[#0A2540] border-t-transparent rounded-full animate-spin"></div>
+  <div className="min-h-screen flex items-center justify-center bg-white">
+    <div className="h-12 w-12 border-4 border-[#1B4965] border-t-transparent rounded-full animate-spin"></div>
   </div>
 );
 

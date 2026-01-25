@@ -9,8 +9,8 @@ export default function LocationSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div className="space-y-8">
                         <div>
-                            <h2 className="text-4xl font-bold text-[#001529] mb-4">
-                                ¿Dónde estamos? <span className="text-[#0A2540]">Visítanos</span>
+                            <h2 className="text-4xl font-bold text-[#1B4965] mb-4">
+                                ¿Dónde estamos? <span className="text-[#1B4965]">Visítanos</span>
                             </h2>
                             <p className="text-xl text-gray-600">
                                 Estamos en el corazón de Villaviciosa del Odón, dentro de la emblemática Galería Sanabria. Ven a vernos para duplicado de llaves o asesoramiento en seguridad.
@@ -19,8 +19,8 @@ export default function LocationSection() {
 
                         <div className="space-y-6">
                             <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-2xl border border-gray-100 transition-all hover:bg-white hover:shadow-xl hover:scale-[1.02] group">
-                                <div className="bg-[#0A2540]/10 p-3 rounded-xl group-hover:bg-[#0A2540] transition-colors">
-                                    <MapPin className="h-6 w-6 text-[#0A2540] group-hover:text-white" />
+                                <div className="bg-[#1B4965]/10 p-3 rounded-xl group-hover:bg-[#1B4965] transition-colors">
+                                    <MapPin className="h-6 w-6 text-[#1B4965] group-hover:text-white" />
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-gray-900 text-lg">Dirección</h3>
@@ -40,8 +40,8 @@ export default function LocationSection() {
                             </div>
 
                             <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-2xl border border-gray-100 transition-all hover:bg-white hover:shadow-xl hover:scale-[1.02] group">
-                                <div className="bg-[#0A2540]/10 p-3 rounded-xl group-hover:bg-[#0A2540] transition-colors">
-                                    <Clock className="h-6 w-6 text-[#0A2540] group-hover:text-white" />
+                                <div className="bg-[#1B4965]/10 p-3 rounded-xl group-hover:bg-[#1B4965] transition-colors">
+                                    <Clock className="h-6 w-6 text-[#1B4965] group-hover:text-white" />
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-gray-900 text-lg">Horario de Taller</h3>

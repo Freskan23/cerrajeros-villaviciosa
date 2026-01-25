@@ -10,7 +10,7 @@ export default function WeatherTopBar() {
   const estimatedTime = isAdverseWeather ? "40-50 min" : "20-30 min";
 
   return (
-    <div className={`${isAdverseWeather ? 'bg-orange-600/90' : 'bg-[#001529]'} text-white py-1.5 text-[11px] md:text-xs transition-colors backdrop-blur-sm`}>
+    <div className={`${isAdverseWeather ? 'bg-orange-600/90' : 'bg-white'} text-white py-1.5 text-[11px] md:text-xs transition-colors backdrop-blur-sm`}>
       <div className="container flex items-center justify-between opacity-90">
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1.5 border-r border-white/10 pr-3">
@@ -24,7 +24,7 @@ export default function WeatherTopBar() {
           </span>
         </div>
 
-        <div className="flex items-center gap-2 font-bold text-[#0A2540]">
+        <div className="flex items-center gap-2 font-bold text-[#1B4965]">
           <Clock className="h-3 w-3" />
           <span className="uppercase tracking-wider">
             Llegada: {estimatedTime}

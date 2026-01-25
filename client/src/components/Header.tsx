@@ -52,7 +52,7 @@ export default function Header() {
             {/* Logo y Branding Premium */}
             <Link href="/" className="flex items-center gap-4 shrink-0">
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-[#D4AF37] to-[#F0C75E] rounded-lg blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-[#C9A961] to-[#F0C75E] rounded-lg blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
                 <img
                   src="/logo-villaviciosa24h.webp"
                   alt={APP_BUSINESS_NAME}
@@ -62,11 +62,11 @@ export default function Header() {
                 />
               </div>
               <div className="hidden sm:flex flex-col border-l border-gray-200 pl-4">
-                <span className="text-sm md:text-base font-bold text-[#0A2540] leading-tight tracking-tight">
+                <span className="text-sm md:text-base font-bold text-[#1B4965] leading-tight tracking-tight">
                   Cerrajeros Villaviciosa
                 </span>
                 <div className="flex items-center gap-1.5 mt-0.5">
-                  <Shield className="h-3 w-3 text-[#D4AF37]" />
+                  <Shield className="h-3 w-3 text-[#C9A961]" />
                   <span className="text-[10px] text-gray-600 uppercase tracking-wider font-medium">
                     Servicio Premium 24h
                   </span>
@@ -90,10 +90,10 @@ export default function Header() {
                       }
                     }
                   }}
-                  className="text-sm font-semibold text-gray-700 hover:text-[#D4AF37] transition-all relative group"
+                  className="text-sm font-semibold text-gray-700 hover:text-[#C9A961] transition-all relative group"
                 >
                   {item.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#D4AF37] to-[#F0C75E] transition-all group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#C9A961] to-[#F0C75E] transition-all group-hover:w-full"></span>
                 </Link>
               ))}
             </nav>
@@ -102,7 +102,7 @@ export default function Header() {
             <div className="flex items-center gap-4 md:gap-5">
               {/* Badge de Precio Premium */}
               <div className="hidden md:flex flex-col items-end pr-5 border-r border-gray-200">
-                <div className="flex items-center gap-2 text-[#D4AF37] font-bold text-xl leading-none">
+                <div className="flex items-center gap-2 text-[#C9A961] font-bold text-xl leading-none">
                   <span className="text-xs font-medium text-gray-500">Desde</span>
                   {currentPrice}€
                 </div>
@@ -113,7 +113,7 @@ export default function Header() {
 
               <Button
                 asChild
-                className="premium-gradient hover:opacity-90 text-white font-bold h-12 px-7 rounded-lg shadow-lg shadow-[#0A2540]/20 active:scale-95 transition-all text-sm md:text-base"
+                className="premium-gradient hover:opacity-90 text-white font-bold h-12 px-7 rounded-lg shadow-lg shadow-[#1B4965]/20 active:scale-95 transition-all text-sm md:text-base"
               >
                 <a href={`tel:${APP_PHONE}`} className="flex items-center gap-2.5" aria-label={`Llamar a Cerrajeros Villaviciosa al ${APP_PHONE_DISPLAY}`}>
                   <Phone className="h-4 w-4 md:h-5 md:w-5 animate-pulse text-white" />
@@ -123,7 +123,7 @@ export default function Header() {
 
               {/* Mobile Toggle */}
               <button
-                className="lg:hidden p-2 text-[#0A2540] hover:text-[#D4AF37] transition-colors"
+                className="lg:hidden p-2 text-[#1B4965] hover:text-[#C9A961] transition-colors"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label={mobileMenuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
                 aria-expanded={mobileMenuOpen}
@@ -155,15 +155,15 @@ export default function Header() {
                     setMobileMenuOpen(false);
                   }
                 }}
-                className="text-lg font-bold text-[#0A2540] hover:text-[#D4AF37] flex items-center justify-between transition-colors"
+                className="text-lg font-bold text-[#1B4965] hover:text-[#C9A961] flex items-center justify-between transition-colors"
               >
                 {item.label}
-                <div className="h-1.5 w-1.5 rounded-full bg-[#D4AF37]/30"></div>
+                <div className="h-1.5 w-1.5 rounded-full bg-[#C9A961]/30"></div>
               </Link>
             ))}
             <div className="mt-4 p-5 premium-gradient rounded-xl flex items-center justify-between shadow-lg">
               <div>
-                <p className="text-xs text-[#D4AF37] font-bold uppercase tracking-wider">Servicio Ahora</p>
+                <p className="text-xs text-[#C9A961] font-bold uppercase tracking-wider">Servicio Ahora</p>
                 <p className="text-2xl font-bold text-white mt-1">{currentPrice}€</p>
               </div>
               <p className="text-[10px] text-white/80 max-w-[120px] text-right leading-tight">

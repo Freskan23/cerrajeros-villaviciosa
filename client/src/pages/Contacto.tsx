@@ -35,9 +35,9 @@ export default function Contacto() {
 
             <main className="flex-1">
                 {/* Hero / Breadcrumb */}
-                <section className="relative py-20 bg-[#001529] overflow-hidden">
+                <section className="relative py-20 bg-white overflow-hidden">
                     <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-10"></div>
-                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#0A2540]/10 rounded-full blur-[120px] -mr-64 -mt-64"></div>
+                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#1B4965]/10 rounded-full blur-[120px] -mr-64 -mt-64"></div>
 
                     <div className="container relative z-10">
                         <nav className="flex items-center text-sm text-gray-400 mb-8">
@@ -46,11 +46,11 @@ export default function Contacto() {
                                 Inicio
                             </Link>
                             <ChevronRight className="h-4 w-4 mx-3" />
-                            <span className="text-[#0A2540] font-bold">Contacto</span>
+                            <span className="text-[#1B4965] font-bold">Contacto</span>
                         </nav>
 
                         <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight italic">
-                            Estamos para <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0A2540] to-[#D4AF37]">ayudarte</span>
+                            Estamos para <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1B4965] to-[#C9A961]">ayudarte</span>
                         </h1>
                         <p className="text-xl text-gray-400 max-w-2xl leading-relaxed">
                             Atención al cliente y servicio técnico de cerrajería en Villaviciosa del Odón.
@@ -65,12 +65,12 @@ export default function Contacto() {
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 -mt-32">
                             {/* Card Teléfono */}
                             <div className="bg-white rounded-[32px] p-8 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.08)] border border-gray-100 hover:scale-[1.02] transition-transform flex flex-col items-center text-center">
-                                <div className="bg-[#0A2540]/10 p-5 rounded-3xl mb-6">
-                                    <Phone className="h-8 w-8 text-[#0A2540]" />
+                                <div className="bg-[#1B4965]/10 p-5 rounded-3xl mb-6">
+                                    <Phone className="h-8 w-8 text-[#1B4965]" />
                                 </div>
-                                <h3 className="text-xl font-black text-[#001529] mb-2 uppercase tracking-tighter">Llámanos ahora</h3>
+                                <h3 className="text-xl font-black text-[#1B4965] mb-2 uppercase tracking-tighter">Llámanos ahora</h3>
                                 <p className="text-gray-500 mb-6 text-sm">Disponible 24h para urgencias en Villaviciosa del Odón</p>
-                                <a href={`tel:${APP_PHONE}`} className="text-2xl font-black text-[#0A2540] hover:opacity-80 transition-opacity italic">
+                                <a href={`tel:${APP_PHONE}`} className="text-2xl font-black text-[#1B4965] hover:opacity-80 transition-opacity italic">
                                     {APP_PHONE_DISPLAY}
                                 </a>
                             </div>
@@ -80,7 +80,7 @@ export default function Contacto() {
                                 <div className="bg-[#004E89]/10 p-5 rounded-3xl mb-6">
                                     <Mail className="h-8 w-8 text-[#004E89]" />
                                 </div>
-                                <h3 className="text-xl font-black text-[#001529] mb-2 uppercase tracking-tighter">Email directo</h3>
+                                <h3 className="text-xl font-black text-[#1B4965] mb-2 uppercase tracking-tighter">Email directo</h3>
                                 <p className="text-gray-500 mb-6 text-sm">Para presupuestos y consultas no urgentes</p>
                                 <a href={`mailto:${APP_EMAIL}`} className="text-lg font-bold text-[#004E89] hover:opacity-80 transition-opacity">
                                     {APP_EMAIL}
@@ -89,10 +89,10 @@ export default function Contacto() {
 
                             {/* Card Ubicación */}
                             <div className="bg-white rounded-[32px] p-8 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.08)] border border-gray-100 hover:scale-[1.02] transition-transform flex flex-col items-center text-center">
-                                <div className="bg-[#0A2540]/10 p-5 rounded-3xl mb-6">
-                                    <MapPin className="h-8 w-8 text-[#0A2540]" />
+                                <div className="bg-[#1B4965]/10 p-5 rounded-3xl mb-6">
+                                    <MapPin className="h-8 w-8 text-[#1B4965]" />
                                 </div>
-                                <h3 className="text-xl font-black text-[#001529] mb-2 uppercase tracking-tighter">Nuestro Taller</h3>
+                                <h3 className="text-xl font-black text-[#1B4965] mb-2 uppercase tracking-tighter">Nuestro Taller</h3>
                                 <p className="text-gray-500 mb-6 text-sm">Galería Comercial Sanabria</p>
                                 <p className="font-bold text-gray-800 tracking-tight">
                                     {APP_ADDRESS}
@@ -104,7 +104,7 @@ export default function Contacto() {
                             {/* Info de contacto y horarios */}
                             <div className="space-y-12">
                                 <div>
-                                    <h2 className="text-4xl font-black text-[#001529] mb-6 italic tracking-tight">Atención <span className="text-[#0A2540]">Empresarial</span></h2>
+                                    <h2 className="text-4xl font-black text-[#1B4965] mb-6 italic tracking-tight">Atención <span className="text-[#1B4965]">Empresarial</span></h2>
                                     <p className="text-lg text-gray-600 leading-relaxed mb-8">
                                         Ofrecemos servicios integrales de cerrajería para comunidades de vecinos, locales comerciales y empresas en todos los polígonos de Villaviciosa del Odón.
                                     </p>
@@ -132,9 +132,9 @@ export default function Contacto() {
                                 <div className="bg-gray-50 rounded-[40px] p-10 border border-gray-100">
                                     <div className="flex items-center gap-4 mb-8">
                                         <div className="bg-white p-3 rounded-2xl shadow-sm">
-                                            <Clock className="h-6 w-6 text-[#0A2540]" />
+                                            <Clock className="h-6 w-6 text-[#1B4965]" />
                                         </div>
-                                        <h3 className="text-2xl font-black text-[#001529] uppercase tracking-tighter">Horarios de Taller</h3>
+                                        <h3 className="text-2xl font-black text-[#1B4965] uppercase tracking-tighter">Horarios de Taller</h3>
                                     </div>
                                     <div className="space-y-4">
                                         <div className="flex justify-between items-center pb-4 border-b border-gray-200">
@@ -150,8 +150,8 @@ export default function Contacto() {
                                             <span className="text-gray-600">10:00 – 14:00</span>
                                         </div>
                                         <div className="flex justify-between items-center pt-2">
-                                            <span className="font-black text-[#0A2540] uppercase italic">Servicio Urgente</span>
-                                            <span className="font-black text-[#0A2540]">24 HORAS / 365 DÍAS</span>
+                                            <span className="font-black text-[#1B4965] uppercase italic">Servicio Urgente</span>
+                                            <span className="font-black text-[#1B4965]">24 HORAS / 365 DÍAS</span>
                                         </div>
                                     </div>
                                 </div>

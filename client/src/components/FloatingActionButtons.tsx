@@ -21,11 +21,11 @@ export default function FloatingActionButtons() {
       {/* Botón Llamada */}
       <a
         href={`tel:${APP_PHONE}`}
-        className="group flex items-center justify-center w-14 h-14 bg-[#0A2540] text-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-xl relative"
+        className="group flex items-center justify-center w-14 h-14 bg-[#1B4965] text-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-xl relative"
         aria-label="Llamar ahora"
       >
         {/* Efecto de pulso */}
-        <span className="absolute inline-flex h-full w-full rounded-full bg-[#0A2540] opacity-75 animate-ping"></span>
+        <span className="absolute inline-flex h-full w-full rounded-full bg-[#1B4965] opacity-75 animate-ping"></span>
         
         <Phone className="h-7 w-7 relative z-10" />
         <span className="absolute right-full mr-3 bg-white text-gray-800 px-3 py-1 rounded-lg text-sm font-medium shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
