@@ -12,16 +12,12 @@ import { WeatherProvider } from "@/context/WeatherContext";
 
 // Lazy loading for other pages to reduce initial JS bundle
 const Centro = lazy(() => import("./pages/Centro"));
-const ElBosque = lazy(() => import("./pages/SanNicasio"));
-const Campodon = lazy(() => import("./pages/ElCarrascal"));
-const Castillo = lazy(() => import("./pages/LaFortuna"));
-const CasaDeRoque = lazy(() => import("./pages/LeganesNorte"));
-const RioGuadarrama = lazy(() => import("./pages/ArroyoCulebro"));
-const LaVega = lazy(() => import("./pages/Valdepelayo"));
-const Monreal = lazy(() => import("./pages/VeredaEstudiantes"));
-const Sacedon = lazy(() => import("./pages/LosSantos"));
-const DehesaDelSotillo = lazy(() => import("./pages/Solagua"));
-const PozaDelAgua = lazy(() => import("./pages/PozaDelAgua"));
+const ElBosque = lazy(() => import("./pages/ElBosque"));
+const Campodon = lazy(() => import("./pages/Campodon"));
+const Castillo = lazy(() => import("./pages/Castillo"));
+const DehesaDelSotillo = lazy(() => import("./pages/DehesaDelSotillo"));
+const MonteDeLaVilla = lazy(() => import("./pages/MonteDeLaVilla"));
+const CerroDeLasNieves = lazy(() => import("./pages/CerroDeLasNieves"));
 const Urgencias24h = lazy(() => import("./pages/Urgencias24h"));
 const AperturaPuertas = lazy(() => import("./pages/AperturaPuertas"));
 const CambioCerraduras = lazy(() => import("./pages/CambioCerraduras"));
@@ -66,13 +62,9 @@ function Router() {
           <Route path="/cerrajeros-el-bosque" component={ElBosque} />
           <Route path="/cerrajeros-campodon" component={Campodon} />
           <Route path="/cerrajeros-castillo" component={Castillo} />
-          <Route path="/cerrajeros-casa-de-roque" component={CasaDeRoque} />
-          <Route path="/cerrajeros-rio-guadarrama" component={RioGuadarrama} />
-          <Route path="/cerrajeros-la-vega" component={LaVega} />
-          <Route path="/cerrajeros-monreal" component={Monreal} />
-          <Route path="/cerrajeros-sacedon" component={Sacedon} />
           <Route path="/cerrajeros-dehesa-del-sotillo" component={DehesaDelSotillo} />
-          <Route path="/cerrajeros-poza-del-agua" component={PozaDelAgua} />
+          <Route path="/cerrajeros-monte-de-la-villa" component={MonteDeLaVilla} />
+          <Route path="/cerrajeros-cerro-de-las-nieves" component={CerroDeLasNieves} />
           <Route path="/urgencias-24h" component={Urgencias24h} />
           <Route path="/apertura-puertas" component={AperturaPuertas} />
           <Route path="/cambio-cerraduras" component={CambioCerraduras} />

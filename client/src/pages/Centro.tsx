@@ -3,14 +3,14 @@ import ZoneLanding from "@/components/ZoneLanding";
 export default function Centro() {
   return (
     <ZoneLanding
-      zoneName="Villaviciosa del Odón Centro"
-      zoneDescription="Cerrajeros en el centro de Villaviciosa del Odón. Llegamos en minutos a la Plaza Mayor, Avenida de Fuenlabrada y alrededores. Servicio 24h."
-      zoneMapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6082.987654321098!2d-3.765!3d40.330!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418a0000000001%3A0x0000000000000000!2sLegan%C3%A9s%20Centro%2C%20Madrid!5e0!3m2!1ses!2ses!4v1610000000000!5m2!1ses!2ses"
+      zoneName="Centro"
+      zoneDescription="¿Vives en el Casco Urbano? Llegamos rápidamente a la Plaza de la Constitución, Calle Carretas o cualquier punto del centro de Villaviciosa. Servicio 24h real."
+      zoneMapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6079.876543210987!2d-3.897!3d40.358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418c0000000001%3A0x0000000000000000!2sCentro%2C%20Villaviciosa%20de%20Od%C3%B3n%2C%20Madrid!5e0!3m2!1ses!2ses!4v1610000000000!5m2!1ses!2ses"
       commonProblems={[
-        "Apertura de puertas en edificios antiguos y modernos.",
-        "Reparación de cierres metálicos en comercios del centro.",
-        "Cambio de cerraduras urgente por robo o pérdida.",
-        "Instalación de muelles cierrapuertas en portales.",
+        "Abrimos puertas en edificios antiguos del casco histórico sin daños.",
+        "Reparación de cierres metálicos en comercios de la Calle Mayor.",
+        "Cambio de bombines por pérdida de llaves en comunidades.",
+        "Instalación de cerrojos de alta seguridad en pisos del centro.",
       ]}
     />
   );

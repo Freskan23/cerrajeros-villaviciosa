@@ -14,8 +14,7 @@ export default function Footer() {
 
   const zones = [
     "Centro", "El Bosque", "Campodón", "Castillo",
-    "Dehesa del Sotillo", "Río Guadarrama", "La Vega",
-    "Monreal", "Sacedón", "Villaviciosa del Odón Norte"
+    "Dehesa del Sotillo", "Monte de la Villa", "Cerro de las Nieves"
   ];
 
   return (
@@ -74,7 +73,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-sm uppercase tracking-wider mb-6">Zonas</h4>
             <ul className="space-y-3">
-              {zones.slice(0, 5).map((zone) => (
+              {zones.map((zone) => (
                 <li key={zone}>
                   <span className="text-gray-600 text-sm">{zone}</span>
                 </li>

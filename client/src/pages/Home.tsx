@@ -22,6 +22,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ServicesCarousel from "@/components/ServicesCarousel";
 import { Link } from "wouter";
+import { slugify } from "@/lib/utils";
 import React from "react";
 
 export default function Home() {
@@ -30,12 +31,9 @@ export default function Home() {
     "El Bosque",
     "Campodón",
     "Castillo",
-    "Casa de Roque",
-    "Río Guadarrama",
-    "La Vega",
-    "Monreal",
-    "Sacedón",
     "Dehesa del Sotillo",
+    "Monte de la Villa",
+    "Cerro de las Nieves",
   ];
 
   const faqs = [
@@ -420,10 +418,12 @@ export default function Home() {
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
               {zones.map((zone, index) => (
-                <div key={index} className="card-tesla p-6 text-center group">
-                  <MapPin className="h-6 w-6 mx-auto mb-3 text-accent group-hover:scale-110 transition-transform" />
-                  <span className="text-sm font-medium">{zone}</span>
-                </div>
+                <Link key={index} href={`/cerrajeros-${slugify(zone)}`}>
+                  <div className="card-tesla p-6 text-center group cursor-pointer hover:border-accent hover:shadow-lg transition-all">
+                    <MapPin className="h-6 w-6 mx-auto mb-3 text-accent group-hover:scale-110 transition-transform" />
+                    <span className="text-sm font-medium">{zone}</span>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
