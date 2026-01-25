@@ -97,28 +97,37 @@ export default function ServicesCarousel() {
                 alt={service.title}
                 className="w-full h-full object-cover"
               />
-              {/* Overlay oscuro para contraste */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+              {/* Overlay MÁS oscuro para mejor contraste */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/20" />
             </div>
 
             {/* Content */}
             <div className="relative h-full flex flex-col justify-between p-7">
               {/* Top: Subtitle pequeño */}
               <div>
-                <p className="text-sm font-medium text-white/90">
+                <p 
+                  className="text-sm font-medium text-gray-200"
+                  style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8)' }}
+                >
                   {service.subtitle}
                 </p>
               </div>
 
               {/* Bottom: Title GRANDE + Price + Buttons */}
               <div>
-                {/* Title muy grande como Tesla */}
-                <h3 className="text-5xl font-bold text-white mb-2 leading-tight tracking-tight">
+                {/* Title muy grande como Tesla con shadow fuerte */}
+                <h3 
+                  className="text-5xl font-bold text-white mb-2 leading-tight tracking-tight"
+                  style={{ textShadow: '0 4px 12px rgba(0,0,0,0.9)' }}
+                >
                   {service.title}
                 </h3>
                 
-                {/* Price */}
-                <p className="text-base font-medium text-white/90 mb-6">
+                {/* Price con shadow */}
+                <p 
+                  className="text-base font-medium text-gray-100 mb-6"
+                  style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8)' }}
+                >
                   {service.price}
                 </p>
 
@@ -126,7 +135,7 @@ export default function ServicesCarousel() {
                 <div className="flex gap-3">
                   <Link href="tel:915270049" className="flex-1">
                     <Button 
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-6 text-base rounded-md"
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-6 text-base rounded-md shadow-xl"
                     >
                       Llamar
                     </Button>
@@ -134,7 +143,7 @@ export default function ServicesCarousel() {
                   <Link href="#contacto" className="flex-1">
                     <Button 
                       variant="outline" 
-                      className="w-full border-2 border-white bg-white text-gray-900 hover:bg-gray-100 font-semibold py-6 text-base rounded-md"
+                      className="w-full border-2 border-white bg-white text-gray-900 hover:bg-gray-100 font-semibold py-6 text-base rounded-md shadow-xl"
                     >
                       Saber más
                     </Button>
