@@ -24,7 +24,7 @@ export default function WeatherTopBar() {
           </span>
         </div>
 
-        <div className="flex items-center gap-2 font-bold text-[#FF6B35]">
+        <div className="flex items-center gap-2 font-bold text-[#0A2540]">
           <Clock className="h-3 w-3" />
           <span className="uppercase tracking-wider">
             Llegada: {estimatedTime}

@@ -31,7 +31,7 @@ export default function Testimonios() {
         canonicalUrl="https://cerrajerosdevillaviciosa del odón.madrid/testimonios"
       />
 
-      <main className="min-h-screen bg-[#0f172a] text-slate-200 selection:bg-orange-500/30">
+      <main className="min-h-screen bg-[#0f172a] text-slate-200 selection:bg-amber-500/30">
         {/* Decorative Background Elements */}
         <div className="fixed inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-orange-600/10 blur-[120px] rounded-full" />
@@ -47,13 +47,13 @@ export default function Testimonios() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 mb-6 backdrop-blur-md">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/20 text-orange-400 mb-6 backdrop-blur-md">
                 <Star className="w-4 h-4 fill-orange-400" />
                 <span className="text-sm font-bold tracking-wider uppercase">97 Reseñas de 5 Estrellas</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-black mb-8 tracking-tight bg-gradient-to-b from-white to-slate-400 bg-clip-text text-transparent leading-tight">
                 La confianza de todo <br />
-                <span className="text-orange-500 italic">Villaviciosa del Odón</span>
+                <span className="text-amber-500 italic">Villaviciosa del Odón</span>
               </h1>
               <p className="text-xl text-slate-400 leading-relaxed mb-12 max-w-2xl mx-auto">
                 No lo decimos nosotros, lo dicen nuestros clientes. Comprometidos con la rapidez,
@@ -69,7 +69,7 @@ export default function Testimonios() {
                   { label: "Garantía", value: "100%", icon: CheckCircle2 },
                 ].map((stat, i) => (
                   <div key={i} className="p-4 rounded-2xl bg-slate-900/50 border border-slate-800 backdrop-blur-sm">
-                    <stat.icon className="w-5 h-5 text-orange-500 mx-auto mb-2" />
+                    <stat.icon className="w-5 h-5 text-amber-500 mx-auto mb-2" />
                     <div className="text-xl font-bold text-white">{stat.value}</div>
                     <div className="text-xs text-slate-500 uppercase tracking-tighter">{stat.label}</div>
                   </div>
@@ -91,8 +91,8 @@ export default function Testimonios() {
             >
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="flex items-center gap-4 text-white shrink-0">
-                  <div className="p-3 rounded-xl bg-orange-500/10 border border-orange-500/20">
-                    <Filter className="w-6 h-6 text-orange-500" />
+                  <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                    <Filter className="w-6 h-6 text-amber-500" />
                   </div>
                   <div>
                     <h2 className="font-bold text-xl">Filtrar Experiencias</h2>
@@ -107,7 +107,7 @@ export default function Testimonios() {
                       <select
                         value={selectedService}
                         onChange={(e) => setSelectedService(e.target.value)}
-                        className="w-full bg-[#020617] border border-slate-800 text-white rounded-xl px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-orange-500/50 transition-all cursor-pointer group-hover:border-slate-700"
+                        className="w-full bg-[#020617] border border-slate-800 text-white rounded-xl px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all cursor-pointer group-hover:border-slate-700"
                       >
                         <option value="all">Todos los trabajos</option>
                         {services.slice(1).map(s => <option key={s} value={s}>{s}</option>)}
@@ -124,7 +124,7 @@ export default function Testimonios() {
                       <select
                         value={selectedLocation}
                         onChange={(e) => setSelectedLocation(e.target.value)}
-                        className="w-full bg-[#020617] border border-slate-800 text-white rounded-xl px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-orange-500/50 transition-all cursor-pointer group-hover:border-slate-700"
+                        className="w-full bg-[#020617] border border-slate-800 text-white rounded-xl px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all cursor-pointer group-hover:border-slate-700"
                       >
                         <option value="all">Toda la ciudad</option>
                         {locations.slice(1).map(l => <option key={l} value={l}>{l}</option>)}
@@ -175,12 +175,12 @@ export default function Testimonios() {
               <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-400 blur-[80px] opacity-20 group-hover:opacity-30 transition-opacity" />
               <div className="relative bg-[#020617] border border-slate-800 rounded-[2.5rem] p-12 text-center overflow-hidden">
                 <div className="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
-                  <Quote className="w-64 h-64 text-orange-500" />
+                  <Quote className="w-64 h-64 text-amber-500" />
                 </div>
 
                 <h2 className="text-4xl md:text-5xl font-black mb-6 text-white leading-tight">
                   Súmate a la tranquilidad <br />
-                  de <span className="text-orange-500">97 familias</span> satisfechas
+                  de <span className="text-amber-500">97 familias</span> satisfechas
                 </h2>
                 <p className="text-xl text-slate-400 mb-10 max-w-xl mx-auto">
                   Estamos a menos de 20 minutos de ti. Llámanos ahora y recibe un presupuesto cerrado sin compromiso.
@@ -188,7 +188,7 @@ export default function Testimonios() {
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                   <a
                     href={`tel:${APP_PHONE}`}
-                    className="flex items-center gap-3 bg-orange-600 hover:bg-orange-500 text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all hover:scale-105 active:scale-95 shadow-xl shadow-orange-600/20"
+                    className="flex items-center gap-3 bg-orange-600 hover:bg-amber-500 text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all hover:scale-105 active:scale-95 shadow-xl shadow-orange-600/20"
                   >
                     {APP_PHONE_DISPLAY}
                   </a>
@@ -209,22 +209,22 @@ export default function Testimonios() {
 function TestimonialCard({ testimonial, formatDate }: { testimonial: Testimonial; formatDate: (date: string) => string }) {
   return (
     <div className="h-full flex flex-col bg-slate-900/40 border border-slate-800 p-8 rounded-[2rem] hover:bg-slate-900/70 transition-all duration-500 group relative">
-      <div className="absolute top-6 right-8 text-slate-800 group-hover:text-orange-500/10 transition-colors pointer-events-none">
+      <div className="absolute top-6 right-8 text-slate-800 group-hover:text-amber-500/10 transition-colors pointer-events-none">
         <Quote className="w-12 h-12 rotate-180" />
       </div>
 
       {/* Header Info */}
       <div className="flex items-center gap-4 mb-8">
-        <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center text-2xl font-black text-orange-500 border border-slate-700 shadow-inner">
+        <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center text-2xl font-black text-amber-500 border border-slate-700 shadow-inner">
           {testimonial.name.charAt(0)}
         </div>
         <div>
-          <h3 className="font-bold text-lg text-white group-hover:text-orange-500 transition-colors uppercase tracking-tight">{testimonial.name}</h3>
+          <h3 className="font-bold text-lg text-white group-hover:text-amber-500 transition-colors uppercase tracking-tight">{testimonial.name}</h3>
           <div className="flex items-center gap-1 mt-1">
             {[...Array(5)].map((_, i) => (
               <Star
                 key={i}
-                className={`w-3.5 h-3.5 ${i < testimonial.rating ? 'fill-orange-500 text-orange-500' : 'text-slate-800'}`}
+                className={`w-3.5 h-3.5 ${i < testimonial.rating ? 'fill-amber-500 text-amber-500' : 'text-slate-800'}`}
               />
             ))}
           </div>
@@ -233,7 +233,7 @@ function TestimonialCard({ testimonial, formatDate }: { testimonial: Testimonial
 
       {/* Content */}
       <div className="flex-grow">
-        <div className="mb-4 inline-block px-3 py-1 rounded-lg bg-orange-500/10 border border-orange-500/20 text-[10px] font-bold text-orange-400 uppercase tracking-widest">
+        <div className="mb-4 inline-block px-3 py-1 rounded-lg bg-amber-500/10 border border-amber-500/20 text-[10px] font-bold text-orange-400 uppercase tracking-widest">
           {testimonial.service}
         </div>
         <p className="text-slate-400 leading-relaxed text-[15px] mb-8 font-medium italic italic-none group-hover:text-slate-300 transition-colors">
@@ -244,7 +244,7 @@ function TestimonialCard({ testimonial, formatDate }: { testimonial: Testimonial
       {/* Metadata */}
       <div className="flex items-center justify-between pt-6 border-t border-slate-800/50">
         <div className="flex items-center gap-2 text-slate-500">
-          <MapPin className="w-4 h-4 text-orange-500/50" />
+          <MapPin className="w-4 h-4 text-amber-500/50" />
           <span className="text-xs font-bold uppercase tracking-widest">{testimonial.location}</span>
         </div>
         <div className="flex items-center gap-2 text-slate-600">

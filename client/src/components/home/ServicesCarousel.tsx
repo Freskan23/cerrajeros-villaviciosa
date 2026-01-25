@@ -21,42 +21,42 @@ import {
 export default function ServicesCarousel() {
     const services = [
         {
-            icon: <HomeIcon className="h-12 w-12 text-[#FF6B35]" />,
+            icon: <HomeIcon className="h-12 w-12 text-[#0A2540]" />,
             title: "Apertura de Puertas",
             description: "¿Te has dejado las llaves en casa? Abrimos puertas en todo Villaviciosa del Odón desde 90€. Sin romper, rápido y barato.",
             image: "/servicio-apertura-puertas-3d.webp",
             link: "/apertura-puertas",
         },
         {
-            icon: <Clock className="h-12 w-12 text-[#FF6B35]" />,
+            icon: <Clock className="h-12 w-12 text-[#0A2540]" />,
             title: "Urgencias 24 Horas",
             description: "Servicio inmediato día y noche. Llegamos en 20 minutos a cualquier punto de Villaviciosa del Odón, festivos incluidos.",
             image: "/servicio-domicilio-3d.webp",
             link: "/urgencias-24h",
         },
         {
-            icon: <Wrench className="h-12 w-12 text-[#FF6B35]" />,
+            icon: <Wrench className="h-12 w-12 text-[#0A2540]" />,
             title: "Cambio de Cerraduras",
             description: "Sustitución e instalación de cerraduras de todas las marcas. Mejora la seguridad de tu hogar hoy mismo.",
             image: "/servicio-cerraduras-3d.webp",
             link: "/cambio-cerraduras",
         },
         {
-            icon: <Lock className="h-12 w-12 text-[#FF6B35]" />,
+            icon: <Lock className="h-12 w-12 text-[#0A2540]" />,
             title: "Bombines Antibumping",
             description: "Instalación de cilindros de alta seguridad. Protección contra el método bumping, ganzúa y taladro.",
             image: "/servicio-llaves-3d.webp",
             link: "/cambio-bombin",
         },
         {
-            icon: <Key className="h-12 w-12 text-[#FF6B35]" />,
+            icon: <Key className="h-12 w-12 text-[#0A2540]" />,
             title: "Amaestramientos",
             description: "Olvídate de llevar inmensos llaveros. Una sola llave para abrir todas las puertas de tu comunidad o negocio.",
             image: "/servicio-llaves-3d.webp",
             link: "/amaestramiento",
         },
         {
-            icon: <Settings className="h-12 w-12 text-[#FF6B35]" />,
+            icon: <Settings className="h-12 w-12 text-[#0A2540]" />,
             title: "Mantenimiento",
             description: "Servicio de mantenimiento para comunidades de propietarios y empresas. Ajuste de muelles y puertas.",
             image: "/servicio-cerraduras-3d.webp",
@@ -106,13 +106,13 @@ export default function ServicesCarousel() {
                                             </div>
                                         </div>
                                         <CardContent className="p-6">
-                                            <h3 className="text-xl font-bold mb-3 text-[#001529] group-hover:text-[#FF6B35] transition-colors">
+                                            <h3 className="text-xl font-bold mb-3 text-[#001529] group-hover:text-[#0A2540] transition-colors">
                                                 {service.title}
                                             </h3>
                                             <p className="text-gray-600 leading-relaxed text-sm">
                                                 {service.description}
                                             </p>
-                                            <div className="mt-4 flex items-center text-[#FF6B35] font-semibold text-sm group-hover:translate-x-1 transition-transform" aria-label={`Ver detalles sobre ${service.title}`}>
+                                            <div className="mt-4 flex items-center text-[#0A2540] font-semibold text-sm group-hover:translate-x-1 transition-transform" aria-label={`Ver detalles sobre ${service.title}`}>
                                                 Ver detalles <ArrowRight className="ml-2 h-4 w-4" />
                                             </div>
                                         </CardContent>
@@ -122,8 +122,8 @@ export default function ServicesCarousel() {
                         ))}
                     </CarouselContent>
                     <div className="hidden md:flex justify-end gap-2 mt-8">
-                        <CarouselPrevious className="relative translate-y-0 left-0 hover:bg-[#FF6B35] hover:text-white border-gray-200" />
-                        <CarouselNext className="relative translate-y-0 right-0 hover:bg-[#FF6B35] hover:text-white border-gray-200" />
+                        <CarouselPrevious className="relative translate-y-0 left-0 hover:bg-[#0A2540] hover:text-white border-gray-200" />
+                        <CarouselNext className="relative translate-y-0 right-0 hover:bg-[#0A2540] hover:text-white border-gray-200" />
                     </div>
                     <div className="flex md:hidden justify-center gap-2 mt-6">
                         <div className="flex gap-1">

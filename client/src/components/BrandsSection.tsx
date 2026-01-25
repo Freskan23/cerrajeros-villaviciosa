@@ -4,7 +4,7 @@ export default function BrandsSection() {
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-black mb-4 text-[#001529] tracking-tight">
-                        Marcas de <span className="text-[#FF6B35]">Confianza</span>
+                        Marcas de <span className="text-[#0A2540]">Confianza</span>
                     </h2>
                     <p className="text-gray-500 max-w-2xl mx-auto font-medium">
                         Instalamos solo componentes de máxima seguridad certificados por las marcas líderes del sector.

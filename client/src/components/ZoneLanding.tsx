@@ -49,12 +49,12 @@ export default function ZoneLanding({
 
           <div className="container relative z-10">
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FF6B35]/20 border border-[#FF6B35]/50 text-[#FF6B35] text-sm font-bold mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0A2540]/20 border border-[#0A2540]/50 text-[#0A2540] text-sm font-bold mb-6">
                 <MapPin className="h-4 w-4" />
                 Servicio en {zoneName}
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Cerrajeros en <span className="text-[#FF6B35]">{zoneName}</span> 24 Horas
+                Cerrajeros en <span className="text-[#0A2540]">{zoneName}</span> 24 Horas
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                 {zoneDescription} Llegamos a cualquier calle de {zoneName} en menos de 20 minutos.
@@ -64,7 +64,7 @@ export default function ZoneLanding({
                 <Button
                   asChild
                   size="lg"
-                  className="bg-[#FF6B35] hover:bg-[#E55A2B] text-white text-lg px-8 py-6 shadow-lg shadow-orange-500/20"
+                  className="bg-[#0A2540] hover:bg-[#E55A2B] text-white text-lg px-8 py-6 shadow-lg shadow-amber-500/20"
                 >
                   <a href={`tel:${APP_PHONE}`}>
                     <Phone className="mr-2 h-6 w-6 animate-pulse" />
