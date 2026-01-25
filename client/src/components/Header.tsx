@@ -1,6 +1,6 @@
 import { APP_LOGO, APP_BUSINESS_NAME, APP_PHONE, APP_PHONE_DISPLAY, APP_LOCATION } from "@/const";
 import { Button } from "@/components/ui/button";
-import { Menu, Phone, X } from "lucide-react";
+import { Menu, Phone, X, Shield } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { useDynamicPricing, getPricingText } from "@/hooks/useDynamicPricing";
@@ -30,7 +30,6 @@ export default function Header() {
         element.scrollIntoView({ behavior: "smooth" });
         setMobileMenuOpen(false);
       } else if (location !== "/") {
-        // Si no estamos en la home y no encontramos el elemento, navegamos
         setLocation("/");
       }
     }
@@ -41,39 +40,42 @@ export default function Header() {
       {/* Top bar minimalista */}
       <WeatherTopBar />
 
-      {/* Banners de aviso (se mantienen para utilidad pero con diseño integrado) */}
+      {/* Banners de aviso */}
       <WeatherWarningBanner />
       <PricingWarningBanner />
 
-      {/* Header Principal con Glassmorphism */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-100 shadow-sm transition-all duration-300">
+      {/* Header Principal Premium */}
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-gray-200/50 shadow-sm transition-all duration-300">
         <div className="container">
-          <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex items-center justify-between h-18 md:h-24 py-3">
 
-            {/* Logo y Branding */}
-            <Link href="/" className="flex items-center gap-3 shrink-0">
+            {/* Logo y Branding Premium */}
+            <Link href="/" className="flex items-center gap-4 shrink-0">
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-[#FF6B35] to-[#FF9F1C] rounded-full blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-[#D4AF37] to-[#F0C75E] rounded-lg blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
                 <img
                   src="/logo-villaviciosa24h.webp"
                   alt={APP_BUSINESS_NAME}
                   width="180"
                   height="45"
-                  className="relative h-10 md:h-12 w-auto"
+                  className="relative h-11 md:h-14 w-auto"
                 />
               </div>
-              <div className="hidden sm:flex flex-col border-l border-gray-100 pl-3">
-                <span className="text-sm font-bold text-[#001529] leading-tight">
-                  Cerrajeros Villaviciosa del Odón
+              <div className="hidden sm:flex flex-col border-l border-gray-200 pl-4">
+                <span className="text-sm md:text-base font-bold text-[#0A2540] leading-tight tracking-tight">
+                  Cerrajeros Villaviciosa
                 </span>
-                <span className="text-[10px] text-gray-500 uppercase tracking-widest font-medium">
-                  Confianza Certificada
-                </span>
+                <div className="flex items-center gap-1.5 mt-0.5">
+                  <Shield className="h-3 w-3 text-[#D4AF37]" />
+                  <span className="text-[10px] text-gray-600 uppercase tracking-wider font-medium">
+                    Servicio Premium 24h
+                  </span>
+                </div>
               </div>
             </Link>
 
             {/* Navegación Desktop */}
-            <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
+            <nav className="hidden lg:flex items-center gap-8 xl:gap-10">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
@@ -88,40 +90,40 @@ export default function Header() {
                       }
                     }
                   }}
-                  className="text-sm font-semibold text-gray-600 hover:text-[#FF6B35] transition-all relative group"
+                  className="text-sm font-semibold text-gray-700 hover:text-[#D4AF37] transition-all relative group"
                 >
                   {item.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#FF6B35] transition-all group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#D4AF37] to-[#F0C75E] transition-all group-hover:w-full"></span>
                 </Link>
               ))}
             </nav>
 
             {/* Acciones Right Side: Precio + Call Button */}
-            <div className="flex items-center gap-3 md:gap-4">
-              {/* Badge de Precio Premium Dinámico */}
-              <div className="hidden md:flex flex-col items-end pr-4 border-r border-gray-100">
-                <div className="flex items-center gap-1.5 text-[#FF6B35] font-bold text-lg leading-none">
-                  <span className="text-sm font-medium opacity-70">Desde</span>
+            <div className="flex items-center gap-4 md:gap-5">
+              {/* Badge de Precio Premium */}
+              <div className="hidden md:flex flex-col items-end pr-5 border-r border-gray-200">
+                <div className="flex items-center gap-2 text-[#D4AF37] font-bold text-xl leading-none">
+                  <span className="text-xs font-medium text-gray-500">Desde</span>
                   {currentPrice}€
                 </div>
-                <span className="text-[10px] text-gray-400 font-medium uppercase tracking-tighter">
-                  {isNormalHours ? "Tarifa Comercial" : "Tarifa Urgencias"}
+                <span className="text-[10px] text-gray-500 font-medium uppercase tracking-wider mt-0.5">
+                  {isNormalHours ? "Tarifa Estándar" : "Tarifa Urgente"}
                 </span>
               </div>
 
               <Button
                 asChild
-                className="bg-[#FF6B35] hover:bg-[#E55A2B] text-white font-bold h-11 px-6 rounded-xl shadow-lg shadow-orange-500/20 active:scale-95 transition-all text-sm md:text-base"
+                className="premium-gradient hover:opacity-90 text-white font-bold h-12 px-7 rounded-lg shadow-lg shadow-[#0A2540]/20 active:scale-95 transition-all text-sm md:text-base"
               >
-                <a href={`tel:${APP_PHONE}`} className="flex items-center gap-2" aria-label={`Llamar a Cerrajeros Villaviciosa 24h al ${APP_PHONE_DISPLAY}`}>
+                <a href={`tel:${APP_PHONE}`} className="flex items-center gap-2.5" aria-label={`Llamar a Cerrajeros Villaviciosa al ${APP_PHONE_DISPLAY}`}>
                   <Phone className="h-4 w-4 md:h-5 md:w-5 animate-pulse text-white" />
-                  <span className="whitespace-nowrap text-white">{APP_PHONE_DISPLAY}</span>
+                  <span className="whitespace-nowrap text-white font-semibold">{APP_PHONE_DISPLAY}</span>
                 </a>
               </Button>
 
               {/* Mobile Toggle */}
               <button
-                className="lg:hidden p-2 text-gray-800 hover:text-[#FF6B35] transition-colors"
+                className="lg:hidden p-2 text-[#0A2540] hover:text-[#D4AF37] transition-colors"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label={mobileMenuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
                 aria-expanded={mobileMenuOpen}
@@ -132,9 +134,9 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Menu Refinado */}
-        <div className={`lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 transition-all duration-300 overflow-hidden ${mobileMenuOpen ? 'max-h-[500px] py-6' : 'max-h-0'}`}>
-          <nav className="container flex flex-col gap-5">
+        {/* Mobile Menu Premium */}
+        <div className={`lg:hidden bg-white/98 backdrop-blur-xl border-t border-gray-200/50 transition-all duration-300 overflow-hidden ${mobileMenuOpen ? 'max-h-[600px] py-8' : 'max-h-0'}`}>
+          <nav className="container flex flex-col gap-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -153,18 +155,18 @@ export default function Header() {
                     setMobileMenuOpen(false);
                   }
                 }}
-                className="text-lg font-bold text-gray-800 hover:text-[#FF6B35] flex items-center justify-between"
+                className="text-lg font-bold text-[#0A2540] hover:text-[#D4AF37] flex items-center justify-between transition-colors"
               >
                 {item.label}
-                <div className="h-1 w-1 rounded-full bg-gray-200"></div>
+                <div className="h-1.5 w-1.5 rounded-full bg-[#D4AF37]/30"></div>
               </Link>
             ))}
-            <div className="mt-4 p-4 bg-orange-50 rounded-2xl flex items-center justify-between">
+            <div className="mt-4 p-5 premium-gradient rounded-xl flex items-center justify-between shadow-lg">
               <div>
-                <p className="text-xs text-orange-600 font-bold uppercase tracking-wider">Apertura ahora</p>
-                <p className="text-xl font-bold text-[#001529]">{currentPrice}€</p>
+                <p className="text-xs text-[#D4AF37] font-bold uppercase tracking-wider">Servicio Ahora</p>
+                <p className="text-2xl font-bold text-white mt-1">{currentPrice}€</p>
               </div>
-              <p className="text-[10px] text-gray-500 max-w-[100px] text-right">
+              <p className="text-[10px] text-white/80 max-w-[120px] text-right leading-tight">
                 {getPricingText(isNormalHours)}
               </p>
             </div>
