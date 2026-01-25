@@ -169,28 +169,15 @@
       max-width: 1400px;
     }
   }
-  
+}
+
+@layer utilities {
   .premium-gradient {
     background: linear-gradient(135deg, oklch(0.25 0.08 250) 0%, oklch(0.20 0.06 250) 100%);
   }
   
   .gold-accent {
     color: oklch(0.75 0.12 85);
-  }
-  
-  .premium-shadow {
-    box-shadow: 0 10px 40px -10px rgba(10, 37, 64, 0.15);
-  }
-  
-  .premium-card {
-    @apply bg-white rounded-lg premium-shadow border border-border/50;
-    transition: all 0.3s ease;
-  }
-  
-  .premium-card:hover {
-    @apply premium-shadow;
-    transform: translateY(-4px);
-    box-shadow: 0 20px 50px -15px rgba(10, 37, 64, 0.25);
   }
 }
 
