@@ -128,7 +128,7 @@ export default function SchemaMarkup() {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Elena R." },
         "datePublished": "2026-01-05",
-        "reviewBody": "Llamé a las 3 am porque no podía entrar en casa cerca del CC Parquesur. Llegaron volando, en menos de 20 minutos estaban allí. Me abrieron la puerta y me dieron mucha tranquilidad.",
+        "reviewBody": "Llamé a las 3 am porque no podía entrar en casa cerca del Castillo. Llegaron volando, en menos de 20 minutos estaban allí. Me abrieron la puerta y me dieron mucha tranquilidad.",
         "reviewRating": { "@type": "Rating", "ratingValue": "5" }
       }
     ],
@@ -187,8 +187,11 @@ export default function SchemaMarkup() {
       { "@type": "City", "name": "Villaviciosa del Odón" },
       { "@type": "City", "name": "Centro" },
       { "@type": "City", "name": "El Bosque" },
-      { "@type": "City", "name": "Villaviciosa del Odón Norte" },
-      { "@type": "City", "name": "Río Guadarrama" }
+      { "@type": "City", "name": "Campodón" },
+      { "@type": "City", "name": "Castillo" },
+      { "@type": "City", "name": "Dehesa del Sotillo" },
+      { "@type": "City", "name": "Monte de la Villa" },
+      { "@type": "City", "name": "Cerro de las Nieves" }
     ],
     "sameAs": [
       "https://www.facebook.com/cerrajeriavillaviciosa24h",
@@ -275,7 +278,7 @@ export default function SchemaMarkup() {
         "name": "¿En qué barrios de Villaviciosa del Odón prestáis servicio?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Damos cobertura total a todo Villaviciosa del Odón: Centro, El Bosque, Campodón, Castillo, Villaviciosa del Odón Norte, Río Guadarrama, La Vega y Dehesa del Sotillo."
+          "text": "Damos cobertura total a todo Villaviciosa del Odón: Centro, El Bosque, Campodón, Castillo, Dehesa del Sotillo, Monte de la Villa y Cerro de las Nieves."
         }
       },
       {
@@ -342,4 +345,3 @@ export default function SchemaMarkup() {
     </>
   );
 }
-

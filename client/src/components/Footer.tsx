@@ -1,6 +1,7 @@
 import { APP_BUSINESS_NAME, APP_LOCATION, APP_PHONE, APP_EMAIL } from "@/const";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "wouter";
+import { slugify } from "@/lib/utils";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -14,8 +15,7 @@ export default function Footer() {
 
   const zones = [
     "Centro", "El Bosque", "Campodón", "Castillo",
-    "Dehesa del Sotillo", "Río Guadarrama", "La Vega",
-    "Monreal", "Sacedón", "Villaviciosa del Odón Norte"
+    "Dehesa del Sotillo", "Monte de la Villa", "Cerro de las Nieves"
   ];
 
   return (
@@ -74,9 +74,11 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-sm uppercase tracking-wider mb-6">Zonas</h4>
             <ul className="space-y-3">
-              {zones.slice(0, 5).map((zone) => (
+              {zones.map((zone) => (
                 <li key={zone}>
-                  <span className="text-gray-600 text-sm">{zone}</span>
+                  <Link href={`/cerrajeros-${slugify(zone)}`} className="text-gray-600 hover:text-black transition-colors text-sm">
+                    {zone}
+                  </Link>
                 </li>
               ))}
             </ul>

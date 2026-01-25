@@ -52,6 +52,11 @@ export default function Urgencias24h() {
         }
     ];
 
+    const zones = [
+        "Centro", "El Bosque", "Campodón", "Castillo",
+        "Dehesa del Sotillo", "Monte de la Villa", "Cerro de las Nieves"
+    ];
+
     return (
         <div className="min-h-screen flex flex-col">
             <SEOHead
@@ -161,7 +166,7 @@ export default function Urgencias24h() {
                             <p className="text-lg text-gray-600 mt-4">Nuestros técnicos están situados cerca de:</p>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-                            {["Centro", "El Bosque", "Villaviciosa del Odón Norte", "Río Guadarrama", "Campodón", "Castillo", "Monreal", "Barrio de Dehesa del Sotillo"].map((barrio, i) => (
+                            {zones.map((barrio, i) => (
                                 <div key={i} className="flex items-center gap-2 text-gray-700 font-medium">
                                     <MapPin className="h-5 w-5 text-[#A52A2A]" />
                                     {barrio}
