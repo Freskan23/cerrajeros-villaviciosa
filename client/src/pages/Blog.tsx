@@ -9,25 +9,25 @@ import SEOHead from "@/components/SEOHead";
 
 const blogPosts = [
   {
-    id: "actualizar-seguridad-casa-leganes",
+    id: "actualizar-seguridad-casa-villaviciosa del odón",
     title: "5 señales de que necesitas actualizar la seguridad de tu hogar hoy mismo",
-    excerpt: "¿Tu llave se atasca? ¿No tienes escudo? Descubre si tu casa es un objetivo fácil para los ladrones en Leganés.",
+    excerpt: "¿Tu llave se atasca? ¿No tienes escudo? Descubre si tu casa es un objetivo fácil para los ladrones en Villaviciosa del Odón.",
     date: "2025-11-10",
     category: "Auditoría",
     icon: <Shield className="h-6 w-6 text-[#FF6B35]" />,
     image: "/images/blog-seguridad-hogar.webp"
   },
   {
-    id: "senales-robo-puerta-leganes",
+    id: "senales-robo-puerta-villaviciosa del odón",
     title: "La vulnerabilidad olvidada: Señales que los ladrones dejan en tu puerta",
-    excerpt: "Hilos de pegamento, plásticos... Aprende a detectar si están vigilando tu casa en Leganés antes de que entren.",
+    excerpt: "Hilos de pegamento, plásticos... Aprende a detectar si están vigilando tu casa en Villaviciosa del Odón antes de que entren.",
     date: "2025-11-08",
     category: "Prevención",
     icon: <AlertTriangle className="h-6 w-6 text-[#FF6B35]" />,
     image: "/images/blog-mantenimiento-cerradura.webp"
   },
   {
-    id: "peligros-cerrojos-simples-leganes",
+    id: "peligros-cerrojos-simples-villaviciosa del odón",
     title: "El peligro de los cerrojos simples: Por qué necesitas un FAC de alta seguridad",
     excerpt: "Un cerrojo barato no detiene a nadie. Te explicamos por qué necesitas un sistema antibumping y con escudo.",
     date: "2025-11-05",
@@ -42,11 +42,11 @@ const blogPosts = [
     date: "2025-11-03",
     category: "Consejos",
     icon: <Shield className="h-6 w-6 text-[#FF6B35]" />,
-    image: "/images/cerrajero-aguado.webp"
+    image: "/images/cerrajero-villaviciosa24h.webp"
   },
   {
     id: "peligro-bumping-bombines-inseguros",
-    title: "Tu bombín podría ser vulnerable: Bumping e Impresioning en Leganés",
+    title: "Tu bombín podría ser vulnerable: Bumping e Impresioning en Villaviciosa del Odón",
     excerpt: "El 80% de las cerraduras se abren sin ruido en segundos. ¿Es tu bombín uno de ellos? Aprende a protegerte.",
     date: "2025-11-01",
     category: "Seguridad",
@@ -54,8 +54,8 @@ const blogPosts = [
     image: "/images/blog-cerradura-inteligente.webp"
   },
   {
-    id: "robos-trasteros-leganes-norte",
-    title: "Oleada de robos en trasteros de Leganés Norte: Cómo protegerte con Cerrajeros Leganés",
+    id: "robos-trasteros-villaviciosa del odón-norte",
+    title: "Oleada de robos en trasteros de Villaviciosa del Odón Norte: Cómo protegerte con Cerrajeros Villaviciosa del Odón",
     excerpt: "¿Vives en la zona de la Ronda Norte? Los trasteros son el nuevo objetivo. Descubre qué cerraduras resisten a los ladrones.",
     date: "2025-10-20",
     category: "Seguridad",
@@ -64,8 +64,8 @@ const blogPosts = [
   },
   {
     id: "cerraduras-antibumping-zarzaquemada",
-    title: "Cerraduras Antibumping en Leganés: Protege tu piso en Zarzaquemada",
-    excerpt: "La mayoría de bloques en Zarzaquemada tienen cerraduras de hace 20 años. El bumping las abre en segundos. ¿Es tu caso?",
+    title: "Cerraduras Antibumping en Villaviciosa del Odón: Protege tu piso en Centro",
+    excerpt: "La mayoría de bloques en Centro tienen cerraduras de hace 20 años. El bumping las abre en segundos. ¿Es tu caso?",
     date: "2025-10-18",
     category: "Prevención",
     icon: <Lock className="h-6 w-6 text-[#FF6B35]" />,
@@ -73,7 +73,7 @@ const blogPosts = [
   },
   {
     id: "seguridad-chalets-arroyo-culebro",
-    title: "Seguridad para Chalets en Leganés: Guía para Arroyo Culebro y Valdepelayo",
+    title: "Seguridad para Chalets en Villaviciosa del Odón: Guía para Río Guadarrama y La Vega",
     excerpt: "Vivir en un chalet es genial, pero requiere seguridad extra. Cerrojos, escudos y alarmas para dormir tranquilo.",
     date: "2025-10-15",
     category: "Hogar",
@@ -82,7 +82,7 @@ const blogPosts = [
   },
   {
     id: "llaves-coche-parquesur",
-    title: "Cerrajeros de Coches en Leganés: Solución rápida si pierdes las llaves en Parquesur",
+    title: "Cerrajeros de Coches en Villaviciosa del Odón: Solución rápida si pierdes las llaves en Parquesur",
     excerpt: "Te explicamos paso a paso qué hacer si te quedas tirado en el parking del centro comercial. Soluciones rápidas.",
     date: "2025-10-12",
     category: "Emergencias",
@@ -90,8 +90,8 @@ const blogPosts = [
     image: "/blog-llaves-coche.webp"
   },
   {
-    id: "puertas-okupas-leganes",
-    title: "Evita la Ocupación en Leganés: Puertas Anti-Okupa en San Nicasio y Centro",
+    id: "puertas-okupas-villaviciosa del odón",
+    title: "Evita la Ocupación en Villaviciosa del Odón: Puertas Anti-Okupa en El Bosque y Centro",
     excerpt: "Si tienes un piso cerrado en la zona antigua, cuidado. Las puertas anti-okupa son tu mejor inversión.",
     date: "2025-10-10",
     category: "Seguridad",
@@ -100,7 +100,7 @@ const blogPosts = [
   },
   {
     id: "bombines-seguridad-baratos",
-    title: "¿Cerraduras Baratas en Leganés? Por qué lo barato sale caro en seguridad",
+    title: "¿Cerraduras Baratas en Villaviciosa del Odón? Por qué lo barato sale caro en seguridad",
     excerpt: "Analizamos las marcas que venden en ferreterías de barrio vs. lo que realmente instala un profesional.",
     date: "2025-10-08",
     category: "Consejos",
@@ -115,7 +115,7 @@ export default function Blog() {
       <SEOHead
         title={`Blog de Seguridad y Cerrajería en ${APP_LOCATION} | ${APP_BUSINESS_NAME}`}
         description={`📰 Consejos de seguridad, avisos de robos y guías de cerrajería para los vecinos de ${APP_LOCATION}. Protege tu hogar con los mejores trucos profesionales.`}
-        canonicalUrl="https://cerrajerosdeleganes.madrid/blog"
+        canonicalUrl="https://cerrajerosdevillaviciosa del odón.madrid/blog"
       />
       <Header />
 
@@ -131,10 +131,10 @@ export default function Blog() {
               BLOG DE SEGURIDAD
             </span>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">
-              Consejos de seguridad para <span className="text-[#FF6B35]">vecinos de Leganés</span>
+              Consejos de seguridad para <span className="text-[#FF6B35]">vecinos de Villaviciosa del Odón</span>
             </h1>
             <p className="text-xl text-blue-100/80 leading-relaxed">
-              Guías prácticas, alertas de robos en la zona y trucos de cerrajero para proteger tu casa en Zarzaquemada, San Nicasio o Arroyo Culebro.
+              Guías prácticas, alertas de robos en la zona y trucos de cerrajero para proteger tu casa en Centro, El Bosque o Río Guadarrama.
             </p>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function Blog() {
           <div className="max-w-2xl mx-auto bg-[#001529] p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl shadow-black/50">
             <h2 className="text-3xl font-bold mb-4 text-white">¿Te preocupa la seguridad de tu barrio?</h2>
             <p className="text-xl text-blue-100/80 mb-8">
-              Hacemos estudios de seguridad gratuitos en Leganés. Llámanos y te decimos cómo mejorar tu puerta.
+              Hacemos estudios de seguridad gratuitos en Villaviciosa del Odón. Llámanos y te decimos cómo mejorar tu puerta.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-[#FF6B35] hover:bg-[#E55A2B] text-white text-lg px-8 shadow-lg shadow-orange-900/20">

@@ -39,7 +39,7 @@ export default function CambioCerraduras() {
       answer: "Es vital cambiarla si has perdido las llaves, si acabas de mudarte a una nueva vivienda, si la cerradura tiene más de 10 años (por obsolescencia de seguridad) o si ha sido forzada o intentado manipular."
     },
     {
-      question: "¿Qué marcas de cerraduras recomendáis para Leganés?",
+      question: "¿Qué marcas de cerraduras recomendáis para Villaviciosa del Odón?",
       answer: "Recomendamos marcas de primera línea como Tesa, Mottura, Ezcurra o FAC. Estas marcas ofrecen los más altos estándares de protección contra el robo técnico y fuerza bruta."
     },
     {
@@ -78,9 +78,9 @@ export default function CambioCerraduras() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead
-        title={`Cambio de Cerraduras Leganés 🔧 Máxima Seguridad | Aguado 24h`}
-        description={`🔒 Protege tu hogar hoy. Instalamos cerraduras antibumping en Leganés con garantía total. Marcas: Mottura, Tesa, Ezcurra. Presupuesto sin compromiso.`}
-        canonicalUrl="https://cerrajerosdeleganes.madrid/cambio-cerraduras"
+        title={`Cambio de Cerraduras Villaviciosa del Odón 🔧 Máxima Seguridad | Villaviciosa 24h 24h`}
+        description={`🔒 Protege tu hogar hoy. Instalamos cerraduras antibumping en Villaviciosa del Odón con garantía total. Marcas: Mottura, Tesa, Ezcurra. Presupuesto sin compromiso.`}
+        canonicalUrl="https://cerrajerosdevillaviciosa del odón.madrid/cambio-cerraduras"
       />
       <Header />
 
@@ -105,17 +105,17 @@ export default function CambioCerraduras() {
           <div className="absolute inset-0 opacity-20">
             <img
               src="/instalacion-cerradura.jpg"
-              alt="Instalación de cerradura de alta seguridad en Leganés"
+              alt="Instalación de cerradura de alta seguridad en Villaviciosa del Odón"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="container relative z-10">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                🔧 Cambiamos tu cerradura antigua por una de alta seguridad en Leganés
+                🔧 Cambiamos tu cerradura antigua por una de alta seguridad en Villaviciosa del Odón
               </h1>
               <p className="text-xl mb-8 text-gray-200">
-                Instalación de cerraduras antibumping y de alta seguridad. La solución ideal para proteger los pisos de barrios como <strong>Zarzaquemada</strong> y <strong>San Nicasio</strong>. No esperes a un robo para actualizar tu seguridad.
+                Instalación de cerraduras antibumping y de alta seguridad. La solución ideal para proteger los pisos de barrios como <strong>Centro</strong> y <strong>El Bosque</strong>. No esperes a un robo para actualizar tu seguridad.
               </p>
               <Button
                 asChild
@@ -227,7 +227,7 @@ export default function CambioCerraduras() {
                 <div className="rounded-xl overflow-hidden h-64">
                   <img
                     src="/proceso-llegada.webp"
-                    alt="Cerrajero Aguado llegando en furgoneta a Leganés"
+                    alt="Cerrajero Villaviciosa 24h llegando en furgoneta a Villaviciosa del Odón"
                     className="w-full h-full object-cover"
                   />
                 </div>

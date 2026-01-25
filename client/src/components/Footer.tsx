@@ -17,9 +17,9 @@ export default function Footer() {
   ];
 
   const zones = [
-    "Zarzaquemada", "San Nicasio", "El Carrascal", "La Fortuna",
-    "Poza del Agua", "Solagua", "Arroyo Culebro", "Valdepelayo",
-    "Vereda Estudiantes", "Los Santos", "Leganés Norte", "Centro"
+    "Centro", "El Bosque", "Campodón", "Castillo",
+    "El Bosque", "Dehesa del Sotillo", "Río Guadarrama", "La Vega",
+    "Monreal", "Sacedón", "Villaviciosa del Odón Norte", "Centro"
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-6">
             <div className="inline-flex items-center gap-3 p-2 bg-white rounded-2xl shadow-xl">
               <img
-                src="/logo-aguado.webp"
+                src="/logo-villaviciosa24h.webp"
                 alt={`Logo de ${APP_BUSINESS_NAME}`}
                 width="150"
                 height="40"
@@ -42,13 +42,13 @@ export default function Footer() {
               />
             </div>
             <h3 className="text-2xl font-black tracking-tight text-white italic">
-              Cerrajeros <span className="text-[#FF6B35]">Aguado</span>
+              Cerrajeros <span className="text-[#FF6B35]">Villaviciosa 24h</span>
             </h3>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base max-w-sm">
               Tu seguridad es nuestra obsesión. Líderes en {APP_LOCATION} con servicio técnico especializado y atención inmediata las 24 horas.
             </p>
             <div className="flex gap-4 pt-2">
-              <a href={`tel:${APP_PHONE}`} className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FF6B35] transition-all group" aria-label="Llamar por teléfono a Cerrajeros Aguado">
+              <a href={`tel:${APP_PHONE}`} className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FF6B35] transition-all group" aria-label="Llamar por teléfono a Cerrajeros Villaviciosa 24h">
                 <Phone className="h-5 w-5 text-gray-400 group-hover:text-white" />
               </a>
               <a href={`mailto:${APP_EMAIL}`} className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FF6B35] transition-all group" aria-label="Enviar correo electrónico">
@@ -74,7 +74,7 @@ export default function Footer() {
 
           {/* Columna Zonas (3 slots) */}
           <div className="lg:col-span-3">
-            <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-[#FF6B35] mb-6">Cobertura en Leganés</h4>
+            <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-[#FF6B35] mb-6">Cobertura en Villaviciosa del Odón</h4>
             <div className="grid grid-cols-2 gap-y-3 gap-x-4">
               {zones.map((zone) => (
                 <Link

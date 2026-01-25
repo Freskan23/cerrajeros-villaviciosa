@@ -1,4 +1,4 @@
-# Instrucciones de Despliegue - Cerrajería Aguado Leganés
+# Instrucciones de Despliegue - Cerrajería Villaviciosa 24h Villaviciosa del Odón
 
 ## 📦 Archivos Generados
 
@@ -8,7 +8,7 @@ El build de producción está en la carpeta `dist/public/`. Estos son los archiv
 
 ### 1. Subir Archivos al Hosting
 
-Sube **TODO el contenido** de la carpeta `dist/public/` a la raíz de tu dominio `cerrajerosdeleganes.madrid`:
+Sube **TODO el contenido** de la carpeta `dist/public/` a la raíz de tu dominio `cerrajerosdevillaviciosa del odón.madrid`:
 
 ```
 dist/public/
@@ -17,8 +17,8 @@ dist/public/
 │   ├── index-CWFfmpRm.js
 │   └── index-BSIWlvcn.css
 ├── images/
-│   ├── logo-aguado.jpg
-│   ├── cerrajero-aguado.png
+│   ├── logo-villaviciosa24h.jpg
+│   ├── cerrajero-villaviciosa24h.png
 │   ├── blog-*.jpg
 │   └── ...
 ├── robots.txt
@@ -37,8 +37,8 @@ Crea un archivo `.htaccess` en la raíz con este contenido:
   RewriteBase /
   
   # Redirigir www a no-www
-  RewriteCond %{HTTP_HOST} ^www\.cerrajerosdeleganes\.madrid [NC]
-  RewriteRule ^(.*)$ https://cerrajerosdeleganes.madrid/$1 [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www\.cerrajerosdevillaviciosa del odón\.madrid [NC]
+  RewriteRule ^(.*)$ https://cerrajerosdevillaviciosa del odón.madrid/$1 [L,R=301]
   
   # Forzar HTTPS
   RewriteCond %{HTTPS} off
@@ -77,27 +77,27 @@ server {
     server_name cerrajeromajadahonda.madrid www.cerrajeromajadahonda.madrid;
     
     # Redirigir a HTTPS
-    return 301 https://cerrajerosdeleganes.madrid$request_uri;
+    return 301 https://cerrajerosdevillaviciosa del odón.madrid$request_uri;
 }
 
 server {
     listen 443 ssl http2;
-    server_name www.cerrajerosdeleganes.madrid;
+    server_name www.cerrajerosdevillaviciosa del odón.madrid;
     
     # Redirigir www a no-www
-    return 301 https://cerrajerosdeleganes.madrid$request_uri;
+    return 301 https://cerrajerosdevillaviciosa del odón.madrid$request_uri;
 }
 
 server {
     listen 443 ssl http2;
-    server_name cerrajerosdeleganes.madrid;
+    server_name cerrajerosdevillaviciosa del odón.madrid;
     
-    root /var/www/cerrajerosdeleganes.madrid;
+    root /var/www/cerrajerosdevillaviciosa del odón.madrid;
     index index.html;
     
     # Certificado SSL (Let's Encrypt recomendado)
-    ssl_certificate /etc/letsencrypt/live/cerrajerosdeleganes.madrid/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/cerrajerosdeleganes.madrid/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/cerrajerosdevillaviciosa del odón.madrid/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cerrajerosdevillaviciosa del odón.madrid/privkey.pem;
     
     # SPA routing
     location / {
@@ -142,10 +142,10 @@ Una vez subidos los archivos, verifica:
 ### 6. Registrar en Google My Business
 
 Asegúrate de que tu ficha de Google My Business esté actualizada con:
-- Nombre: Cerrajería Aguado
-- Dirección: Av. de Fuenlabrada, 37, local 34 (Galería Sanabria), 28912 Leganés, Madrid
-- Teléfono: 624 940 941
-- Sitio web: https://cerrajerosdeleganes.madrid
+- Nombre: Cerrajería Villaviciosa 24h
+- Dirección: Av. de Fuenlabrada, 37, local 34 (Galería Sanabria), 28912 Villaviciosa del Odón, Madrid
+- Teléfono: 915 27 00 49
+- Sitio web: https://cerrajerosdevillaviciosa del odón.madrid
 - Horario: 24 horas
 
 ## 📊 Características Implementadas
@@ -172,9 +172,9 @@ Asegúrate de que tu ficha de Google My Business esté actualizada con:
 - ✅ Botón flotante de WhatsApp
 
 ### Contacto
-- Teléfono: 624 940 941
-- Email: aguado@cerrajerosleganes.madrid
-- WhatsApp: 624 940 941
+- Teléfono: 915 27 00 49
+- Email: villaviciosa24h@cerrajerosvillaviciosa del odón.madrid
+- WhatsApp: 915 27 00 49
 
 ## 🔧 Soporte Técnico
 
@@ -194,5 +194,5 @@ Si tienes algún problema durante el despliegue, verifica:
 
 ---
 
-**¡Tu web está lista para dominar las búsquedas locales de cerrajeros en Leganés! 🔐⚡**
+**¡Tu web está lista para dominar las búsquedas locales de cerrajeros en Villaviciosa del Odón! 🔐⚡**
 

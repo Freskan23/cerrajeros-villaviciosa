@@ -46,8 +46,8 @@ export default function CambioBombin() {
       answer: "Significa que las llaves vienen con una tarjeta de propiedad única. Solo el dueño de esa tarjeta puede solicitar copias en centros autorizados, evitando que personas no autorizadas dupliquen tu llave."
     },
     {
-      question: "¿Instaláis bombines en cualquier barrio de Leganés?",
-      answer: "Sí, realizamos instalaciones en todos los barrios: desde Arroyo Culebro hasta La Fortuna, San Nicasio y el Centro de Leganés. Llegamos rápido para que no tengas que esperar."
+      question: "¿Instaláis bombines en cualquier barrio de Villaviciosa del Odón?",
+      answer: "Sí, realizamos instalaciones en todos los barrios: desde Río Guadarrama hasta Castillo, El Bosque y el Centro de Villaviciosa del Odón. Llegamos rápido para que no tengas que esperar."
     }
   ];
 
@@ -77,9 +77,9 @@ export default function CambioBombin() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead
-        title={`Cambio de Bombín Leganés 🔑 Antibumping desde 70€ | Aguado`}
-        description={`🛡️ La forma más barata de asegurar tu puerta. Cambiamos tu bombín en 20 min en Leganés. Protección real contra robos. ☎️ ¡Llama y evita el bumping!`}
-        canonicalUrl="https://cerrajerosdeleganes.madrid/cambio-bombin"
+        title={`Cambio de Bombín Villaviciosa del Odón 🔑 Antibumping desde 70€ | Villaviciosa 24h`}
+        description={`🛡️ La forma más barata de asegurar tu puerta. Cambiamos tu bombín en 20 min en Villaviciosa del Odón. Protección real contra robos. ☎️ ¡Llama y evita el bumping!`}
+        canonicalUrl="https://cerrajerosdevillaviciosa del odón.madrid/cambio-bombin"
       />
       <Header />
 
@@ -104,14 +104,14 @@ export default function CambioBombin() {
           <div className="absolute inset-0 opacity-20">
             <img
               src="/cambio-bombin.jpg"
-              alt="Instalación de bombín antibumping en Leganés"
+              alt="Instalación de bombín antibumping en Villaviciosa del Odón"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="container relative z-10">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                🔑 Protege tu hogar contra el bumping en Leganés
+                🔑 Protege tu hogar contra el bumping en Villaviciosa del Odón
               </h1>
               <p className="text-xl mb-8 text-gray-200">
                 Instalamos bombines antirrobo e incopiables en el acto. La forma más rápida y económica de subir el nivel de seguridad de tu puerta. ¡Duerme tranquilo hoy mismo!
@@ -235,7 +235,7 @@ export default function CambioBombin() {
                 <div className="rounded-xl overflow-hidden h-64">
                   <img
                     src="/proceso-llegada.webp"
-                    alt="Cerrajero Aguado llegando en furgoneta a Leganés"
+                    alt="Cerrajero Villaviciosa 24h llegando en furgoneta a Villaviciosa del Odón"
                     className="w-full h-full object-cover"
                   />
                 </div>

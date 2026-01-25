@@ -23,14 +23,14 @@ export default function ServicesCarousel() {
         {
             icon: <HomeIcon className="h-12 w-12 text-[#FF6B35]" />,
             title: "Apertura de Puertas",
-            description: "¿Te has dejado las llaves en casa? Abrimos puertas en todo Leganés desde 90€. Sin romper, rápido y barato.",
+            description: "¿Te has dejado las llaves en casa? Abrimos puertas en todo Villaviciosa del Odón desde 90€. Sin romper, rápido y barato.",
             image: "/servicio-apertura-puertas-3d.webp",
             link: "/apertura-puertas",
         },
         {
             icon: <Clock className="h-12 w-12 text-[#FF6B35]" />,
             title: "Urgencias 24 Horas",
-            description: "Servicio inmediato día y noche. Llegamos en 20 minutos a cualquier punto de Leganés, festivos incluidos.",
+            description: "Servicio inmediato día y noche. Llegamos en 20 minutos a cualquier punto de Villaviciosa del Odón, festivos incluidos.",
             image: "/servicio-domicilio-3d.webp",
             link: "/urgencias-24h",
         },
@@ -69,7 +69,7 @@ export default function ServicesCarousel() {
             <div className="container">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-4xl font-bold mb-4 text-[#001529]">
-                        Servicios de Cerrajería en Leganés
+                        Servicios de Cerrajería en Villaviciosa del Odón
                     </h2>
                     <p className="text-xl text-gray-600">
                         Soluciones profesionales para tu hogar o negocio. Calidad garantizada.

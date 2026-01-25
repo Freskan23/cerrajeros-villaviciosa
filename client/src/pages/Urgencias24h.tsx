@@ -29,18 +29,18 @@ export default function Urgencias24h() {
         "✅ Disponible las 24 horas del día",
         "✅ Atendemos noches, festivos y fines de semana",
         "✅ Precios transparentes y sin sorpresas",
-        "✅ Cerrajeros homologados y locales de Leganés",
+        "✅ Cerrajeros homologados y locales de Villaviciosa del Odón",
         "✅ Herramientas de última tecnología",
     ];
 
     const faqItems = [
         {
             question: "¿Cuánto tardáis realmente en llegar para una urgencia?",
-            answer: "Garantizamos una llegada en menos de 20 minutos en el casco urbano de Leganés y barrios periféricos. Tenemos unidades móviles siempre preparadas."
+            answer: "Garantizamos una llegada en menos de 20 minutos en el casco urbano de Villaviciosa del Odón y barrios periféricos. Tenemos unidades móviles siempre preparadas."
         },
         {
             question: "¿Atendéis en festivos y de madrugada?",
-            answer: "Sí, nuestro servicio es real 24/7. No importa si es Nochebuena, un domingo a las 3 AM o un festivo local de Leganés, siempre habrá un cerrajero disponible."
+            answer: "Sí, nuestro servicio es real 24/7. No importa si es Nochebuena, un domingo a las 3 AM o un festivo local de Villaviciosa del Odón, siempre habrá un cerrajero disponible."
         },
         {
             question: "¿El precio es cerrado antes de ir?",
@@ -55,9 +55,9 @@ export default function Urgencias24h() {
     return (
         <div className="min-h-screen flex flex-col">
             <SEOHead
-                title={`Cerrajero Urgente Leganés ⚡ 20 Min | Aguado 24h ⭐ 5.0`}
-                description={`🚨 ¿Te has quedado fuera? Cerrajero Urgente en Leganés. Llegamos en 20 min reales. Apertura de puertas y cerraduras sin daños. Precio cerrado ☎️ ¡Llama ya!`}
-                canonicalUrl="https://cerrajerosdeleganes.madrid/urgencias-24h"
+                title={`Cerrajero Urgente Villaviciosa del Odón ⚡ 20 Min | Villaviciosa 24h 24h ⭐ 5.0`}
+                description={`🚨 ¿Te has quedado fuera? Cerrajero Urgente en Villaviciosa del Odón. Llegamos en 20 min reales. Apertura de puertas y cerraduras sin daños. Precio cerrado ☎️ ¡Llama ya!`}
+                canonicalUrl="https://cerrajerosdevillaviciosa del odón.madrid/urgencias-24h"
             />
             <Header />
 
@@ -83,10 +83,10 @@ export default function Urgencias24h() {
                     <div className="container relative z-10 text-center">
                         <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full mb-6 border border-white/30 animate-pulse">
                             <Zap className="h-5 w-5 text-yellow-400 fill-yellow-400" />
-                            <span className="font-bold uppercase tracking-wider text-sm">Servicio Urgente Leganés</span>
+                            <span className="font-bold uppercase tracking-wider text-sm">Servicio Urgente Villaviciosa del Odón</span>
                         </div>
                         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                            Cerrajeros Urgencias 24 Horas en Leganés <br />
+                            Cerrajeros Urgencias 24 Horas en Villaviciosa del Odón <br />
                             <span className="text-yellow-400">Llegamos en 20 Minutos</span>
                         </h1>
                         <p className="text-xl md:text-2xl mb-10 text-gray-100 max-w-3xl mx-auto">
@@ -116,7 +116,7 @@ export default function Urgencias24h() {
                     <div className="container">
                         <div className="max-w-4xl mx-auto text-center">
                             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900 italic">
-                                "Servicio urgente de cerrajería disponible 24 horas en Leganés. Llegamos en menos de 20 minutos para que nada detenga tu día."
+                                "Servicio urgente de cerrajería disponible 24 horas en Villaviciosa del Odón. Llegamos en menos de 20 minutos para que nada detenga tu día."
                             </h2>
                             <p className="text-xl text-gray-700 leading-relaxed mb-8">
                                 ¿Te has quedado fuera de casa de madrugada? ¿Has perdido las llaves un domingo por la tarde? No te preocupes. En <strong>{APP_BUSINESS_NAME}</strong> entendemos que las emergencias no tienen horario. Por eso contamos con unidades móviles distribuidas estratégicamente por todo {APP_LOCATION} para darte una respuesta inmediata.
@@ -130,7 +130,7 @@ export default function Urgencias24h() {
                     <div className="container">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div className="space-y-6">
-                                <h2 className="text-3xl font-bold text-gray-900">¿Por qué somos los cerrajeros 24h más rápidos de Leganés?</h2>
+                                <h2 className="text-3xl font-bold text-gray-900">¿Por qué somos los cerrajeros 24h más rápidos de Villaviciosa del Odón?</h2>
                                 <div className="grid grid-cols-1 gap-4">
                                     {benefits.map((benefit, index) => (
                                         <div key={index} className="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
@@ -142,7 +142,7 @@ export default function Urgencias24h() {
                             <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[400px]">
                                 <img
                                     src="/hero-cerrajero.webp"
-                                    alt="Cerrajero urgente profesional en Leganés"
+                                    alt="Cerrajero urgente profesional en Villaviciosa del Odón"
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
@@ -161,7 +161,7 @@ export default function Urgencias24h() {
                             <p className="text-lg text-gray-600 mt-4">Nuestros técnicos están situados cerca de:</p>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-                            {["Zarzaquemada", "San Nicasio", "Leganés Norte", "Arroyo Culebro", "El Carrascal", "La Fortuna", "Vereda de los Estudiantes", "Barrio de Solagua"].map((barrio, i) => (
+                            {["Centro", "El Bosque", "Villaviciosa del Odón Norte", "Río Guadarrama", "Campodón", "Castillo", "Monreal", "Barrio de Dehesa del Sotillo"].map((barrio, i) => (
                                 <div key={i} className="flex items-center gap-2 text-gray-700 font-medium">
                                     <MapPin className="h-5 w-5 text-[#A52A2A]" />
                                     {barrio}

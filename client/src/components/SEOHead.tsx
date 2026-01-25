@@ -10,11 +10,11 @@ interface SEOHeadProps {
 }
 
 export default function SEOHead({
-  title = `Cerrajeros Leganés 24h ⚡ Llegamos en 20 min | Aguado ⭐ 5.0`,
-  description = `🔑 Cerrajeros en Leganés 24h. ¿Puerta cerrada? ¡No esperes fuera! Llegamos en 20 min. Apertura desde 90€ (Precio Cerrado). ☎️ ${APP_PHONE_DISPLAY}. ¡97 Reseñas Reales!`,
-  keywords = "cerrajeros leganés, cerrajería 24 horas leganés, apertura puertas leganés, cambio cerraduras leganés, cerrajero urgente leganés, bombín seguridad leganés, zarzaquemada, san nicasio, el carrascal",
-  ogImage = "https://cerrajerosdeleganes.madrid/images/og-image.webp",
-  canonicalUrl = "https://cerrajerosdeleganes.madrid/"
+  title = `Cerrajeros Villaviciosa del Odón 24h ⚡ Llegamos en 20 min | Villaviciosa 24h ⭐ 5.0`,
+  description = `🔑 Cerrajeros en Villaviciosa del Odón 24h. ¿Puerta cerrada? ¡No esperes fuera! Llegamos en 20 min. Apertura desde 90€ (Precio Cerrado). ☎️ ${APP_PHONE_DISPLAY}. ¡97 Reseñas Reales!`,
+  keywords = "cerrajeros villaviciosa del odón, cerrajería 24 horas villaviciosa del odón, apertura puertas villaviciosa del odón, cambio cerraduras villaviciosa del odón, cerrajero urgente villaviciosa del odón, bombín seguridad villaviciosa del odón, zarzaquemada, san nicasio, el carrascal",
+  ogImage = "https://cerrajerosdevillaviciosa del odón.madrid/images/og-image.webp",
+  canonicalUrl = "https://cerrajerosdevillaviciosa del odón.madrid/"
 }: SEOHeadProps) {
   return (
     <Helmet>
@@ -41,7 +41,7 @@ export default function SEOHead({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:type" content="image/webp" />
-      <meta property="og:image:alt" content="Cerrajero profesional de Cerrajería Aguado en Leganés" />
+      <meta property="og:image:alt" content="Cerrajero profesional de Cerrajería Villaviciosa 24h en Villaviciosa del Odón" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -52,7 +52,7 @@ export default function SEOHead({
 
       {/* Geo tags para SEO local */}
       <meta name="geo.region" content="ES-M" />
-      <meta name="geo.placename" content="Leganés" />
+      <meta name="geo.placename" content="Villaviciosa del Odón" />
       <meta name="geo.position" content="40.3283;-3.7667" />
       <meta name="ICBM" content="40.3283, -3.7667" />
 

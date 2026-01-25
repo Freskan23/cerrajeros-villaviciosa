@@ -9,12 +9,12 @@ export default function SchemaMarkup() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": APP_BUSINESS_NAME,
-    "url": "https://cerrajerosdeleganes.madrid",
+    "url": "https://cerrajerosdevillaviciosa del odón.madrid",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://cerrajerosdeleganes.madrid/?s={search_term_string}"
+        "urlTemplate": "https://cerrajerosdevillaviciosa del odón.madrid/?s={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
@@ -23,22 +23,22 @@ export default function SchemaMarkup() {
   const aboutPageSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "@id": "https://cerrajerosdeleganes.madrid/#about",
-    "url": "https://cerrajerosdeleganes.madrid/",
+    "@id": "https://cerrajerosdevillaviciosa del odón.madrid/#about",
+    "url": "https://cerrajerosdevillaviciosa del odón.madrid/",
     "name": `Sobre Nosotros - ${APP_BUSINESS_NAME}`,
-    "description": `Conoce más sobre Cerrajería Aguado, tus cerrajeros de confianza en Leganés con más de 20 años de experiencia.`,
+    "description": `Conoce más sobre Cerrajería Villaviciosa 24h, tus cerrajeros de confianza en Villaviciosa del Odón con más de 20 años de experiencia.`,
     "mainEntity": {
-      "@id": "https://cerrajerosdeleganes.madrid/#organization"
+      "@id": "https://cerrajerosdevillaviciosa del odón.madrid/#organization"
     }
   };
 
   const contactPageSchema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "@id": "https://cerrajerosdeleganes.madrid/#contact",
-    "url": "https://cerrajerosdeleganes.madrid/#ubicacion",
+    "@id": "https://cerrajerosdevillaviciosa del odón.madrid/#contact",
+    "url": "https://cerrajerosdevillaviciosa del odón.madrid/#ubicacion",
     "name": `Contacto - ${APP_BUSINESS_NAME}`,
-    "description": `Contacta con Cerrajería Aguado para urgencias 24h o presupuestos de cerrajería en Leganés.`,
+    "description": `Contacta con Cerrajería Villaviciosa 24h para urgencias 24h o presupuestos de cerrajería en Villaviciosa del Odón.`,
     "mainEntity": {
       "@type": "ContactPoint",
       "telephone": APP_PHONE,
@@ -57,31 +57,31 @@ export default function SchemaMarkup() {
       {
         "@type": "ListItem",
         "position": 1,
-        "url": "https://cerrajerosdeleganes.madrid/apertura-puertas",
+        "url": "https://cerrajerosdevillaviciosa del odón.madrid/apertura-puertas",
         "name": "Apertura de Puertas"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "url": "https://cerrajerosdeleganes.madrid/urgencias-24h",
+        "url": "https://cerrajerosdevillaviciosa del odón.madrid/urgencias-24h",
         "name": "Urgencias 24 Horas"
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "url": "https://cerrajerosdeleganes.madrid/cambio-cerraduras",
+        "url": "https://cerrajerosdevillaviciosa del odón.madrid/cambio-cerraduras",
         "name": "Cambio de Cerraduras"
       },
       {
         "@type": "ListItem",
         "position": 4,
-        "url": "https://cerrajerosdeleganes.madrid/cambio-bombin",
+        "url": "https://cerrajerosdevillaviciosa del odón.madrid/cambio-bombin",
         "name": "Cambio de Bombín"
       },
       {
         "@type": "ListItem",
         "position": 5,
-        "url": "https://cerrajerosdeleganes.madrid/amaestramiento",
+        "url": "https://cerrajerosdevillaviciosa del odón.madrid/amaestramiento",
         "name": "Amaestramiento de Llaves"
       }
     ]
@@ -90,13 +90,13 @@ export default function SchemaMarkup() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "Locksmith",
-    "@id": "https://cerrajerosdeleganes.madrid/#organization",
+    "@id": "https://cerrajerosdevillaviciosa del odón.madrid/#organization",
     "name": APP_BUSINESS_NAME,
-    "legalName": "CERRAJERIA AGUADO, S.L.",
-    "url": "https://cerrajerosdeleganes.madrid",
-    "logo": "https://cerrajerosdeleganes.madrid/logo-aguado.webp",
-    "image": "https://cerrajerosdeleganes.madrid/hero-cerrajero.webp",
-    "description": "Cerrajeros profesionales en Leganés disponibles 24/7 para cualquier urgencia. Apertura de puertas desde 90€, cambio de cerraduras, bombines de seguridad y amaestramiento.",
+    "legalName": "CERRAJERIA VILLAVICIOSA24H, S.L.",
+    "url": "https://cerrajerosdevillaviciosa del odón.madrid",
+    "logo": "https://cerrajerosdevillaviciosa del odón.madrid/logo-villaviciosa24h.webp",
+    "image": "https://cerrajerosdevillaviciosa del odón.madrid/hero-cerrajero.webp",
+    "description": "Cerrajeros profesionales en Villaviciosa del Odón disponibles 24/7 para cualquier urgencia. Apertura de puertas desde 90€, cambio de cerraduras, bombines de seguridad y amaestramiento.",
     "telephone": APP_PHONE,
     "email": APP_EMAIL,
     "priceRange": "€€",
@@ -114,14 +114,14 @@ export default function SchemaMarkup() {
         "@type": "Review",
         "author": { "@type": "Person", "name": "María G." },
         "datePublished": "2026-01-10",
-        "reviewBody": "Me dejé las llaves puestas por dentro en mi piso de Zarzaquemada. Eran las 10 de la noche y llegaron en 15 minutos. El cerrajero fue súper amable y abrió la puerta de un plumazo sin romper nada.",
+        "reviewBody": "Me dejé las llaves puestas por dentro en mi piso de Centro. Eran las 10 de la noche y llegaron en 15 minutos. El cerrajero fue súper amable y abrió la puerta de un plumazo sin romper nada.",
         "reviewRating": { "@type": "Rating", "ratingValue": "5" }
       },
       {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Carlos M." },
         "datePublished": "2026-01-08",
-        "reviewBody": "Increíble servicio en San Nicasio. Quería actualizar la seguridad y me instalaron un bombín antibumping de alta gama. Explicación perfecta de por qué era mejor ese modelo.",
+        "reviewBody": "Increíble servicio en El Bosque. Quería actualizar la seguridad y me instalaron un bombín antibumping de alta gama. Explicación perfecta de por qué era mejor ese modelo.",
         "reviewRating": { "@type": "Rating", "ratingValue": "5" }
       },
       {
@@ -141,7 +141,7 @@ export default function SchemaMarkup() {
           "itemOffered": {
             "@type": "Service",
             "name": "Apertura de Puertas",
-            "url": "https://cerrajerosdeleganes.madrid/apertura-puertas"
+            "url": "https://cerrajerosdevillaviciosa del odón.madrid/apertura-puertas"
           }
         },
         {
@@ -149,7 +149,7 @@ export default function SchemaMarkup() {
           "itemOffered": {
             "@type": "Service",
             "name": "Cambio de Cerraduras",
-            "url": "https://cerrajerosdeleganes.madrid/cambio-cerraduras"
+            "url": "https://cerrajerosdevillaviciosa del odón.madrid/cambio-cerraduras"
           }
         },
         {
@@ -157,7 +157,7 @@ export default function SchemaMarkup() {
           "itemOffered": {
             "@type": "Service",
             "name": "Cambio de Bombín",
-            "url": "https://cerrajerosdeleganes.madrid/cambio-bombin"
+            "url": "https://cerrajerosdevillaviciosa del odón.madrid/cambio-bombin"
           }
         }
       ]
@@ -165,7 +165,7 @@ export default function SchemaMarkup() {
     "address": {
       "@type": "PostalAddress",
       "streetAddress": APP_ADDRESS,
-      "addressLocality": "Leganés",
+      "addressLocality": "Villaviciosa del Odón",
       "addressRegion": "Madrid",
       "postalCode": "28912",
       "addressCountry": "ES"
@@ -184,21 +184,21 @@ export default function SchemaMarkup() {
       "closes": "23:59"
     },
     "areaServed": [
-      { "@type": "City", "name": "Leganés" },
-      { "@type": "City", "name": "Zarzaquemada" },
-      { "@type": "City", "name": "San Nicasio" },
-      { "@type": "City", "name": "Leganés Norte" },
-      { "@type": "City", "name": "Arroyo Culebro" }
+      { "@type": "City", "name": "Villaviciosa del Odón" },
+      { "@type": "City", "name": "Centro" },
+      { "@type": "City", "name": "El Bosque" },
+      { "@type": "City", "name": "Villaviciosa del Odón Norte" },
+      { "@type": "City", "name": "Río Guadarrama" }
     ],
     "sameAs": [
-      "https://www.facebook.com/cerrajeriaaguado",
-      "https://www.instagram.com/cerrajeriaaguado",
-      "https://cerrajerosdeleganes.madrid"
+      "https://www.facebook.com/cerrajeriavillaviciosa24h",
+      "https://www.instagram.com/cerrajeriavillaviciosa24h",
+      "https://cerrajerosdevillaviciosa del odón.madrid"
     ],
     "brand": {
       "@type": "Brand",
-      "name": "Aguado",
-      "logo": "https://cerrajerosdeleganes.madrid/logo-aguado.webp"
+      "name": "Villaviciosa 24h",
+      "logo": "https://cerrajerosdevillaviciosa del odón.madrid/logo-villaviciosa24h.webp"
     }
   };
 
@@ -208,15 +208,15 @@ export default function SchemaMarkup() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "¿Cuánto tarda un cerrajero en llegar a mi ubicación en Leganés?",
+        "name": "¿Cuánto tarda un cerrajero en llegar a mi ubicación en Villaviciosa del Odón?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Nuestro tiempo medio de respuesta en Leganés es de 20 a 30 minutos, ya que contamos con técnicos distribuidos estratégicamente por barrios como Zarzaquemada, San Nicasio y El Carrascal."
+          "text": "Nuestro tiempo medio de respuesta en Villaviciosa del Odón es de 20 a 30 minutos, ya que contamos con técnicos distribuidos estratégicamente por barrios como Centro, El Bosque y Campodón."
         }
       },
       {
         "@type": "Question",
-        "name": "¿Qué precio tiene abrir una puerta en Leganés?",
+        "name": "¿Qué precio tiene abrir una puerta en Villaviciosa del Odón?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Nuestras tarifas son transparentes: desde 90€ en horario comercial y 120€ en horario de urgencia 24h. Siempre ofrecemos precio cerrado telefónicamente."
@@ -227,7 +227,7 @@ export default function SchemaMarkup() {
         "name": "¿Trabajáis las 24 horas del día?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, Cerrajería Aguado ofrece servicio de cerrajeros de guardia las 24 horas del día, los 365 días del año, incluyendo festivos y fines de semana por toda la zona de Leganés."
+          "text": "Sí, Cerrajería Villaviciosa 24h ofrece servicio de cerrajeros de guardia las 24 horas del día, los 365 días del año, incluyendo festivos y fines de semana por toda la zona de Villaviciosa del Odón."
         }
       },
       {
@@ -272,10 +272,10 @@ export default function SchemaMarkup() {
       },
       {
         "@type": "Question",
-        "name": "¿En qué barrios de Leganés prestáis servicio?",
+        "name": "¿En qué barrios de Villaviciosa del Odón prestáis servicio?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Damos cobertura total a todo Leganés: Zarzaquemada, San Nicasio, El Carrascal, La Fortuna, Leganés Norte, Arroyo Culebro, Valdepelayo y Solagua."
+          "text": "Damos cobertura total a todo Villaviciosa del Odón: Centro, El Bosque, Campodón, Castillo, Villaviciosa del Odón Norte, Río Guadarrama, La Vega y Dehesa del Sotillo."
         }
       },
       {
@@ -292,10 +292,10 @@ export default function SchemaMarkup() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://cerrajerosdeleganes.madrid/#organization",
+    "@id": "https://cerrajerosdevillaviciosa del odón.madrid/#organization",
     "name": APP_BUSINESS_NAME,
-    "url": "https://cerrajerosdeleganes.madrid",
-    "logo": "https://cerrajerosdeleganes.madrid/logo-aguado.webp",
+    "url": "https://cerrajerosdevillaviciosa del odón.madrid",
+    "logo": "https://cerrajerosdevillaviciosa del odón.madrid/logo-villaviciosa24h.webp",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": APP_PHONE,
@@ -312,19 +312,19 @@ export default function SchemaMarkup() {
         "@type": "ListItem",
         "position": 1,
         "name": "Inicio",
-        "item": "https://cerrajerosdeleganes.madrid/"
+        "item": "https://cerrajerosdevillaviciosa del odón.madrid/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Apertura de Puertas",
-        "item": "https://cerrajerosdeleganes.madrid/apertura-puertas"
+        "item": "https://cerrajerosdevillaviciosa del odón.madrid/apertura-puertas"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Blog",
-        "item": "https://cerrajerosdeleganes.madrid/blog"
+        "item": "https://cerrajerosdevillaviciosa del odón.madrid/blog"
       }
     ]
   };

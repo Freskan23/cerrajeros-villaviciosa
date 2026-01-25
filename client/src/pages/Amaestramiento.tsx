@@ -81,9 +81,9 @@ export default function Amaestramiento() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead
-        title={`Amaestramiento de Llaves Leganés 🔑 Una Llave para Todo | Aguado`}
-        description={`🏢 Comodidad total para comunidades y oficinas en Leganés. Diseñamos sistemas de llave maestra a medida. Simplifica tu vida y gana en seguridad.`}
-        canonicalUrl="https://cerrajerosdeleganes.madrid/amaestramiento"
+        title={`Amaestramiento de Llaves Villaviciosa del Odón 🔑 Una Llave para Todo | Villaviciosa 24h`}
+        description={`🏢 Comodidad total para comunidades y oficinas en Villaviciosa del Odón. Diseñamos sistemas de llave maestra a medida. Simplifica tu vida y gana en seguridad.`}
+        canonicalUrl="https://cerrajerosdevillaviciosa del odón.madrid/amaestramiento"
       />
       <Header />
 
@@ -106,17 +106,17 @@ export default function Amaestramiento() {
           <div className="absolute inset-0 opacity-20">
             <img
               src="/cilindro-seguridad.jpg"
-              alt="Sistema de amaestramiento de llaves en Leganés"
+              alt="Sistema de amaestramiento de llaves en Villaviciosa del Odón"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="container relative z-10">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                🔑 Una sola llave para todo: Amaestramiento en Leganés
+                🔑 Una sola llave para todo: Amaestramiento en Villaviciosa del Odón
               </h1>
               <p className="text-xl mb-8 text-gray-200">
-                La solución perfecta para comunidades de vecinos en barrios como Zarzaquemada y empresas de los polígonos de Leganés. Comodidad, control de accesos y máxima seguridad.
+                La solución perfecta para comunidades de vecinos en barrios como Centro y empresas de los polígonos de Villaviciosa del Odón. Comodidad, control de accesos y máxima seguridad.
               </p>
               <Button
                 asChild
@@ -280,7 +280,7 @@ export default function Amaestramiento() {
                 <div className="rounded-xl overflow-hidden h-64">
                   <img
                     src="/proceso-llegada.webp"
-                    alt="Cerrajero Aguado llegando en furgoneta a Leganés"
+                    alt="Cerrajero Villaviciosa 24h llegando en furgoneta a Villaviciosa del Odón"
                     className="w-full h-full object-cover"
                   />
                 </div>

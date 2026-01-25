@@ -13,7 +13,7 @@ export default function LocationSection() {
                                 ¿Dónde estamos? <span className="text-[#FF6B35]">Visítanos</span>
                             </h2>
                             <p className="text-xl text-gray-600">
-                                Estamos en el corazón de Leganés, dentro de la emblemática Galería Sanabria. Ven a vernos para duplicado de llaves o asesoramiento en seguridad.
+                                Estamos en el corazón de Villaviciosa del Odón, dentro de la emblemática Galería Sanabria. Ven a vernos para duplicado de llaves o asesoramiento en seguridad.
                             </p>
                         </div>
 
@@ -63,7 +63,7 @@ export default function LocationSection() {
                                 allowFullScreen
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                title="Ubicación de Cerrajería Aguado en Leganés"
+                                title="Ubicación de Cerrajería Villaviciosa 24h en Villaviciosa del Odón"
                             ></iframe>
                         </div>
                     </div>

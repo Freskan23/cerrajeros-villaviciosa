@@ -34,8 +34,8 @@ export default function AperturaPuertas() {
 
   const faqItems = [
     {
-      question: "¿Cuánto tardáis en llegar a mi ubicación en Leganés?",
-      answer: `Nuestro tiempo medio de respuesta para aperturas urgentes en barrios como Zarzaquemada, San Nicasio o Leganés Norte es de 20 a 30 minutos. Estamos distribuidos estratégicamente para llegar lo antes posible.`
+      question: "¿Cuánto tardáis en llegar a mi ubicación en Villaviciosa del Odón?",
+      answer: `Nuestro tiempo medio de respuesta para aperturas urgentes en barrios como Centro, El Bosque o Villaviciosa del Odón Norte es de 20 a 30 minutos. Estamos distribuidos estratégicamente para llegar lo antes posible.`
     },
     {
       question: "¿Se romperá la cerradura o la puerta al abrir?",
@@ -77,9 +77,9 @@ export default function AperturaPuertas() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead
-        title={`Apertura de Puertas Leganés 🔓 Sin Romper | Aguado 24h ⭐ 5.0`}
-        description={`🔑 ¿Llaves dentro? Abrimos tu puerta en Leganés en 20-30 min. Sin romper, sin daños y con precio cerrado desde 90€. ☎️ Llama ahora y recupera el acceso.`}
-        canonicalUrl="https://cerrajerosdeleganes.madrid/apertura-puertas"
+        title={`Apertura de Puertas Villaviciosa del Odón 🔓 Sin Romper | Villaviciosa 24h 24h ⭐ 5.0`}
+        description={`🔑 ¿Llaves dentro? Abrimos tu puerta en Villaviciosa del Odón en 20-30 min. Sin romper, sin daños y con precio cerrado desde 90€. ☎️ Llama ahora y recupera el acceso.`}
+        canonicalUrl="https://cerrajerosdevillaviciosa del odón.madrid/apertura-puertas"
       />
       <Header />
 
@@ -104,17 +104,17 @@ export default function AperturaPuertas() {
           <div className="absolute inset-0 opacity-20">
             <img
               src="/apertura-puerta.jpg"
-              alt="Apertura de puertas profesional en Leganés"
+              alt="Apertura de puertas profesional en Villaviciosa del Odón"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="container relative z-10">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                🔓 ¿Te has dejado las llaves en casa? Abrimos puertas en todo Leganés desde 90€
+                🔓 ¿Te has dejado las llaves en casa? Abrimos puertas en todo Villaviciosa del Odón desde 90€
               </h1>
               <p className="text-xl mb-8 text-gray-200">
-                Apertura de puertas sin daños, rápido y barato. Llegamos en menos de 20-30 minutos a cualquier barrio de Leganés, las 24 horas del día.
+                Apertura de puertas sin daños, rápido y barato. Llegamos en menos de 20-30 minutos a cualquier barrio de Villaviciosa del Odón, las 24 horas del día.
               </p>
               <Button
                 asChild
@@ -228,7 +228,7 @@ export default function AperturaPuertas() {
                 <div className="rounded-xl overflow-hidden h-64">
                   <img
                     src="/proceso-llegada.webp"
-                    alt="Cerrajero Aguado llegando en furgoneta a Leganés"
+                    alt="Cerrajero Villaviciosa 24h llegando en furgoneta a Villaviciosa del Odón"
                     className="w-full h-full object-cover"
                   />
                 </div>

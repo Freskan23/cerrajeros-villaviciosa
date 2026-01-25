@@ -27,9 +27,9 @@ export default function Contacto() {
     return (
         <div className="min-h-screen flex flex-col bg-white">
             <SEOHead
-                title={`Contacta con ${APP_BUSINESS_NAME} | Cerrajeros en Leganés 24h`}
-                description={`¿Necesitas un cerrajero en Leganés? Contacta con nosotros. Estamos en ${APP_ADDRESS}. Atención inmediata 24 horas para urgencias.`}
-                canonicalUrl="https://cerrajerosdeleganes.madrid/contacto"
+                title={`Contacta con ${APP_BUSINESS_NAME} | Cerrajeros en Villaviciosa del Odón 24h`}
+                description={`¿Necesitas un cerrajero en Villaviciosa del Odón? Contacta con nosotros. Estamos en ${APP_ADDRESS}. Atención inmediata 24 horas para urgencias.`}
+                canonicalUrl="https://cerrajerosdevillaviciosa del odón.madrid/contacto"
             />
             <Header />
 
@@ -53,7 +53,7 @@ export default function Contacto() {
                             Estamos para <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B35] to-[#FF9F1C]">ayudarte</span>
                         </h1>
                         <p className="text-xl text-gray-400 max-w-2xl leading-relaxed">
-                            Atención al cliente y servicio técnico de cerrajería en Leganés.
+                            Atención al cliente y servicio técnico de cerrajería en Villaviciosa del Odón.
                             Respondemos al instante, sin esperas y con la máxima transparencia.
                         </p>
                     </div>
@@ -69,7 +69,7 @@ export default function Contacto() {
                                     <Phone className="h-8 w-8 text-[#FF6B35]" />
                                 </div>
                                 <h3 className="text-xl font-black text-[#001529] mb-2 uppercase tracking-tighter">Llámanos ahora</h3>
-                                <p className="text-gray-500 mb-6 text-sm">Disponible 24h para urgencias en Leganés</p>
+                                <p className="text-gray-500 mb-6 text-sm">Disponible 24h para urgencias en Villaviciosa del Odón</p>
                                 <a href={`tel:${APP_PHONE}`} className="text-2xl font-black text-[#FF6B35] hover:opacity-80 transition-opacity italic">
                                     {APP_PHONE_DISPLAY}
                                 </a>
@@ -106,7 +106,7 @@ export default function Contacto() {
                                 <div>
                                     <h2 className="text-4xl font-black text-[#001529] mb-6 italic tracking-tight">Atención <span className="text-[#FF6B35]">Empresarial</span></h2>
                                     <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                                        Ofrecemos servicios integrales de cerrajería para comunidades de vecinos, locales comerciales y empresas en todos los polígonos de Leganés.
+                                        Ofrecemos servicios integrales de cerrajería para comunidades de vecinos, locales comerciales y empresas en todos los polígonos de Villaviciosa del Odón.
                                     </p>
 
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -169,7 +169,7 @@ export default function Contacto() {
                                         allowFullScreen
                                         loading="lazy"
                                         referrerPolicy="no-referrer-when-downgrade"
-                                        title="Ubicación de Cerrajería Aguado en Leganés"
+                                        title="Ubicación de Cerrajería Villaviciosa 24h en Villaviciosa del Odón"
                                     ></iframe>
                                 </div>
                             </div>

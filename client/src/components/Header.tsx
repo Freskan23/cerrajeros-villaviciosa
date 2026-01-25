@@ -55,7 +55,7 @@ export default function Header() {
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-[#FF6B35] to-[#FF9F1C] rounded-full blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
                 <img
-                  src="/logo-aguado.webp"
+                  src="/logo-villaviciosa24h.webp"
                   alt={APP_BUSINESS_NAME}
                   width="180"
                   height="45"
@@ -64,7 +64,7 @@ export default function Header() {
               </div>
               <div className="hidden sm:flex flex-col border-l border-gray-100 pl-3">
                 <span className="text-sm font-bold text-[#001529] leading-tight">
-                  Cerrajeros Leganés
+                  Cerrajeros Villaviciosa del Odón
                 </span>
                 <span className="text-[10px] text-gray-500 uppercase tracking-widest font-medium">
                   Confianza Certificada
@@ -113,7 +113,7 @@ export default function Header() {
                 asChild
                 className="bg-[#FF6B35] hover:bg-[#E55A2B] text-white font-bold h-11 px-6 rounded-xl shadow-lg shadow-orange-500/20 active:scale-95 transition-all text-sm md:text-base"
               >
-                <a href={`tel:${APP_PHONE}`} className="flex items-center gap-2" aria-label={`Llamar a Cerrajeros Aguado al ${APP_PHONE_DISPLAY}`}>
+                <a href={`tel:${APP_PHONE}`} className="flex items-center gap-2" aria-label={`Llamar a Cerrajeros Villaviciosa 24h al ${APP_PHONE_DISPLAY}`}>
                   <Phone className="h-4 w-4 md:h-5 md:w-5 animate-pulse text-white" />
                   <span className="whitespace-nowrap text-white">{APP_PHONE_DISPLAY}</span>
                 </a>

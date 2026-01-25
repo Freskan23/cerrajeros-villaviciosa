@@ -26,9 +26,9 @@ export default function Testimonios() {
   return (
     <>
       <SEOHead
-        title="Opiniones y Reseñas Reales | Cerrajería Aguado Leganés ⭐⭐⭐⭐⭐"
-        description="Descubre por qué somos los cerrajeros mejor valorados en Leganés. Lee 97 opiniones reales sobre apertura de puertas, cambio de cerraduras y urgencias 24h."
-        canonicalUrl="https://cerrajerosdeleganes.madrid/testimonios"
+        title="Opiniones y Reseñas Reales | Cerrajería Villaviciosa 24h Villaviciosa del Odón ⭐⭐⭐⭐⭐"
+        description="Descubre por qué somos los cerrajeros mejor valorados en Villaviciosa del Odón. Lee 97 opiniones reales sobre apertura de puertas, cambio de cerraduras y urgencias 24h."
+        canonicalUrl="https://cerrajerosdevillaviciosa del odón.madrid/testimonios"
       />
 
       <main className="min-h-screen bg-[#0f172a] text-slate-200 selection:bg-orange-500/30">
@@ -53,7 +53,7 @@ export default function Testimonios() {
               </div>
               <h1 className="text-5xl md:text-7xl font-black mb-8 tracking-tight bg-gradient-to-b from-white to-slate-400 bg-clip-text text-transparent leading-tight">
                 La confianza de todo <br />
-                <span className="text-orange-500 italic">Leganés</span>
+                <span className="text-orange-500 italic">Villaviciosa del Odón</span>
               </h1>
               <p className="text-xl text-slate-400 leading-relaxed mb-12 max-w-2xl mx-auto">
                 No lo decimos nosotros, lo dicen nuestros clientes. Comprometidos con la rapidez,
@@ -119,7 +119,7 @@ export default function Testimonios() {
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-xs font-bold text-slate-500 uppercase tracking-widest pl-1">Barrio de Leganés</label>
+                    <label className="text-xs font-bold text-slate-500 uppercase tracking-widest pl-1">Barrio de Villaviciosa del Odón</label>
                     <div className="relative group">
                       <select
                         value={selectedLocation}

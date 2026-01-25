@@ -41,7 +41,7 @@ export default function Home() {
       icon: <Clock className="h-10 w-10 text-[#FF6B35]" />,
       title: "Atención rápida y eficaz",
       description:
-        "Llegamos volando a cualquier punto de Leganés. Desde La Fortuna hasta Arroyo Culebro en menos de 20 minutos.",
+        "Llegamos volando a cualquier punto de Villaviciosa del Odón. Desde Castillo hasta Río Guadarrama en menos de 20 minutos.",
     },
     {
       icon: <Wrench className="h-10 w-10 text-[#FF6B35]" />,
@@ -64,23 +64,23 @@ export default function Home() {
   ];
 
   const zones = [
-    { name: "Zarzaquemada", url: "/cerrajeros-zarzaquemada" },
-    { name: "San Nicasio", url: "/cerrajeros-san-nicasio" },
-    { name: "El Carrascal", url: "/cerrajeros-el-carrascal" },
-    { name: "La Fortuna", url: "/cerrajeros-la-fortuna" },
-    { name: "Leganés Norte", url: "/cerrajeros-leganes-norte" },
-    { name: "Arroyo Culebro", url: "/cerrajeros-arroyo-culebro" },
-    { name: "Valdepelayo", url: "/cerrajeros-valdepelayo" },
-    { name: "Vereda de los Estudiantes", url: "/cerrajeros-vereda-estudiantes" },
-    { name: "Los Santos", url: "/cerrajeros-los-santos" },
-    { name: "Solagua", url: "/cerrajeros-solagua" },
-    { name: "Poza del Agua", url: "/cerrajeros-poza-del-agua" },
+    { name: "Centro", url: "/cerrajeros-zarzaquemada" },
+    { name: "El Bosque", url: "/cerrajeros-san-nicasio" },
+    { name: "Campodón", url: "/cerrajeros-el-carrascal" },
+    { name: "Castillo", url: "/cerrajeros-la-fortuna" },
+    { name: "Villaviciosa del Odón Norte", url: "/cerrajeros-villaviciosa del odón-norte" },
+    { name: "Río Guadarrama", url: "/cerrajeros-arroyo-culebro" },
+    { name: "La Vega", url: "/cerrajeros-valdepelayo" },
+    { name: "Monreal", url: "/cerrajeros-vereda-estudiantes" },
+    { name: "Sacedón", url: "/cerrajeros-los-santos" },
+    { name: "Dehesa del Sotillo", url: "/cerrajeros-solagua" },
+    { name: "El Bosque", url: "/cerrajeros-poza-del-agua" },
     { name: "Centro", url: "/cerrajeros-centro" },
   ];
 
   const faqs = [
     {
-      question: "¿Cuánto cobra un cerrajero por abrir una puerta en Leganés?",
+      question: "¿Cuánto cobra un cerrajero por abrir una puerta en Villaviciosa del Odón?",
       answer:
         `En ${APP_BUSINESS_NAME}, el servicio de apertura de puertas cuesta 90€ en horario normal (lunes a viernes de 08:00 a 19:00h) y 120€ fuera de este horario (noches, fines de semana y festivos). No cobramos desplazamiento.`,
     },
@@ -92,7 +92,7 @@ export default function Home() {
     {
       question: "¿Cuánto tardáis en llegar a mi barrio?",
       answer:
-        "Garantizamos una llegada en 20 minutos a cualquier zona de Leganés, desde Zarzaquemada hasta Arroyo Culebro o San Nicasio. Nuestras unidades móviles están siempre operativas.",
+        "Garantizamos una llegada en 20 minutos a cualquier zona de Villaviciosa del Odón, desde Centro hasta Río Guadarrama o El Bosque. Nuestras unidades móviles están siempre operativas.",
     },
     {
       question: "¿Hacéis cambios de bombín antibumping?",
@@ -122,7 +122,7 @@ export default function Home() {
           {/* Imagen de fondo cinematográfica */}
           <div className="absolute inset-0 z-0">
             <img
-              src="/images/hero-moderno-aguado.webp"
+              src="/images/hero-moderno-villaviciosa24h.webp"
               alt="Seguridad avanzada y cerrajería profesional"
               width="1920"
               height="1080"
@@ -148,7 +148,7 @@ export default function Home() {
                 </div>
 
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
-                  Cerrajeros <span className="text-[#FF6B35]">Leganés</span> <br />
+                  Cerrajeros <span className="text-[#FF6B35]">Villaviciosa del Odón</span> <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B35] to-[#FF9F1C]">
                     Urgencias 24h
                   </span>
@@ -164,7 +164,7 @@ export default function Home() {
                     size="lg"
                     className="bg-[#FF6B35] hover:bg-[#E55A2B] text-white text-xl px-10 py-8 rounded-2xl shadow-[0_0_40px_-10px_rgba(255,107,53,0.5)] hover:shadow-[0_0_60px_-15px_rgba(255,107,53,0.6)] transition-all duration-300 transform hover:-translate-y-1"
                   >
-                    <a href={`tel:${APP_PHONE}`} className="flex items-center gap-3" aria-label={`Llamar a Cerrajeros Aguado al ${APP_PHONE_DISPLAY}`}>
+                    <a href={`tel:${APP_PHONE}`} className="flex items-center gap-3" aria-label={`Llamar a Cerrajeros Villaviciosa 24h al ${APP_PHONE_DISPLAY}`}>
                       <Phone className="h-8 w-8 animate-pulse" />
                       <div className="flex flex-col items-start text-left">
                         <span className="text-xs font-medium opacity-90 uppercase tracking-wider">Llamar ahora</span>
@@ -254,7 +254,7 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
                 <h2 className="text-4xl font-bold mb-6 text-[#001529]">
-                  ¿Por qué elegirnos en Leganés?
+                  ¿Por qué elegirnos en Villaviciosa del Odón?
                 </h2>
                 <p className="text-xl text-gray-600 mb-8">
                   No somos una franquicia ni un intermediario. Somos cerrajeros locales comprometidos con nuestros vecinos.
@@ -281,7 +281,7 @@ export default function Home() {
                 <div className="absolute -inset-4 bg-[#FF6B35]/20 rounded-3xl transform rotate-3"></div>
                 <img
                   src="/hero-cerrajero.webp"
-                  alt="Cerrajero profesional de Cerrajería Aguado trabajando en Leganés"
+                  alt="Cerrajero profesional de Cerrajería Villaviciosa 24h trabajando en Villaviciosa del Odón"
                   className="relative rounded-2xl shadow-2xl w-full object-cover h-[600px]"
                 />
                 <div className="absolute bottom-8 left-8 bg-white p-6 rounded-xl shadow-lg max-w-xs">
@@ -297,7 +297,7 @@ export default function Home() {
                     "Rápidos y muy profesionales"
                   </p>
                   <p className="text-sm text-gray-500">
-                    - Carlos M., vecino de Zarzaquemada
+                    - Carlos M., vecino de Centro
                   </p>
                 </div>
               </div>
@@ -310,7 +310,7 @@ export default function Home() {
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-4xl font-bold mb-4">
-                Llegamos a todos los barrios de Leganés
+                Llegamos a todos los barrios de Villaviciosa del Odón
               </h2>
               <p className="text-xl text-gray-300">
                 Conocemos cada rincón de la ciudad. Desde el centro hasta los nuevos desarrollos.
@@ -411,7 +411,7 @@ export default function Home() {
                 </div>
 
                 <p className="text-xl md:text-2xl mb-12 text-gray-400 font-medium leading-relaxed max-w-2xl mx-auto">
-                  No pierdas tiempo con intermediarios. Llama directamente a <span className="text-white font-bold">Aguado</span> y estaremos en tu puerta en menos de 20 minutos.
+                  No pierdas tiempo con intermediarios. Llama directamente a <span className="text-white font-bold">Villaviciosa 24h</span> y estaremos en tu puerta en menos de 20 minutos.
                 </p>
                 <div className="flex flex-col items-center gap-6">
                   <Button

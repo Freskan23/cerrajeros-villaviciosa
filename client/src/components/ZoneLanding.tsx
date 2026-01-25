@@ -11,7 +11,7 @@ interface ZoneLandingProps {
   zoneName: string;
   zoneDescription: string;
   zoneMapUrl: string; // URL del iframe de Google Maps centrado en la zona
-  commonProblems: string[]; // Lista de problemas comunes en esa zona (ej: "Cerraduras antiguas en San Nicasio")
+  commonProblems: string[]; // Lista de problemas comunes en esa zona (ej: "Cerraduras antiguas en El Bosque")
 }
 
 export default function ZoneLanding({
@@ -32,9 +32,9 @@ export default function ZoneLanding({
         <title>Cerrajeros {zoneName} 24 Horas | {APP_BUSINESS_NAME}</title>
         <meta
           name="description"
-          content={`Cerrajeros urgentes en ${zoneName}, Leganés. Llegamos en 20 minutos. Apertura de puertas, cambio de cerraduras y urgencias 24h en ${zoneName}. Precio cerrado.`}
+          content={`Cerrajeros urgentes en ${zoneName}, Villaviciosa del Odón. Llegamos en 20 minutos. Apertura de puertas, cambio de cerraduras y urgencias 24h en ${zoneName}. Precio cerrado.`}
         />
-        <link rel="canonical" href={`https://cerrajerosdeleganes.madrid/cerrajeros-${slugify(zoneName)}`} />
+        <link rel="canonical" href={`https://cerrajerosdevillaviciosa del odón.madrid/cerrajeros-${slugify(zoneName)}`} />
       </Helmet>
 
       <Header />
