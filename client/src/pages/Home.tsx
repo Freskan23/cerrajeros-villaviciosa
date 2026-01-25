@@ -74,20 +74,19 @@ export default function Home() {
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="/hero-cerrajero-profesional.jpg"
-              alt="Cerrajero profesional en Villaviciosa del Odón"
+              src="/hero-background-minimal.jpg"
+              alt="Cerrajeros Villaviciosa del Odón"
               className="w-full h-full object-cover"
               loading="eager"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
           </div>
 
           <div className="relative z-10 container text-center">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 tracking-tight">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary mb-8 tracking-tight">
               Cerrajeros<br />Villaviciosa del Odón
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/95 mb-12 max-w-2xl mx-auto font-light">
+            <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-2xl mx-auto font-light">
               Servicio profesional 24 horas. Llegamos en 20 minutos. Sin daños, sin sorpresas.
             </p>
 
