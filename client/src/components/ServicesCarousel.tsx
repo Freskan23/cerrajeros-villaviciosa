@@ -16,42 +16,42 @@ const services: Service[] = [
     title: "Apertura de Puertas",
     subtitle: "Servicio urgente 24h",
     price: "Precio cerrado · Sin daños",
-    image: "/servicio-apertura-puertas.jpg",
+    image: "/servicio-apertura-puertas-new.webp",
   },
   {
     id: 2,
     title: "Instalación de Cerraduras",
     subtitle: "Alta seguridad",
     price: "Consultar precio",
-    image: "/instalacion-cerraduras.jpg",
+    image: "/instalacion-cerraduras-new.webp",
   },
   {
     id: 3,
     title: "Reparación y Mantenimiento",
     subtitle: "Servicio completo",
     price: "Desde 60€",
-    image: "/cerraduras-seguridad.jpg",
+    image: "/reparacion-mantenimiento-new.webp",
   },
   {
     id: 4,
     title: "Servicio de Emergencia",
     subtitle: "Disponible 24/7",
     price: "Desde 120€",
-    image: "/cerrajero-emergencia.jpg",
+    image: "/servicio-emergencia-new.webp",
   },
   {
     id: 5,
     title: "Seguridad Avanzada",
     subtitle: "Última generación",
     price: "Consultar precio",
-    image: "/cerraduras-seguridad.jpg",
+    image: "/seguridad-avanzada-new.webp",
   },
   {
     id: 6,
     title: "Duplicado de Llaves",
     subtitle: "Servicio rápido",
     price: "Desde 15€",
-    image: "/hero-cerrajero-profesional.jpg",
+    image: "/duplicado-llaves-new.webp",
   }
 ];
 
