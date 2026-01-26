@@ -10,7 +10,20 @@ import SchemaMarkup from "./components/SchemaMarkup";
 import Home from "./pages/Home";
 import { WeatherProvider } from "@/context/WeatherContext";
 
-// Lazy loading for other pages to reduce initial JS bundle
+// Lazy loading for other pages
+// Servicios
+const Urgencias24h = lazy(() => import("./pages/Urgencias24h"));
+const AperturaPuertas = lazy(() => import("./pages/AperturaPuertas"));
+const CambioCerraduras = lazy(() => import("./pages/CambioCerraduras"));
+const CambioBombin = lazy(() => import("./pages/CambioBombin"));
+const Amaestramiento = lazy(() => import("./pages/Amaestramiento"));
+const AperturaCajasFuertes = lazy(() => import("./pages/AperturaCajasFuertes"));
+const ReparacionCierres = lazy(() => import("./pages/ReparacionCierres"));
+const CerrojosSeguridad = lazy(() => import("./pages/CerrojosSeguridad"));
+const MuellesCierrapuertas = lazy(() => import("./pages/MuellesCierrapuertas"));
+const Desahucios = lazy(() => import("./pages/Desahucios"));
+
+// Barrios y Ubicaciones
 const Centro = lazy(() => import("./pages/Centro"));
 const ElBosque = lazy(() => import("./pages/SanNicasio"));
 const Campodon = lazy(() => import("./pages/ElCarrascal"));
@@ -22,11 +35,11 @@ const Monreal = lazy(() => import("./pages/VeredaEstudiantes"));
 const Sacedon = lazy(() => import("./pages/LosSantos"));
 const DehesaDelSotillo = lazy(() => import("./pages/Solagua"));
 const PozaDelAgua = lazy(() => import("./pages/PozaDelAgua"));
-const Urgencias24h = lazy(() => import("./pages/Urgencias24h"));
-const AperturaPuertas = lazy(() => import("./pages/AperturaPuertas"));
-const CambioCerraduras = lazy(() => import("./pages/CambioCerraduras"));
-const CambioBombin = lazy(() => import("./pages/CambioBombin"));
-const Amaestramiento = lazy(() => import("./pages/Amaestramiento"));
+const ElBosqueAlto = lazy(() => import("./pages/ElBosqueAlto"));
+const MonteDeLaVilla = lazy(() => import("./pages/MonteDeLaVilla"));
+const CerroDeLasNieves = lazy(() => import("./pages/CerroDeLasNieves"));
+
+// Otros
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 const PoliticaPrivacidad = lazy(() => import("./pages/PoliticaPrivacidad"));
@@ -38,7 +51,6 @@ const Testimonios = lazy(() => import("./pages/Testimonios"));
 const CookieBanner = lazy(() => import("./components/CookieBanner"));
 const FloatingActionButtons = lazy(() => import("./components/FloatingActionButtons"));
 
-// Fallback component while loading a lazy route
 const PageLoader = () => (
   <div className="min-h-screen flex items-center justify-center bg-white">
     <div className="h-12 w-12 border-4 border-[#1B4965] border-t-transparent rounded-full animate-spin"></div>
@@ -48,7 +60,6 @@ const PageLoader = () => (
 function Router() {
   const [location] = useLocation();
 
-  // Scroll to top on route change
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, [location]);
@@ -61,7 +72,21 @@ function Router() {
       </Suspense>
       <Suspense fallback={<PageLoader />}>
         <Switch>
-          <Route path={"/"} component={Home} />
+          <Route path="/" component={Home} />
+
+          {/* Rutas de Servicios */}
+          <Route path="/urgencias-24h" component={Urgencias24h} />
+          <Route path="/apertura-puertas" component={AperturaPuertas} />
+          <Route path="/cambio-cerraduras" component={CambioCerraduras} />
+          <Route path="/cambio-bombin" component={CambioBombin} />
+          <Route path="/amaestramiento" component={Amaestramiento} />
+          <Route path="/apertura-cajas-fuertes" component={AperturaCajasFuertes} />
+          <Route path="/reparacion-cierres-metalicos" component={ReparacionCierres} />
+          <Route path="/cerrojos-seguridad" component={CerrojosSeguridad} />
+          <Route path="/muelles-cierrapuertas" component={MuellesCierrapuertas} />
+          <Route path="/desahucios" component={Desahucios} />
+
+          {/* Rutas de Ubicaciones */}
           <Route path="/cerrajeros-centro" component={Centro} />
           <Route path="/cerrajeros-el-bosque" component={ElBosque} />
           <Route path="/cerrajeros-campodon" component={Campodon} />
@@ -73,11 +98,11 @@ function Router() {
           <Route path="/cerrajeros-sacedon" component={Sacedon} />
           <Route path="/cerrajeros-dehesa-del-sotillo" component={DehesaDelSotillo} />
           <Route path="/cerrajeros-poza-del-agua" component={PozaDelAgua} />
-          <Route path="/urgencias-24h" component={Urgencias24h} />
-          <Route path="/apertura-puertas" component={AperturaPuertas} />
-          <Route path="/cambio-cerraduras" component={CambioCerraduras} />
-          <Route path="/cambio-bombin" component={CambioBombin} />
-          <Route path="/amaestramiento" component={Amaestramiento} />
+          <Route path="/cerrajeros-el-bosque-alto" component={ElBosqueAlto} />
+          <Route path="/cerrajeros-monte-de-la-villa" component={MonteDeLaVilla} />
+          <Route path="/cerrajeros-cerro-de-las-nieves" component={CerroDeLasNieves} />
+
+          {/* Rutas Generales */}
           <Route path="/blog" component={Blog} />
           <Route path="/blog/:id" component={BlogPost} />
           <Route path="/testimonios" component={Testimonios} />
@@ -86,8 +111,7 @@ function Router() {
           <Route path="/cookies" component={PoliticaCookies} />
           <Route path="/aviso-legal" component={AvisoLegal} />
           <Route path="/contacto" component={Contacto} />
-          <Route path={"/404"} component={NotFound} />
-          {/* Final fallback route */}
+          <Route path="/404" component={NotFound} />
           <Route component={NotFound} />
         </Switch>
       </Suspense>
@@ -95,19 +119,11 @@ function Router() {
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
   return (
     <ErrorBoundary>
       <HelmetProvider>
-        <ThemeProvider
-          defaultTheme="light"
-        // switchable
-        >
+        <ThemeProvider defaultTheme="light">
           <TooltipProvider>
             <Toaster />
             <SchemaMarkup />

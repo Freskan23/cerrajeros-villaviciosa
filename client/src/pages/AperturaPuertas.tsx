@@ -1,389 +1,128 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  APP_BUSINESS_NAME,
-  APP_LOCATION,
-  APP_PHONE,
-  APP_PHONE_DISPLAY,
-} from "@/const";
-import {
-  Phone,
-  Clock,
-  Shield,
-  CheckCircle,
-  Home as HomeIcon,
-  AlertCircle,
-} from "lucide-react";
+import { APP_BUSINESS_NAME, APP_PHONE, APP_PHONE_DISPLAY, APP_LOCATION } from "@/const";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import RelatedServices from "@/components/RelatedServices";
 import SEOHead from "@/components/SEOHead";
-import FAQSection from "@/components/FAQSection";
-import BrandsSection from "@/components/BrandsSection";
+import RelatedServices from "@/components/RelatedServices";
+import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import { Shield, Clock, Zap, CheckCircle, ChevronDown } from "lucide-react";
 
 export default function AperturaPuertas() {
-  const benefits = [
-    "✅ Apertura sin daños en la cerradura",
-    "✅ Llegamos en menos de 30 minutos",
-    "✅ Disponible 24 horas, 365 días",
-    "✅ Precio cerrado desde 90€",
-    "✅ Técnicos profesionales certificados",
-    "✅ Sin cobro por desplazamiento",
-  ];
-
-  const faqItems = [
-    {
-      question: "¿Cuánto tardáis en llegar a mi ubicación en Villaviciosa del Odón?",
-      answer: `Nuestro tiempo medio de respuesta para aperturas urgentes en barrios como Centro, El Bosque o Villaviciosa del Odón Norte es de 20 a 30 minutos. Estamos distribuidos estratégicamente para llegar lo antes posible.`
-    },
-    {
-      question: "¿Se romperá la cerradura o la puerta al abrir?",
-      answer: "En el 95% de los casos realizamos una apertura limpia sin causar ningún daño a la puerta ni a la cerradura actual, utilizando técnicas de ganzuado o herramientas de precisión profesionales."
-    },
-    {
-      question: "¿Cuánto cuesta abrir una puerta de urgencia?",
-      answer: "Nuestras tarifas son transparentes: 90€ en horario comercial (L-V 08:00 a 19:00) y 120€ en horario de urgencia. Siempre te damos el precio cerrado por teléfono antes de ir."
-    },
-    {
-      question: "¿Abrís puertas acorazadas o de alta seguridad?",
-      answer: "Sí, somos especialistas en la apertura de todo tipo de puertas, incluyendo acorazadas, blindadas y cierres metálicos de locales comerciales, trabajando con marcas como Fichet, Mottura o Tesa."
-    }
-  ];
-
-  const situations = [
-    {
-      icon: <AlertCircle className="h-8 w-8 text-[#A52A2A]" />,
-      title: "Puerta cerrada sin llave",
-      description: "Has salido y la puerta se ha cerrado sola sin las llaves",
-    },
-    {
-      icon: <AlertCircle className="h-8 w-8 text-[#A52A2A]" />,
-      title: "Llave rota en cerradura",
-      description: "La llave se ha partido dentro del bombín",
-    },
-    {
-      icon: <AlertCircle className="h-8 w-8 text-[#A52A2A]" />,
-      title: "Cerradura atascada",
-      description: "La cerradura no gira o está bloqueada",
-    },
-    {
-      icon: <AlertCircle className="h-8 w-8 text-[#A52A2A]" />,
-      title: "Pérdida de llaves",
-      description: "Has perdido o te han robado las llaves",
-    },
-  ];
-
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-white">
       <SEOHead
-        title={`Apertura de Puertas Villaviciosa del Odón 🔓 Sin Romper | Villaviciosa 24h 24h ⭐ 5.0`}
-        description={`🔑 ¿Llaves dentro? Abrimos tu puerta en Villaviciosa del Odón en 20-30 min. Sin romper, sin daños y con precio cerrado desde 90€. ☎️ Llama ahora y recupera el acceso.`}
-        canonicalUrl="https://cerrajerosdevillaviciosa del odón.madrid/apertura-puertas"
+        title={`Apertura de Puertas en ${APP_LOCATION} 🔓 Sin Romper | 24 Horas`}
+        description={`🔑 ¿Has perdido las llaves? Abrimos tu puerta en ${APP_LOCATION} en menos de 20 min. Sin romper, sin daños y con precio cerrado desde 90€. Cerrajeros locales expertos.`}
       />
       <Header />
 
-      <main>
-        {/* Breadcrumb */}
-        <section className="bg-gray-50 py-4">
-          <div className="container">
-            <nav className="text-sm text-gray-600">
-              <Link href="/" className="hover:text-[#A52A2A]">
-                Inicio
-              </Link>
-              <span className="mx-2">/</span>
-              <span className="text-gray-900 font-medium">
-                Apertura de Puertas
-              </span>
-            </nav>
-          </div>
-        </section>
-
-        {/* Hero */}
-        <section className="relative bg-gradient-to-br from-gray-800 to-gray-900 text-white py-16 overflow-hidden">
-          <div className="absolute inset-0 opacity-20">
+      <main className="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth">
+        {/* Hero Section */}
+        <section className="tesla-hero snap-start">
+          <div className="tesla-hero-bg">
             <img
               src="/apertura-puerta.jpg"
-              alt="Apertura de puertas profesional en Villaviciosa del Odón"
+              alt="Apertura técnica de puertas"
               className="w-full h-full object-cover"
             />
+            <div className="absolute inset-0 bg-black/30" />
           </div>
-          <div className="container relative z-10">
-            <div className="max-w-4xl">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                🔓 ¿Te has dejado las llaves en casa? Abrimos puertas en todo Villaviciosa del Odón desde 90€
-              </h1>
-              <p className="text-xl mb-8 text-gray-200">
-                Apertura de puertas sin daños, rápido y barato. Llegamos en menos de 20-30 minutos a cualquier barrio de Villaviciosa del Odón, las 24 horas del día.
-              </p>
-              <Button
-                asChild
-                size="lg"
-                className="bg-[#A52A2A] hover:bg-[#8B2323] text-white text-lg px-8 py-6"
-              >
-                <a href={`tel:${APP_PHONE}`}>
-                  <Phone className="mr-2 h-6 w-6" />
-                  Llamar ahora: {APP_PHONE_DISPLAY}
-                </a>
-              </Button>
-            </div>
+
+          <div className="animate-tesla">
+            <h1 className="text-[40px] md:text-[64px] font-medium text-white mb-2 leading-tight drop-shadow-2xl">
+              Apertura Impecable
+            </h1>
+            <p className="text-sm md:text-lg text-white font-normal underline underline-offset-4 decoration-1 decoration-white/40 drop-shadow-lg">
+              Llegada en 20 min · Sin daños garantizado
+            </p>
+          </div>
+
+          <div className="w-full max-w-[550px] flex flex-col md:flex-row gap-4 px-6 mb-12 animate-tesla [animation-delay:200ms]">
+            <a href={`tel:${APP_PHONE}`} className="tesla-button tesla-button-primary uppercase tracking-widest text-[11px] font-bold">
+              Solicitar Apertura: {APP_PHONE_DISPLAY}
+            </a>
+            <a href="#detalles" className="tesla-button tesla-button-secondary uppercase tracking-widest text-[11px] font-bold">
+              Ver Detalles Técnicos
+            </a>
+          </div>
+
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce opacity-80 z-20">
+            <ChevronDown className="w-6 h-6 text-white" />
           </div>
         </section>
 
-        {/* Introducción */}
-        <section className="py-16 bg-white">
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                En <strong>{APP_BUSINESS_NAME}</strong> somos especialistas en{" "}
-                <strong>apertura de puertas en {APP_LOCATION}</strong>, ya sean
-                de viviendas, oficinas, locales comerciales o trasteros. Si te
-                has quedado fuera de casa por pérdida de llaves, cerradura
-                bloqueada o puerta atrancada, resolvemos el problema{" "}
-                <strong>sin causar daños</strong> a la cerradura ni a la puerta.
-                Si además necesitas mejorar la seguridad, también realizamos{" "}
-                <Link href="/cambio-cerraduras" className="text-[#A52A2A] underline hover:text-[#8B2323]">
-                  cambio de cerraduras
-                </Link>{" "}
-                y{" "}
-                <Link href="/cambio-bombin" className="text-[#A52A2A] underline hover:text-[#8B2323]">
-                  cambio de bombines
-                </Link>
-                .
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Utilizamos herramientas profesionales y técnicas no invasivas
-                siempre que sea posible. Nuestro servicio de apertura de puertas
-                está disponible <strong>las 24 horas del día desde 90€</strong>,
-                con llegada en menos de 30 minutos a cualquier punto de{" "}
-                {APP_LOCATION}.
+        {/* Content Section 1: Detailed Text */}
+        <section id="detalles" className="tesla-section snap-start min-h-screen flex flex-col justify-center items-center">
+          <div className="tesla-container space-y-16 max-w-5xl">
+            <div className="text-center space-y-6">
+              <h2 className="text-3xl md:text-5xl font-medium tracking-tight">Expertos en aperturas de alta gama</h2>
+              <p className="text-lg text-gray-500 font-light leading-relaxed max-w-3xl mx-auto">
+                Sabemos que quedarte fuera de casa es una situación estresante. Por eso, en <strong>{APP_BUSINESS_NAME}</strong> nos especializamos en aperturas técnicas que priorizan la integridad de tu puerta y cerradura.
+                Utilizamos herramientas de última generación y técnicas de ganzuado profesional para que puedas entrar en tu hogar en cuestión de segundos.
               </p>
             </div>
-          </div>
-        </section>
 
-        {/* Beneficios */}
-        <section className="py-16 bg-gray-50">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                ¿Por qué elegir nuestro servicio de apertura de puertas?
-              </h2>
-            </div>
-
-            <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-              {benefits.map((benefit, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-4 rounded-lg shadow-sm text-lg"
-                >
-                  {benefit}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Situaciones */}
-        <section className="py-16 bg-white">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                ¿En qué situaciones necesitas apertura de puertas?
-              </h2>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {situations.map((situation, index) => (
-                <Card key={index}>
-                  <CardContent className="p-6 text-center">
-                    <div className="flex justify-center mb-4">
-                      {situation.icon}
-                    </div>
-                    <h3 className="text-lg font-bold mb-3">
-                      {situation.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm">
-                      {situation.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Proceso */}
-        <section className="py-16 bg-gray-50">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                ¿Cómo funciona nuestro servicio de apertura?
-              </h2>
-            </div>
-
-            <div className="max-w-4xl mx-auto">
-              {/* Imágenes del proceso */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-                <div className="rounded-xl overflow-hidden h-64">
-                  <img
-                    src="/proceso-llegada.webp"
-                    alt="Cerrajero Villaviciosa 24h llegando en furgoneta a Villaviciosa del Odón"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="rounded-xl overflow-hidden h-64">
-                  <img
-                    src="/proceso-herramientas.webp"
-                    alt="Herramientas profesionales de cerrajería"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <h3 className="text-2xl font-bold">¿Qué abrimos en {APP_LOCATION}?</h3>
+                <ul className="grid grid-cols-1 gap-4">
+                  {[
+                    "Puertas Blindadas y Acorazadas de todas las marcas.",
+                    "Puertas de interior y trasteros sin daños.",
+                    "Cierres metálicos de comercio y locales.",
+                    "Vehículos de gama alta sin rotura de cristales.",
+                    "Cajas fuertes mecánicas y digitales."
+                  ].map((text, i) => (
+                    <li key={i} className="flex items-center gap-3 text-gray-600 font-light">
+                      <CheckCircle className="w-5 h-5 text-primary" /> {text}
+                    </li>
+                  ))}
+                </ul>
               </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="bg-[#A52A2A] text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                    1
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">Llámanos</h3>
-                  <p className="text-gray-600">
-                    Contacta con nosotros por teléfono o WhatsApp. Te atendemos
-                    inmediatamente.
-                  </p>
-                </div>
-
-                <div className="text-center">
-                  <div className="bg-[#A52A2A] text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                    2
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">Llegamos rápido</h3>
-                  <p className="text-gray-600">
-                    Nuestro cerrajero se desplaza a tu ubicación en menos de 30
-                    minutos.
-                  </p>
-                </div>
-
-                <div className="text-center">
-                  <div className="bg-[#A52A2A] text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                    3
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">Abrimos sin daños</h3>
-                  <p className="text-gray-600">
-                    Abrimos tu puerta de forma profesional, sin romper la
-                    cerradura.
-                  </p>
-                </div>
+              <div className="rounded-3xl overflow-hidden shadow-xl aspect-video bg-gray-100">
+                <img src="/proceso-herramientas.webp" alt="Herramientas profesionales" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
         </section>
 
-        {/* Precios */}
-        <section className="py-16 bg-white">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Precios transparentes de apertura de puertas
-              </h2>
-              <p className="text-lg text-gray-600">
-                Sin sorpresas ni costes ocultos
-              </p>
+        {/* Content Section 2: Why us for Apertura */}
+        <section className="tesla-section snap-start min-h-screen flex flex-col justify-center bg-gray-50">
+          <div className="tesla-container space-y-16">
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                { t: "Garantía de No Rotura", d: "En el 98% de las aperturas no es necesario romper la cerradura ni el cilindro.", icon: <Shield className="w-10 h-10" /> },
+                { t: "Urgencias Express", d: "Atendemos llamadas prioritarias en menos de 20 minutos en todo Villaviciosa.", icon: <Clock className="w-10 h-10" /> },
+                { t: "Técnicos Oficiales", d: "Todos nuestros cerrajeros están acreditados y asegurados para su total tranquilidad.", icon: <Zap className="w-10 h-10" /> }
+              ].map((item, i) => (
+                <div key={i} className="bg-white p-10 rounded-[2.5rem] shadow-sm flex flex-col items-center text-center space-y-6 border border-gray-100">
+                  <div className="text-primary">{item.icon}</div>
+                  <h4 className="text-xl font-bold">{item.t}</h4>
+                  <p className="text-gray-500 font-light text-sm leading-relaxed">{item.d}</p>
+                </div>
+              ))}
             </div>
 
-            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card>
-                <CardContent className="p-8 text-center">
-                  <Clock className="h-12 w-12 text-[#A52A2A] mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold mb-3">Horario Normal</h3>
-                  <p className="text-gray-600 mb-4">
-                    Lunes a Viernes
-                    <br />
-                    08:00h - 19:00h
-                  </p>
-                  <div className="text-4xl font-bold text-[#A52A2A] mb-2">
-                    90€
-                  </div>
-                  <p className="text-sm text-gray-500">
-                    Sin cobro por desplazamiento
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-8 text-center">
-                  <Clock className="h-12 w-12 text-[#A52A2A] mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold mb-3">Fuera de Horario</h3>
-                  <p className="text-gray-600 mb-4">
-                    Noches, fines de semana
-                    <br />y festivos
-                  </p>
-                  <div className="text-4xl font-bold text-[#A52A2A] mb-2">
-                    120€
-                  </div>
-                  <p className="text-sm text-gray-500">
-                    Sin cobro por desplazamiento
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="bg-black text-white p-12 md:p-20 rounded-[3rem] text-center space-y-8">
+              <h2 className="text-3xl md:text-5xl font-medium tracking-tight">¿Estás fuera de casa ahora mismo?</h2>
+              <p className="text-lg text-gray-400 font-light max-w-2xl mx-auto">No intentes forzar la puerta, podrías causar daños irreparables. Nuestro retén de urgencias está listo para salir.</p>
+              <Button asChild size="lg" className="rounded-full px-12 h-16 bg-white text-black hover:bg-gray-200 transition-all font-bold text-xl shadow-2xl shadow-white/10">
+                <a href={`tel:${APP_PHONE}`}>Llamar a Urgencias</a>
+              </Button>
             </div>
           </div>
         </section>
 
-        {/* Marcas */}
-        <BrandsSection />
-
-        {/* FAQ Personalizada */}
-        <FAQSection items={faqItems} title="Dudas sobre Apertura de Puertas" />
-
-        {/* Servicios Relacionados */}
-        <RelatedServices currentService="Apertura de Puertas" />
-
-        {/* CTA Final */}
-        <section className="py-16 bg-[#A52A2A] text-white">
-          <div className="container">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                ¿Necesitas abrir tu puerta urgentemente?
-              </h2>
-              <p className="text-xl mb-8">
-                Llámanos ahora y llegamos en menos de 30 minutos
-              </p>
-              <Button
-                asChild
-                size="lg"
-                className="bg-white text-[#A52A2A] hover:bg-gray-100 text-lg px-8 py-6"
-              >
-                <a href={`tel:${APP_PHONE}`}>
-                  <Phone className="mr-2 h-6 w-6" />
-                  {APP_PHONE_DISPLAY} - Disponible 24/7
-                </a>
-              </Button>
-            </div>
+        {/* Final Links & Footer */}
+        <section className="tesla-section snap-start min-h-screen flex flex-col justify-between">
+          <div className="tesla-container mt-20">
+            <RelatedServices currentService="Apertura de Puertas" />
+          </div>
+          <div className="mt-20">
+            <Footer />
           </div>
         </section>
       </main>
-
-      <Footer />
-
-      {/* Botón flotante WhatsApp */}
-      <a
-        href={`https://wa.me/${APP_PHONE.replace(/\s/g, "")}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110 z-50"
-        aria-label="Contactar por WhatsApp"
-      >
-        <svg
-          className="h-8 w-8"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-        </svg>
-      </a>
     </div>
   );
 }
-
