@@ -36,7 +36,7 @@ export default function Header() {
             <img
               src="/logo-cerrajeros-villaviciosa.webp"
               alt={APP_BUSINESS_NAME}
-              className="h-5 w-auto brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
+              className="h-6 w-auto transition-all duration-300"
             />
           </Link>
 

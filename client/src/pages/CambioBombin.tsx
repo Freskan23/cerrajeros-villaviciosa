@@ -5,7 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import RelatedServices from "@/components/RelatedServices";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ShieldAlert, CheckCircle, ChevronDown, Award, Package, Lock } from "lucide-react";
+import { ShieldAlert, CheckCircle, ChevronRight, Award, Package, Lock, Star, ShieldCheck, Phone, Zap } from "lucide-react";
 
 export default function CambioBombin() {
   return (
@@ -17,122 +17,145 @@ export default function CambioBombin() {
       <Header />
 
       <main className="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth">
-        {/* Hero Section */}
+        {/* Unified Hero Section */}
         <section className="tesla-hero snap-start">
           <div className="tesla-hero-bg">
             <img
               src="/cambio-bombin.jpg"
               alt="Bombín de alta seguridad"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover brightness-[0.6]"
             />
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent" />
           </div>
 
-          <div className="animate-tesla">
-            <h1 className="text-[40px] md:text-[64px] font-medium text-white mb-2 leading-tight drop-shadow-2xl">
-              Seguridad Invisible
+          <div className="animate-tesla flex flex-col items-center text-center">
+            <div className="flex gap-3 mb-6">
+              <div className="flex items-center gap-1.5 px-3 py-1 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-white text-[10px] uppercase font-bold tracking-tighter">
+                <span className="text-primary"><ShieldCheck className="w-4 h-4" /></span>
+                Grado 5
+              </div>
+              <div className="flex items-center gap-1.5 px-3 py-1 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-white text-[10px] uppercase font-bold tracking-tighter">
+                <span className="text-primary"><Zap className="w-4 h-4" /></span>
+                Antibumping
+              </div>
+            </div>
+
+            <h1
+              className="text-[44px] md:text-[80px] font-black mb-4 leading-[0.85] tracking-tighter uppercase italic"
+              style={{ color: '#FFFFFF', textShadow: '0 10px 30px rgba(0,0,0,0.8)' }}
+            >
+              Seguridad <br /> Invisible
             </h1>
-            <p className="text-sm md:text-lg text-white font-normal underline underline-offset-4 decoration-1 decoration-white/40 drop-shadow-lg">
-              Bombines antibumping grado 5 · Instalación Express
+            <p
+              className="text-lg md:text-2xl font-medium max-w-2xl px-6 opacity-100"
+              style={{ color: '#FFFFFF', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}
+            >
+              Bombines de Alta Gama · Instalación inmediata
             </p>
           </div>
 
-          <div className="w-full max-w-[550px] flex flex-col md:flex-row gap-4 px-6 mb-12 animate-tesla [animation-delay:200ms]">
-            <a href={`tel:${APP_PHONE}`} className="tesla-button tesla-button-primary uppercase tracking-widest text-[11px] font-bold">
-              Pedir Presupuesto: {APP_PHONE_DISPLAY}
+          <div className="w-full max-w-[600px] flex flex-col md:flex-row gap-4 px-6 mb-12 animate-tesla [animation-delay:200ms]">
+            <a
+              href={`tel:${APP_PHONE}`}
+              className="tesla-button h-14 md:h-20 text-xl font-black bg-[#E55A2B] hover:bg-[#C4461B] text-white border-none shadow-[0_20px_50px_rgba(229,90,43,0.3)] flex items-center justify-center rounded-full transition-all flex-1"
+            >
+              <Phone className="w-7 h-7 mr-3 animate-pulse" fill="currentColor" />
+              Presupuesto Gratis
             </a>
-            <a href="#ventajas" className="tesla-button tesla-button-secondary uppercase tracking-widest text-[11px] font-bold">
+            <a href="#ventajas" className="tesla-button h-14 md:h-20 text-sm font-bold opacity-80 backdrop-blur-sm text-white border border-white/30 rounded-full flex items-center justify-center flex-1">
               Ventajas Técnicas
             </a>
           </div>
 
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce opacity-80 z-20">
-            <ChevronDown className="w-6 h-6 text-white" />
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+            <ChevronRight className="w-6 h-6 text-white rotate-90" />
           </div>
         </section>
 
         {/* Content Section 1: Detailed SEO Text */}
-        <section id="ventajas" className="tesla-section snap-start min-h-screen flex flex-col justify-center items-center bg-white">
+        <section id="ventajas" className="tesla-section snap-start md:min-h-screen flex flex-col justify-center items-center py-20 px-4">
           <div className="tesla-container space-y-16 max-w-5xl">
             <div className="text-center space-y-6">
-              <h2 className="text-3xl md:text-5xl font-medium tracking-tight uppercase">Blindaje técnico para tu puerta</h2>
-              <p className="text-lg text-gray-500 font-light leading-relaxed max-w-3xl mx-auto">
-                El bombín es el corazón de tu cerradura. En <strong>{APP_BUSINESS_NAME}</strong> recomendamos siempre el cambio de cilindros antiguos por modelos de <strong>Alta Seguridad</strong> que resistan las técnicas de robo más frecuentes en {APP_LOCATION}, como el Bumping, el Impresioning o la extracción de núcleo.
+              <span className="text-primary font-black uppercase tracking-[0.3em] text-[10px] md:text-xs">Blindaje Premium</span>
+              <h2 className="text-3xl md:text-6xl font-black tracking-tighter uppercase italic leading-tight text-balance">Protección de núcleo avanzado</h2>
+              <p className="text-base md:text-xl text-gray-500 font-light leading-relaxed max-w-3xl mx-auto">
+                El bombín es el corazón de tu cerradura. En <strong>{APP_BUSINESS_NAME}</strong> sustituimos cilindros antiguos por modelos de <strong>Alta Seguridad</strong> resistentes a Bumping e Impresioning en todo <strong>{APP_LOCATION}</strong>.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="rounded-[3rem] overflow-hidden shadow-2xl aspect-square bg-gray-100">
-                <img src="/cilindro-seguridad.jpg" alt="Cilindro de seguridad de precisión" className="w-full h-full object-cover" />
+              <div className="rounded-[2.5rem] md:rounded-[3rem] overflow-hidden shadow-2xl aspect-square bg-gray-100 group">
+                <img src="/cilindro-seguridad.jpg" alt="Cilindro de seguridad de precisión" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" />
               </div>
               <div className="space-y-10">
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold flex items-center gap-3"><ShieldAlert className="text-primary" /> Protección Total</h3>
-                  <p className="text-gray-500 font-light leading-relaxed">Nuestros bombines cuentan con pasadores de acero reforzado que impiden el taladrado y puentes de refuerzo que evitan la rotura del cuerpo.</p>
-                </div>
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold flex items-center gap-3"><Award className="text-primary" /> Marcas Líderes</h3>
-                  <p className="text-gray-500 font-light leading-relaxed">Trabajamos exclusivamente con fabricantes certificados: Kaba, Mauer, Amig, Tesa e ISEO. Calidad garantizada.</p>
-                </div>
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold flex items-center gap-3"><Package className="text-primary" /> Llaves Incopiables</h3>
-                  <p className="text-gray-500 font-light leading-relaxed">Sistemas con tarjeta de propiedad. Solo tú puedes solicitar duplicados de llaves bajo estricto control de seguridad.</p>
-                </div>
+                {[
+                  { icon: <ShieldAlert className="text-primary w-8 h-8" />, t: "Protección Total", d: "Pasadores de acero reforzado que impiden el taladrado y la extracción de núcleo." },
+                  { icon: <Award className="text-primary w-8 h-8" />, t: "Marcas Oficiales", d: "Instalamos Kaba, Mauer y Tesa con garantía oficial del fabricante." },
+                  { icon: <Package className="text-primary w-8 h-8" />, t: "Llaves Incopiables", d: "Sistemas protegidos con tarjeta de propiedad para mayor control." }
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-6">
+                    <div className="flex-shrink-0">{item.icon}</div>
+                    <div>
+                      <h3 className="text-xl font-black uppercase italic tracking-tight mb-2">{item.t}</h3>
+                      <p className="text-gray-500 font-light text-sm md:text-base leading-relaxed">{item.d}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* Content Section 2: Brands & CTA */}
-        <section className="tesla-section snap-start min-h-screen flex flex-col justify-center bg-gray-50">
-          <div className="tesla-container space-y-20">
-            <div className="grid md:grid-cols-4 gap-8">
-              {[
-                { t: "KABA Expert", d: "Tecnología suiza de alta precisión." },
-                { t: "MAUER NW5", d: "El bombín más resistente del mercado." },
-                { t: "TESA TK100", d: "Seguridad avanzada fabricada en España." },
-                { t: "EVVA MCS", d: "Sistema magnético imposible de ganzuar." }
-              ].map((item, i) => (
-                <div key={i} className="bg-white p-8 rounded-2xl shadow-sm text-center space-y-4">
-                  <h4 className="font-bold text-gray-900">{item.t}</h4>
-                  <p className="text-xs text-gray-500 font-light">{item.d}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="grid md:grid-cols-2 bg-white rounded-[3rem] overflow-hidden shadow-xl">
-              <div className="p-12 md:p-20 space-y-6">
-                <h2 className="text-3xl md:text-5xl font-medium tracking-tighter">¿Cuándo cambiar tu bombín?</h2>
-                <ul className="space-y-4">
+        {/* Content Section 2: Trust/Social Proof */}
+        <section className="tesla-section snap-start md:min-h-screen flex flex-col justify-center bg-gray-50 py-20 px-4">
+          <div className="tesla-container">
+            <div className="grid md:grid-cols-2 gap-12 items-center text-left">
+              <div className="space-y-10">
+                <h2 className="text-3xl md:text-7xl font-black leading-[0.95] tracking-tighter uppercase italic">Seguridad <br /><span className="text-primary">Certificada</span></h2>
+                <div className="space-y-8">
                   {[
-                    "Al mudarte a una nueva vivienda o local.",
-                    "Si has perdido las llaves o te las han robado.",
-                    "Si tu bombín tiene más de 5 años y no es antibumping.",
-                    "Si la llave empieza a atascarse o gira mal."
-                  ].map((text, i) => (
-                    <li key={i} className="flex gap-3 items-start text-gray-600 font-light">
-                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /> {text}
-                    </li>
+                    { t: "KABA Expert", d: "Precisión suiza y máxima resistencia al ganzuado." },
+                    { t: "MAUER NW5", d: "El estándar más alto de seguridad física en España." },
+                    { t: "Tarifas Cerradas", d: "Presupuesto real telefónico. Sin sorpresas al pagar." },
+                    { t: "Instalación 24h", d: "Cambiamos tu bombín hoy mismo, sin esperas." }
+                  ].map((item, i) => (
+                    <div key={i} className="flex gap-6">
+                      <div className="mt-1 flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-sm flex items-center justify-center">
+                        <Star className="w-5 h-5 text-primary" fill="currentColor" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg md:text-xl font-black uppercase tracking-tight">{item.t}</h4>
+                        <p className="text-gray-500 font-light text-sm md:text-base">{item.d}</p>
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
-              <div className="bg-black text-white p-12 md:p-20 flex flex-col justify-center items-center text-center space-y-8">
-                <Lock className="w-16 h-16 text-primary" />
-                <h4 className="text-2xl font-bold">Consigue tu presupuesto en 1 minuto</h4>
-                <Button asChild size="lg" className="rounded-full px-12 h-16 bg-white text-black hover:bg-gray-200 transition-all font-bold">
-                  <a href={`tel:${APP_PHONE}`}>Llamar ahora</a>
-                </Button>
+              <div className="relative rounded-[3rem] overflow-hidden shadow-3xl aspect-[4/5] md:aspect-square">
+                <img src="/hero-cerrajero-profesional.jpg" alt="Instalación de bombín" className="w-full h-full object-cover grayscale" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-12">
+                  <div className="space-y-4 text-left">
+                    <div className="flex gap-1.5">
+                      {[1, 2, 3, 4, 5].map(s => (
+                        <Star key={s} className="w-8 h-8 text-[#FFD700]" fill="currentColor" style={{ filter: 'drop-shadow(0 0 8px rgba(255, 165, 0, 0.6))' }} />
+                      ))}
+                    </div>
+                    <p className="text-white text-xl font-medium italic leading-relaxed">"Cambié el bombín por uno antibumping tras ver que habían robado en el bloque. Muy rápido y limpio."</p>
+                    <p className="text-white/60 text-sm font-bold uppercase tracking-widest">— Vecino de Villaviciosa</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Final Section */}
-        <section className="tesla-section snap-start min-h-screen flex flex-col justify-between">
-          <div className="tesla-container mt-20">
+        <section className="tesla-section snap-start md:min-h-screen flex flex-col justify-between py-20">
+          <div className="tesla-container">
             <RelatedServices currentService="Cambio de Bombín" />
           </div>
-          <div className="mt-20">
+          <div className="mt-20 border-t pt-20 border-gray-100 opacity-60">
             <Footer />
           </div>
         </section>
