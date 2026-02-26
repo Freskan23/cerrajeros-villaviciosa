@@ -1,34 +1,84 @@
+import { motion } from "framer-motion";
+
+const brands = [
+    { name: "TESA", position: "0% 0%" },
+    { name: "MOTTURA", position: "100% 0%" },
+    { name: "CISA", position: "0% 50%" },
+    { name: "FICHET", position: "100% 50%" },
+    { name: "MUL-T-LOCK", position: "0% 100%" },
+    { name: "ASSA ABLOY", position: "100% 100%" }
+];
+
+// Duplicamos el array para el efecto de scroll infinito suave
+const allBrands = [...brands, ...brands, ...brands];
+
 export default function BrandsSection() {
     return (
-        <section className="py-16 bg-white overflow-hidden">
-            <div className="container">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl font-black mb-4 text-[#1B4965] tracking-tight">
-                        Marcas de <span className="text-[#1B4965]">Confianza</span>
+        <section className="py-20 bg-white overflow-hidden">
+            <div className="container px-4 mb-16">
+                <div className="flex flex-col items-center text-center">
+                    <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-300 mb-4">
+                        Trust & Security
+                    </span>
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#1B4965] tracking-tight">
+                        Servicio Oficial Multimarca
                     </h2>
-                    <p className="text-gray-500 max-w-2xl mx-auto font-medium">
-                        Instalamos solo componentes de máxima seguridad certificados por las marcas líderes del sector.
-                    </p>
                 </div>
+            </div>
 
-                <div className="relative group max-w-4xl mx-auto">
-                    {/* Efecto de resplandor sutil al fondo */}
-                    <div className="absolute -inset-4 bg-orange-100/50 rounded-[40px] blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+            <div className="relative flex overflow-x-hidden group">
+                {/* Gradientes laterales para suavizar la entrada/salida */}
+                <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+                <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
-                    <div className="relative bg-gray-50/50 border border-gray-100 rounded-[32px] p-8 md:p-12">
-                        <img
-                            src="/images/marcas-cerrajeria.webp"
-                            alt="Logos de marcas de cerrajería de confianza"
-                            width="1200"
-                            height="300"
-                            className="w-full h-auto object-contain mix-blend-multiply opacity-80 hover:opacity-100 transition-opacity duration-500"
-                        />
+                <motion.div
+                    className="flex whitespace-nowrap py-4"
+                    animate={{
+                        x: [0, -1920], // Ajustable según el ancho total
+                    }}
+                    transition={{
+                        x: {
+                            repeat: Infinity,
+                            repeatType: "loop",
+                            duration: 30,
+                            ease: "linear",
+                        },
+                    }}
+                >
+                    {allBrands.map((brand, index) => (
+                        <div
+                            key={`${brand.name}-${index}`}
+                            className="inline-flex items-center justify-center w-64 h-24 px-12"
+                        >
+                            <div
+                                className="w-full h-full bg-no-repeat bg-contain filter grayscale opacity-40 hover:opacity-100 hover:grayscale-0 transition-all duration-700"
+                                style={{
+                                    backgroundImage: `url('/images/marcas-cerrajeria.webp')`,
+                                    backgroundPosition: brand.position,
+                                    backgroundSize: '200% 300%'
+                                }}
+                                aria-label={brand.name}
+                            />
+                        </div>
+                    ))}
+                </motion.div>
+            </div>
+
+            <div className="container mt-16">
+                <div className="flex justify-center flex-wrap gap-x-12 gap-y-6">
+                    <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold text-gray-400">
+                        <span className="w-1 h-1 bg-orange-400 rounded-full"></span>
+                        Repuestos Originales
+                    </div>
+                    <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold text-gray-400">
+                        <span className="w-1 h-1 bg-orange-400 rounded-full"></span>
+                        Garantía por Escrito
+                    </div>
+                    <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold text-gray-400">
+                        <span className="w-1 h-1 bg-orange-400 rounded-full"></span>
+                        Instalación Certificada
                     </div>
                 </div>
-
-                <p className="text-center mt-12 text-sm text-gray-400 font-bold uppercase tracking-widest">
-                    Repuestos Originales • Garantía por Escrito • Instalación Certificada
-                </p>
             </div>
         </section>
     );
