@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
+import FAQSection from '../components/sections/FAQSection.astro';
+import CTACallBanner from '../components/sections/CTACallBanner.astro';
+import { SERVICES, APP_PHONE_DISPLAY, APP_PHONE_HREF, SITE_URL } from '../data/business';
+
+const urgenciasFaqs = [
+  { question: '¿De verdad llegáis en 20 minutos?', answer: 'Sí. Nuestro tiempo medio de respuesta en Villaviciosa del Odón es de 15-20 minutos. Disponemos de cerrajeros de guardia permanente en la zona.' },
+  { question: '¿Hay recargo por servicio nocturno?', answer: 'No aplicamos recargos ocultos. El precio que te damos por teléfono es el precio final, sea la hora que sea.' },
+  { question: '¿Qué pasa si no podéis abrir sin daños?', answer: 'Te informamos antes de actuar. Si fuera necesario forzar, siempre con tu aprobación previa y presupuesto cerrado.' },
+  { question: '¿Aceptáis pago con tarjeta?', answer: 'Sí, aceptamos efectivo, tarjeta y Bizum.' },
+];
+---
+<BaseLayout title="Cerrajero Urgente 24h Villaviciosa del Odón | 20 min" description="Cerrajero de urgencias 24 horas en Villaviciosa del Odón. Llegamos en 20 minutos. Precio cerrado. Llama al 915 27 00 49." canonicalUrl={`${SITE_URL}/urgencias-24h`}>
+  <section class="hero-section" style="background-image: url('/hero-cerrajero.webp')">
+    <div class="hero-overlay"></div>
+    <div class="relative z-10 container text-center text-white py-24">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in-up">Cerrajero Urgente 24h</h1>
+      <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8">Llegamos en 20 minutos a cualquier punto de Villaviciosa del Odón. Precio cerrado por teléfono.</p>
+      <a href={APP_PHONE_HREF} class="cta-button text-lg">📞 Llamar ahora: {APP_PHONE_DISPLAY}</a>
+    </div>
+  </section>
+
+  <Breadcrumbs items={[{ name: 'Urgencias 24h', url: '/urgencias-24h' }]} />
+
+  <!-- Proceso en 3 pasos -->
+  <section class="section">
+    <div class="container max-w-4xl">
+      <h2 class="text-3xl font-bold text-center mb-12">¿Cómo funciona nuestro servicio urgente?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+          <h3 class="font-bold text-text mb-2">Llámanos</h3>
+          <p class="text-sm text-text-muted">Cuéntanos tu situación. Te damos precio cerrado al instante por teléfono.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+          <h3 class="font-bold text-text mb-2">Llegamos en 20 min</h3>
+          <p class="text-sm text-text-muted">Un cerrajero profesional se desplaza inmediatamente a tu ubicación.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+          <h3 class="font-bold text-text mb-2">Problema resuelto</h3>
+          <p class="text-sm text-text-muted">Resolvemos la urgencia con garantía. Te damos factura para el seguro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios urgentes -->
+  <section class="section-alt">
+    <div class="container">
+      <h2 class="text-3xl font-bold text-center mb-12">Servicios de urgencia disponibles</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {SERVICES.map(s => (
+          <a href={`/servicios/${s.slug}`} class="bg-white p-6 rounded-2xl shadow-sm card-hover block">
+            <h3 class="text-lg font-bold text-text mb-2">{s.name}</h3>
+            <p class="text-sm text-text-muted mb-3">Servicio urgente en Villaviciosa del Odón</p>
+            <span class="text-danger font-bold text-sm">{s.price} →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <FAQSection faqs={urgenciasFaqs} title="Preguntas frecuentes sobre urgencias" />
+  <CTACallBanner />
+</BaseLayout>

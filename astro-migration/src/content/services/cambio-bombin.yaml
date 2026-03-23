@@ -1,0 +1,34 @@
+title: "Cambio de Bombín"
+slug: "cambio-bombin"
+description: "Cambio de bombín antibumping en Villaviciosa del Odón. Desde 80€ con instalación. Certificados de seguridad."
+heroImage: "/cambio-bombin.jpg"
+price: "Desde 80€"
+keywords: "cambio bombin villaviciosa, bombin antibumping"
+longDescription: |
+  <h2>Cambio de bombín en Villaviciosa del Odón</h2>
+  <p>El <strong>bombín</strong> es el corazón de tu cerradura. Más del 80% de los bombines en Villaviciosa del Odón son vulnerables al bumping. Somos especialistas en sustitución por modelos de <strong>alta seguridad certificada</strong>.</p>
+  <h3>Bombines recomendados</h3>
+  <ul>
+    <li><strong>Tesa TK100</strong>: Antibumping, antiganzúa, antitaladro.</li>
+    <li><strong>Mottura Champions</strong>: Gama alta con doble embrague.</li>
+    <li><strong>Keso 8000</strong>: Referente en seguridad suiza.</li>
+    <li><strong>Yale Platinum</strong>: Sistema antipánico.</li>
+  </ul>
+  <p>Proceso rápido: evaluación, recomendación, sustitución y entrega de llaves en <strong>15-30 minutos</strong>.</p>
+features:
+  - "Bombines certificados antibumping"
+  - "Instalación en 15-30 minutos"
+  - "Llave patentada incopiable"
+  - "Marcas: Tesa, Mottura, Keso, Yale"
+  - "Diagnóstico gratuito"
+  - "Tarjeta de propiedad incluida"
+faqs:
+  - question: "¿Cuánto cuesta cambiar el bombín?"
+    answer: "Desde 80€ con instalación incluida."
+  - question: "¿Qué es antibumping?"
+    answer: "Un cilindro con mecanismos que impiden la apertura mediante golpe."
+relatedServices:
+  - name: "Cambio de Cerraduras"
+    slug: "cambio-cerraduras"
+  - name: "Cerrojos de Seguridad"
+    slug: "cerrojos-seguridad"

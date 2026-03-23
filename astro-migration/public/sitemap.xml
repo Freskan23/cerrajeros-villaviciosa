@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://cerrajerosvillaviciosadeodon.madrid/</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Servicios -->
+  <url>
+    <loc>https://cerrajerosvillaviciosadeodon.madrid/apertura-puertas</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosvillaviciosadeodon.madrid/cambio-cerraduras</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosvillaviciosadeodon.madrid/cambio-bombin</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosvillaviciosadeodon.madrid/amaestramiento</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosvillaviciosadeodon.madrid/urgencias-24h</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Zonas -->
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/cerrajeros-zarzaquemada</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/cerrajeros-san-nicasio</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/cerrajeros-el-carrascal</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/cerrajeros-la-fortuna</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/cerrajeros-leganes-norte</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/cerrajeros-arroyo-culebro</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/cerrajeros-valdepelayo</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/cerrajeros-vereda-estudiantes</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/cerrajeros-los-santos</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/cerrajeros-solagua</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/cerrajeros-poza-del-agua</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/cerrajeros-centro</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://cerrajerosvillaviciosadeodon.madrid/blog</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/blog/actualizar-seguridad-casa-leganes</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/blog/senales-robo-puerta-leganes</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/blog/peligros-cerrojos-simples-leganes</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/blog/diferencia-puerta-blindada-acorazada-seguridad</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/blog/peligro-bumping-bombines-inseguros</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/blog/robos-trasteros-leganes-norte</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/blog/cerraduras-antibumping-zarzaquemada</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/blog/seguridad-chalets-arroyo-culebro</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/blog/llaves-coche-parquesur</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/blog/puertas-okupas-leganes</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosvillaviciosadeodon.madrid/blog/bombines-seguridad-baratos</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Otros -->
+  <url>
+    <loc>https://cerrajerosvillaviciosadeodon.madrid/testimonios</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosvillaviciosadeodon.madrid/contacto</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosvillaviciosadeodon.madrid/politica-privacidad</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosvillaviciosadeodon.madrid/politica-cookies</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosvillaviciosadeodon.madrid/aviso-legal</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,72 @@
+---
+import '../styles/global.css';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import FloatingActions from '../components/layout/FloatingActions.astro';
+import { buildLocalBusinessSchema, buildWebSiteSchema } from '../utils/schema';
+import { SITE_URL, APP_BUSINESS_NAME, APP_GEO_LAT, APP_GEO_LNG } from '../data/business';
+
+interface Props {
+  title: string;
+  description: string;
+  keywords?: string;
+  ogImage?: string;
+  canonicalUrl?: string;
+  noindex?: boolean;
+}
+
+const { title, description, keywords, ogImage = '/og-image.webp', canonicalUrl, noindex = false } = Astro.props;
+const canonical = canonicalUrl || `${SITE_URL}${Astro.url.pathname}`;
+const fullOgImage = ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  {keywords && <meta name="keywords" content={keywords} />}
+  <link rel="canonical" href={canonical} />
+  {noindex ? <meta name="robots" content="noindex,nofollow" /> : <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />}
+
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={fullOgImage} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content={APP_BUSINESS_NAME} />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={fullOgImage} />
+
+  <meta name="geo.region" content="ES-M" />
+  <meta name="geo.placename" content="Villaviciosa del Odón" />
+  <meta name="geo.position" content={`${APP_GEO_LAT};${APP_GEO_LNG}`} />
+  <meta name="ICBM" content={`${APP_GEO_LAT}, ${APP_GEO_LNG}`} />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <script type="application/ld+json" set:html={JSON.stringify(buildLocalBusinessSchema())} />
+  <script type="application/ld+json" set:html={JSON.stringify(buildWebSiteSchema())} />
+
+  <slot name="head" />
+</head>
+<body class="min-h-screen flex flex-col bg-bg text-text">
+  <Header />
+  <main class="flex-1">
+    <slot />
+  </main>
+  <Footer />
+  <FloatingActions />
+  <slot name="schema" />
+</body>
+</html>

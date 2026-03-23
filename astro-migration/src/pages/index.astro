@@ -1,0 +1,196 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FAQSection from '../components/sections/FAQSection.astro';
+import CTACallBanner from '../components/sections/CTACallBanner.astro';
+import TestimonialsGrid from '../components/sections/TestimonialsGrid.astro';
+import BrandsCarousel from '../components/sections/BrandsCarousel.astro';
+import { testimonials } from '../data/testimonials';
+import { SERVICES, ZONES, APP_PHONE_DISPLAY, APP_PHONE_HREF, APP_DESCRIPTION } from '../data/business';
+
+const homeFaqs = [
+  { question: '¿Cuánto cuesta un cerrajero en Villaviciosa del Odón?', answer: 'Desde 80€ dependiendo del servicio. Siempre damos precio cerrado por teléfono antes de acudir, sin sorpresas.' },
+  { question: '¿Cuánto tardáis en llegar?', answer: '15-20 minutos de media a cualquier barrio de Villaviciosa del Odón: Centro, El Bosque, Campodón, Castillo, Monte de la Villa.' },
+  { question: '¿Trabajáis festivos y fines de semana?', answer: 'Sí, nuestro servicio es 24 horas los 365 días del año, incluidos festivos y madrugadas.' },
+  { question: '¿Emitís factura?', answer: 'Sí, factura completa con IVA válida para reclamaciones al seguro del hogar.' },
+  { question: '¿Rompéis la cerradura al abrir?', answer: 'No. En el 95% de los casos la apertura es sin daños y la cerradura queda funcional.' },
+  { question: '¿Qué marcas de cerraduras instaláis?', answer: 'Trabajamos con Tesa, Mottura, FAC, Yale, Keso, Ezcurra e Iseo. Todas con certificación antibumping y garantía.' },
+];
+
+const barrios = ZONES.filter(z => z.type === 'barrio');
+const municipios = ZONES.filter(z => z.type === 'municipio');
+
+const serviceIcons: Record<string, string> = {
+  'apertura-puertas': '🚪',
+  'cambio-cerraduras': '🔐',
+  'cambio-bombin': '🔑',
+  'amaestramiento': '🗝️',
+  'cajas-fuertes': '🏦',
+  'cierres-metalicos': '🏗️',
+  'cerrojos-seguridad': '🛡️',
+  'muelles-cierrapuertas': '🚧',
+  'desahucios': '📋',
+};
+---
+
+<BaseLayout title="Cerrajeros Villaviciosa del Odón 24h | Urgencias 20 min" description={APP_DESCRIPTION}>
+
+  <!-- ========== HERO ========== -->
+  <section class="relative min-h-[90vh] flex items-center overflow-hidden bg-primary-dark">
+    <img src="/hero-cerrajero.webp" alt="Cerrajero profesional en Villaviciosa del Odón" class="absolute inset-0 w-full h-full object-cover opacity-40" loading="eager" />
+    <div class="absolute inset-0 bg-gradient-to-b from-primary-dark/80 via-primary-dark/60 to-primary-dark/90"></div>
+    <div class="relative z-10 container text-center text-white py-16 md:py-24">
+      <div class="inline-block bg-danger/90 text-white text-sm font-bold px-4 py-1.5 rounded-full mb-6 animate-fade-in-up">
+        🔑 Cerrajeros Profesionales · 24h · 365 días
+      </div>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 animate-fade-in-up leading-[1.1] tracking-tight">
+        Cerrajeros en<br/><span class="text-secondary">Villaviciosa del Odón</span>
+      </h1>
+      <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 animate-fade-in-up leading-relaxed">
+        Llegamos en <strong class="text-white">20 minutos</strong>. Apertura de puertas desde 90€.
+        <strong class="text-secondary">Precio cerrado sin sorpresas.</strong>
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
+        <a href={APP_PHONE_HREF} class="cta-button text-lg px-8 py-4">
+          📞 Llamar: {APP_PHONE_DISPLAY}
+        </a>
+        <a href="/urgencias-24h" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold rounded-xl hover:bg-white hover:text-primary-dark transition-all text-lg">
+          🚨 Urgencias 24h
+        </a>
+      </div>
+      <!-- Trust badges -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 max-w-3xl mx-auto animate-fade-in-up">
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 border border-white/10">
+          <span class="block text-2xl mb-1">⚡</span>
+          <span class="text-sm font-semibold">20 min</span>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 border border-white/10">
+          <span class="block text-2xl mb-1">🔒</span>
+          <span class="text-sm font-semibold">Sin daños</span>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 border border-white/10">
+          <span class="block text-2xl mb-1">💰</span>
+          <span class="text-sm font-semibold">Precio cerrado</span>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 border border-white/10">
+          <span class="block text-2xl mb-1">📋</span>
+          <span class="text-sm font-semibold">Factura seguro</span>
+        </div>
+      </div>
+    </div>
+    <!-- Wave transition -->
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+        <path d="M0 40L60 35C120 30 240 20 360 25C480 30 600 50 720 55C840 60 960 50 1080 40C1200 30 1320 20 1380 15L1440 10V80H0V40Z" fill="white"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS ========== -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container">
+      <div class="text-center mb-14">
+        <span class="inline-block bg-primary/10 text-primary text-sm font-bold px-4 py-1.5 rounded-full mb-4">Nuestros servicios</span>
+        <h2 class="text-3xl md:text-4xl font-black text-text mb-4">Servicios de Cerrajería Profesional</h2>
+        <p class="text-text-muted max-w-xl mx-auto">Soluciones para hogares, comercios y comunidades en Villaviciosa del Odón</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {SERVICES.map(s => (
+          <a href={`/servicios/${s.slug}`} class="group relative bg-white p-6 rounded-2xl border-2 border-gray-100 hover:border-primary/30 hover:shadow-xl transition-all duration-300 block">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-2xl group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                <span class="group-hover:brightness-200">{serviceIcons[s.slug] || '🔧'}</span>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="text-lg font-bold text-text group-hover:text-primary transition-colors mb-1">{s.name}</h3>
+                <p class="text-sm text-text-muted mb-3 line-clamp-2">Servicio profesional de {s.name.toLowerCase()} en Villaviciosa del Odón y alrededores.</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-danger font-bold text-sm">{s.price}</span>
+                  <span class="text-primary text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">Ver más →</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== POR QUÉ ELEGIRNOS ========== -->
+  <section class="py-16 md:py-24 bg-primary-dark text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute top-10 left-10 w-40 h-40 border border-white/20 rounded-full"></div>
+      <div class="absolute bottom-20 right-20 w-60 h-60 border border-white/20 rounded-full"></div>
+    </div>
+    <div class="container relative z-10">
+      <div class="text-center mb-14">
+        <span class="inline-block bg-secondary/20 text-secondary text-sm font-bold px-4 py-1.5 rounded-full mb-4">¿Por qué nosotros?</span>
+        <h2 class="text-3xl md:text-4xl font-black mb-4">Más de 20 años protegiendo hogares</h2>
+        <p class="text-gray-400 max-w-xl mx-auto">La confianza de cientos de familias en Villaviciosa del Odón nos avala</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        {[
+          { icon: '⚡', title: 'Llegamos en 20 min', desc: 'Unidades móviles en Villaviciosa del Odón. Servicio express para urgencias.' },
+          { icon: '💰', title: 'Precio cerrado', desc: 'Te damos el precio exacto por teléfono antes de acudir. Sin sorpresas ni recargos.' },
+          { icon: '🔒', title: 'Sin romper nada', desc: 'Técnicas de apertura no destructiva. Tu cerradura y puerta quedan intactas.' },
+          { icon: '📋', title: 'Factura para seguro', desc: 'Documentación completa para reclamaciones a tu compañía de seguros.' },
+          { icon: '🏆', title: '+20 años experiencia', desc: 'Empresa local con dos décadas de experiencia en cerrajería profesional.' },
+          { icon: '✅', title: 'Garantía por escrito', desc: 'Todos nuestros trabajos incluyen garantía escrita. Tu tranquilidad es prioridad.' },
+        ].map(item => (
+          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all">
+            <span class="text-4xl mb-4 block">{item.icon}</span>
+            <h3 class="text-lg font-bold mb-2 text-white">{item.title}</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ZONAS ========== -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container">
+      <div class="text-center mb-14">
+        <span class="inline-block bg-primary/10 text-primary text-sm font-bold px-4 py-1.5 rounded-full mb-4">Cobertura</span>
+        <h2 class="text-3xl md:text-4xl font-black text-text mb-4">Zonas de servicio</h2>
+        <p class="text-text-muted max-w-xl mx-auto">Cobertura en todo Villaviciosa del Odón y municipios cercanos</p>
+      </div>
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-lg font-bold text-primary mb-4 flex items-center gap-2">
+          <span class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center text-sm">📍</span>
+          Barrios de Villaviciosa del Odón
+        </h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-10">
+          {barrios.map(z => (
+            <a href={`/zonas/${z.slug}`} class="group bg-gradient-to-br from-primary/5 to-primary/10 hover:from-primary hover:to-primary-dark px-4 py-3 rounded-xl text-center text-sm font-semibold text-primary hover:text-white transition-all duration-300 border border-primary/10 hover:border-primary">
+              {z.name}
+            </a>
+          ))}
+        </div>
+        <h3 class="text-lg font-bold text-text-light mb-4 flex items-center gap-2">
+          <span class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center text-sm">🏘️</span>
+          Municipios cercanos
+        </h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          {municipios.map(z => (
+            <a href={`/zonas/${z.slug}`} class="bg-gray-50 hover:bg-primary hover:text-white px-4 py-3 rounded-xl text-center text-sm font-medium text-text-light transition-all duration-300 border border-gray-100 hover:border-primary">
+              {z.name}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIOS ========== -->
+  <TestimonialsGrid testimonials={testimonials} limit={6} />
+
+  <!-- ========== FAQ ========== -->
+  <FAQSection faqs={homeFaqs} title="Preguntas frecuentes sobre cerrajeros en Villaviciosa del Odón" />
+
+  <!-- ========== MARCAS ========== -->
+  <BrandsCarousel />
+
+  <!-- ========== CTA ========== -->
+  <CTACallBanner />
+
+</BaseLayout>

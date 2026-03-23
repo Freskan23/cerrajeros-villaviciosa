@@ -1,0 +1,59 @@
+---
+import { APP_BUSINESS_NAME, APP_FULL_ADDRESS, APP_PHONE_DISPLAY, APP_PHONE_HREF, APP_PHONE_SECONDARY_DISPLAY, APP_PHONE_SECONDARY_HREF, APP_EMAIL, SERVICES, ZONES } from '../../data/business';
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-bg-dark text-white">
+  <div class="container py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <h3 class="text-xl font-bold mb-4">{APP_BUSINESS_NAME}</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-4">Cerrajeros profesionales en Villaviciosa del Odón con más de 20 años de experiencia. Servicio de urgencias 24 horas, los 365 días del año.</p>
+        <address class="not-italic text-sm text-gray-400 space-y-1">
+          <p>{APP_FULL_ADDRESS}</p>
+          <p><a href={APP_PHONE_HREF} class="text-secondary hover:text-secondary-light transition-colors font-semibold">{APP_PHONE_DISPLAY}</a></p>
+          <p><a href={APP_PHONE_SECONDARY_HREF} class="text-gray-400 hover:text-white transition-colors">{APP_PHONE_SECONDARY_DISPLAY}</a></p>
+          <p><a href={`mailto:${APP_EMAIL}`} class="text-gray-400 hover:text-white transition-colors">{APP_EMAIL}</a></p>
+        </address>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Servicios</h3>
+        <ul class="space-y-2">
+          {SERVICES.map(s => (
+            <li><a href={`/servicios/${s.slug}`} class="text-sm text-gray-400 hover:text-white transition-colors">{s.name}</a></li>
+          ))}
+          <li><a href="/urgencias-24h" class="text-sm text-danger font-semibold hover:text-red-400 transition-colors">🚨 Urgencias 24h</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Zonas de servicio</h3>
+        <ul class="space-y-2">
+          {ZONES.map(z => (
+            <li><a href={`/zonas/${z.slug}`} class="text-sm text-gray-400 hover:text-white transition-colors">{z.name}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">¿Por qué elegirnos?</h3>
+        <ul class="space-y-3 text-sm text-gray-400">
+          {['Llegamos en 20 minutos', 'Servicio 24h / 365 días', 'Precio cerrado sin sorpresas', '+20 años de experiencia', 'Factura para el seguro', 'Garantía por escrito'].map(item => (
+            <li class="flex items-start gap-2"><span class="text-secondary mt-0.5">✓</span><span>{item}</span></li>
+          ))}
+        </ul>
+        <div class="mt-6">
+          <a href={APP_PHONE_HREF} class="cta-button text-sm w-full justify-center">📞 Llamar ahora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-gray-800">
+    <div class="container py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-500">© {currentYear} {APP_BUSINESS_NAME}. Todos los derechos reservados.</p>
+      <nav class="flex gap-4 text-sm" aria-label="Enlaces legales">
+        <a href="/politica-privacidad" class="text-gray-500 hover:text-white transition-colors">Privacidad</a>
+        <a href="/politica-cookies" class="text-gray-500 hover:text-white transition-colors">Cookies</a>
+        <a href="/aviso-legal" class="text-gray-500 hover:text-white transition-colors">Aviso Legal</a>
+      </nav>
+    </div>
+  </div>
+</footer>

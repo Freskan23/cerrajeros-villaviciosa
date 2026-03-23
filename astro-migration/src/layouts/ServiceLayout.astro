@@ -1,0 +1,50 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
+import FAQSection from '../components/sections/FAQSection.astro';
+import CTACallBanner from '../components/sections/CTACallBanner.astro';
+import RelatedServices from '../components/sections/RelatedServices.astro';
+import { buildServiceSchema } from '../utils/schema';
+import { SITE_URL, APP_PHONE_DISPLAY, APP_PHONE_HREF } from '../data/business';
+
+interface Props {
+  title: string; slug: string; description: string; longDescription: string;
+  heroImage: string; price: string; features: string[];
+  faqs: { question: string; answer: string }[];
+  relatedServices: { name: string; slug: string }[];
+  keywords?: string;
+}
+const { title, slug, description, longDescription, heroImage, price, features, faqs, relatedServices, keywords } = Astro.props;
+const pageTitle = `${title} en Villaviciosa del Odón | Cerrajeros Villaviciosa 24h`;
+const serviceSchema = buildServiceSchema({ name: title, slug, description, price });
+---
+<BaseLayout title={pageTitle} description={description} keywords={keywords} ogImage={heroImage} canonicalUrl={`${SITE_URL}/servicios/${slug}`}>
+  <section class="hero-section" style={`background-image: url('${heroImage}')`}>
+    <div class="hero-overlay"></div>
+    <div class="relative z-10 container text-center text-white py-20">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in-up">{title}</h1>
+      <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8">{description}</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href={APP_PHONE_HREF} class="cta-button text-lg">📞 Llamar: {APP_PHONE_DISPLAY}</a>
+        <a href="/contacto" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-text transition-all">Pedir presupuesto</a>
+      </div>
+      {price && <p class="mt-6 text-lg text-secondary font-semibold">{price} · Sin compromiso</p>}
+    </div>
+  </section>
+  <Breadcrumbs items={[{ name: 'Servicios', url: '/servicios/apertura-puertas' }, { name: title, url: `/servicios/${slug}` }]} />
+  <section class="section"><div class="container max-w-4xl"><div class="prose" set:html={longDescription} /></div></section>
+  {features?.length > 0 && (
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="text-3xl font-bold text-center mb-12">¿Por qué elegirnos para {title.toLowerCase()}?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {features.map(f => (<div class="bg-white p-6 rounded-2xl shadow-sm card-hover"><span class="text-danger text-2xl mb-3 block">✓</span><p class="text-text font-medium">{f}</p></div>))}
+        </div>
+      </div>
+    </section>
+  )}
+  {faqs?.length > 0 && <FAQSection faqs={faqs} title={`Preguntas frecuentes sobre ${title.toLowerCase()}`} />}
+  <CTACallBanner />
+  {relatedServices?.length > 0 && <RelatedServices services={relatedServices} />}
+  <script type="application/ld+json" slot="schema" set:html={JSON.stringify(serviceSchema)} />
+</BaseLayout>

@@ -1,0 +1,21 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+import { APP_BUSINESS_LEGAL_NAME, APP_EMAIL } from '../data/business';
+---
+<LegalLayout title="Política de Cookies" slug="politica-cookies">
+  <h2>¿Qué son las cookies?</h2>
+  <p>Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita un sitio web. Permiten recordar sus preferencias y mejorar su experiencia de navegación.</p>
+
+  <h2>Cookies que utilizamos</h2>
+  <h3>Cookies técnicas (necesarias)</h3>
+  <p>Son imprescindibles para el funcionamiento del sitio web. No requieren consentimiento.</p>
+
+  <h3>Cookies analíticas</h3>
+  <p>Utilizamos herramientas de analítica web para comprender cómo los usuarios interactúan con nuestro sitio. Estas cookies recopilan información de forma anónima.</p>
+
+  <h2>Gestión de cookies</h2>
+  <p>Puede configurar su navegador para rechazar cookies o para que le avise cuando se envíe una cookie. Sin embargo, algunas funciones del sitio pueden no funcionar correctamente sin cookies.</p>
+
+  <h2>Más información</h2>
+  <p>Para cualquier consulta sobre nuestra política de cookies, contacte con {APP_BUSINESS_LEGAL_NAME} en <a href={`mailto:${APP_EMAIL}`}>{APP_EMAIL}</a>.</p>
+</LegalLayout>

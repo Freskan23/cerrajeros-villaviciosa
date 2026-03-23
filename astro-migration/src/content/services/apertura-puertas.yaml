@@ -1,0 +1,44 @@
+title: "Apertura de Puertas"
+slug: "apertura-puertas"
+description: "Servicio de apertura de puertas 24h en Villaviciosa del Odón. Llegamos en 20 minutos. Sin daños. Desde 90€."
+heroImage: "/servicio-apertura-puertas-3d.webp"
+price: "Desde 90€"
+keywords: "apertura puertas villaviciosa, cerrajero urgente villaviciosa del odon, abrir puerta"
+longDescription: |
+  <h2>Apertura de puertas profesional en Villaviciosa del Odón</h2>
+  <p>¿Te has quedado fuera de casa? Nuestro equipo de <strong>cerrajeros en Villaviciosa del Odón</strong> está disponible 24 horas para resolver cualquier emergencia de acceso. Con más de 20 años de experiencia, utilizamos técnicas de apertura no destructiva que garantizan que tu cerradura y puerta quedan intactas.</p>
+  <h3>¿Cuánto cuesta abrir una puerta?</h3>
+  <p>Desde <strong>90€</strong> con IVA incluido. Siempre damos <strong>precio cerrado por teléfono</strong> sin sorpresas. Emitimos factura válida para el seguro del hogar.</p>
+  <h3>¿Cuánto tardamos en llegar?</h3>
+  <p>Tiempo medio de llegada: <strong>15-20 minutos</strong> a cualquier punto de Villaviciosa del Odón (Centro, El Bosque, Campodón, Castillo, Monte de la Villa, Nuevo Madrid).</p>
+  <h3>Tipos de aperturas</h3>
+  <ul>
+    <li><strong>Puertas blindadas y acorazadas</strong>: Cerraduras multipunto, de gorjas, de seguridad con escudo.</li>
+    <li><strong>Puertas de madera estándar</strong>: Cerraduras de serreta, de puntos, resbalón.</li>
+    <li><strong>Puertas de comunidad</strong>: Portales con cerradura electrónica o mecánica.</li>
+    <li><strong>Cajas fuertes</strong>: Combinación mecánica, electrónica o de llave.</li>
+    <li><strong>Vehículos</strong>: Coches, furgonetas y motos.</li>
+    <li><strong>Cierres metálicos</strong>: Persianas de seguridad, puertas enrollables.</li>
+  </ul>
+  <p>Todos nuestros trabajos incluyen <strong>garantía por escrito</strong>. Somos una empresa registrada (CERRAJEROS VILLAVICIOSA 24H, S.L.) con sede en Villaviciosa del Odón.</p>
+features:
+  - "Llegamos en 20 minutos"
+  - "Apertura sin daños"
+  - "Precio cerrado por teléfono"
+  - "Servicio 24h / 365 días"
+  - "Factura para el seguro"
+  - "+20 años de experiencia"
+faqs:
+  - question: "¿Cuánto cuesta abrir una puerta en Villaviciosa del Odón?"
+    answer: "Desde 90€ con IVA incluido. Precio cerrado por teléfono antes de acudir."
+  - question: "¿Cuánto tardáis en llegar?"
+    answer: "15-20 minutos a cualquier barrio de Villaviciosa del Odón."
+  - question: "¿Rompéis la cerradura?"
+    answer: "No. En el 95% de los casos la cerradura queda funcional."
+  - question: "¿Emitís factura para el seguro?"
+    answer: "Sí, factura completa válida para reclamaciones."
+relatedServices:
+  - name: "Cambio de Cerraduras"
+    slug: "cambio-cerraduras"
+  - name: "Cambio de Bombín"
+    slug: "cambio-bombin"

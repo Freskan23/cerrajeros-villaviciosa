@@ -1,0 +1,15 @@
+name: "El Castillo"
+slug: "castillo"
+type: "barrio"
+description: "Cerrajeros en El Castillo, Villaviciosa del Odón. Servicio 24h. Cerraduras de seguridad, aperturas urgentes."
+keywords: "cerrajero el castillo villaviciosa, cerrajero urgente castillo villaviciosa del odon"
+longDescription: |
+  <h2>Cerrajeros en El Castillo — Villaviciosa del Odón</h2>
+  <p>El barrio de <strong>El Castillo</strong> se encuentra junto al emblemático Castillo de Villaviciosa del Odón y alberga tanto viviendas residenciales como edificios de nueva construcción. Nuestros cerrajeros ofrecen cobertura completa en toda la zona.</p>
+  <p>En El Castillo atendemos desde <strong>aperturas urgentes</strong> por olvido de llaves hasta instalaciones planificadas de cerraduras de alta seguridad. Las viviendas más nuevas de la zona suelen contar con puertas acorazadas que requieren cerrajeros con experiencia específica.</p>
+  <p>Servicio disponible las <strong>24 horas</strong>, incluidos festivos y fines de semana. Tiempo de respuesta a El Castillo: <strong>15-20 minutos</strong>.</p>
+faqs:
+  - question: "¿Atendéis urgencias nocturnas en El Castillo?"
+    answer: "Sí, nuestro servicio es 24 horas los 365 días del año, incluidas noches y festivos."
+  - question: "¿Qué servicios ofrecéis en El Castillo?"
+    answer: "Aperturas, cambio de cerraduras y bombines, cerrojos, amaestramiento y cierrapuertas."

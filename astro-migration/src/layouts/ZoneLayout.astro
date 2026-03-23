@@ -1,0 +1,44 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
+import CTACallBanner from '../components/sections/CTACallBanner.astro';
+import FAQSection from '../components/sections/FAQSection.astro';
+import { SITE_URL, APP_PHONE_DISPLAY, APP_PHONE_HREF, SERVICES } from '../data/business';
+
+interface Props {
+  name: string; slug: string; type: 'barrio' | 'municipio';
+  description: string; longDescription: string;
+  heroImage?: string; faqs?: { question: string; answer: string }[];
+  keywords?: string;
+}
+const { name, slug, type, description, longDescription, heroImage = '/hero-cerrajero.webp', faqs, keywords } = Astro.props;
+const pageTitle = `Cerrajeros en ${name} | 24h Urgencias | Cerrajeros Villaviciosa 24h`;
+---
+<BaseLayout title={pageTitle} description={description} keywords={keywords} ogImage={heroImage} canonicalUrl={`${SITE_URL}/zonas/${slug}`}>
+  <section class="hero-section" style={`background-image: url('${heroImage}')`}>
+    <div class="hero-overlay"></div>
+    <div class="relative z-10 container text-center text-white py-20">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in-up">Cerrajeros en {name}</h1>
+      <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8">{description}</p>
+      <a href={APP_PHONE_HREF} class="cta-button text-lg">📞 Llamar: {APP_PHONE_DISPLAY}</a>
+    </div>
+  </section>
+  <Breadcrumbs items={[{ name: 'Zonas', url: '/zonas/centro' }, { name, url: `/zonas/${slug}` }]} />
+  <section class="section"><div class="container max-w-4xl"><div class="prose" set:html={longDescription} /></div></section>
+  <section class="section-alt">
+    <div class="container">
+      <h2 class="text-3xl font-bold text-center mb-12">Servicios de cerrajería en {name}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {SERVICES.map(s => (
+          <a href={`/servicios/${s.slug}`} class="bg-white p-6 rounded-2xl shadow-sm card-hover block">
+            <h3 class="text-lg font-bold text-text mb-2">{s.name}</h3>
+            <p class="text-sm text-text-muted mb-3">Servicio profesional en {name}</p>
+            <span class="text-danger font-bold text-sm">{s.price} →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  {faqs?.length > 0 && <FAQSection faqs={faqs} title={`Preguntas frecuentes — Cerrajeros en ${name}`} />}
+  <CTACallBanner />
+</BaseLayout>

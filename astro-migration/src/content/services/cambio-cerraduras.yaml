@@ -1,0 +1,41 @@
+title: "Cambio de Cerraduras"
+slug: "cambio-cerraduras"
+description: "Cambio de cerraduras de alta seguridad en Villaviciosa del Odón. Antibumping. Servicio en el día. Desde 120€."
+heroImage: "/servicio-cerraduras-3d.webp"
+price: "Desde 120€"
+keywords: "cambio cerradura villaviciosa, instalar cerradura seguridad"
+longDescription: |
+  <h2>Cambio de cerraduras profesional en Villaviciosa del Odón</h2>
+  <p>El <strong>cambio de cerradura</strong> es fundamental para proteger tu hogar. Somos especialistas en cerraduras de alta seguridad con estándares europeos.</p>
+  <h3>¿Cuándo cambiar la cerradura?</h3>
+  <ul>
+    <li><strong>Mudanza</strong>: Siempre cambiar al entrar en piso nuevo.</li>
+    <li><strong>Pérdida de llaves</strong>: Tu seguridad está comprometida.</li>
+    <li><strong>Cerradura antigua</strong>: Más de 10 años = vulnerable al bumping.</li>
+    <li><strong>Intento de robo</strong>: La cerradura puede estar debilitada.</li>
+  </ul>
+  <h3>Tipos de cerraduras</h3>
+  <ul>
+    <li><strong>Multipunto</strong>: 3, 5 o 7 puntos de anclaje.</li>
+    <li><strong>Antibumping</strong>: Bloquean la técnica del bumping.</li>
+    <li><strong>Electrónicas</strong>: Código, huella o proximidad.</li>
+    <li><strong>Invisibles</strong>: Sin bombín exterior.</li>
+  </ul>
+  <p>Marcas: <strong>Tesa, Mottura, FAC, Yale, Keso, Ezcurra, Iseo y CISA</strong>.</p>
+features:
+  - "Instalación en el mismo día"
+  - "Cerraduras antibumping certificadas"
+  - "Asesoramiento personalizado"
+  - "Garantía fabricante + instalación"
+  - "Marcas premium"
+  - "Precio cerrado"
+faqs:
+  - question: "¿Cuánto cuesta cambiar una cerradura?"
+    answer: "Desde 120€ incluyendo cerradura nueva y mano de obra."
+  - question: "¿Cuánto se tarda?"
+    answer: "30-60 minutos para cerraduras estándar, hasta 90 para multipunto."
+relatedServices:
+  - name: "Cambio de Bombín"
+    slug: "cambio-bombin"
+  - name: "Cerrojos de Seguridad"
+    slug: "cerrojos-seguridad"

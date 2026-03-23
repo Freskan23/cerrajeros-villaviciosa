@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { APP_PHONE_DISPLAY, APP_PHONE_HREF } from '../data/business';
+---
+<BaseLayout title="Página no encontrada | Cerrajeros Villaviciosa 24h" description="La página que buscas no existe." noindex={true}>
+  <section class="section">
+    <div class="container text-center py-20">
+      <h1 class="text-6xl font-bold text-primary mb-4">404</h1>
+      <h2 class="text-2xl font-bold text-text mb-4">Página no encontrada</h2>
+      <p class="text-text-muted mb-8 max-w-md mx-auto">La página que buscas no existe o ha sido movida. Pero si necesitas un cerrajero, estamos aquí.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all">Ir al inicio</a>
+        <a href={APP_PHONE_HREF} class="cta-button">📞 Llamar: {APP_PHONE_DISPLAY}</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,37 @@
+title: "Amaestramiento de Llaves"
+slug: "amaestramiento"
+description: "Amaestramiento de cerraduras y llaves maestras en Villaviciosa del Odón. Ideal para comunidades y empresas. Consultar precio."
+heroImage: "/servicio-llaves-3d.webp"
+price: "Consultar"
+keywords: "amaestramiento llaves villaviciosa, llave maestra comunidad, cerrajero amaestramiento"
+longDescription: |
+  <h2>Amaestramiento de llaves en Villaviciosa del Odón</h2>
+  <p>El <strong>amaestramiento de cerraduras</strong> permite que una única llave maestra abra todas las puertas de un edificio, mientras cada vecino conserva su llave individual. Ideal para <strong>comunidades de propietarios, oficinas y edificios comerciales</strong> en Villaviciosa del Odón.</p>
+  <h3>¿Cómo funciona?</h3>
+  <p>Diseñamos un plan de jerarquía de llaves adaptado a tu comunidad o empresa. Cada nivel tiene acceso solo a las zonas autorizadas, manteniendo la seguridad individual y facilitando el acceso a zonas comunes como garajes, portales y cuartos de instalaciones.</p>
+  <h3>Ventajas del amaestramiento</h3>
+  <ul>
+    <li><strong>Una sola llave</strong> para portal, garaje y vivienda.</li>
+    <li><strong>Control de accesos</strong> por niveles de seguridad.</li>
+    <li><strong>Compatibilidad</strong> con cerraduras existentes en muchos casos.</li>
+    <li><strong>Registro de llaves</strong> con tarjeta de propiedad.</li>
+  </ul>
+  <p>Trabajamos con marcas como <strong>Tesa, Keso, Yale y Mottura</strong> para garantizar la máxima seguridad en cada instalación.</p>
+features:
+  - "Llave maestra para toda la comunidad"
+  - "Compatible con cerraduras existentes"
+  - "Registro y control de copias"
+  - "Instalación sin obras"
+  - "Presupuesto sin compromiso"
+faqs:
+  - question: "¿Se puede amaestrar cualquier cerradura?"
+    answer: "La mayoría de cerraduras modernas son amaestrables. Evaluamos cada caso sin compromiso."
+  - question: "¿Cuánto tarda el proceso?"
+    answer: "Depende del número de puertas. Una comunidad media se completa en 1-2 días."
+  - question: "¿Es seguro el amaestramiento?"
+    answer: "Sí. Cada llave individual sigue siendo única y las llaves maestras tienen tarjeta de propiedad incopiable."
+relatedServices:
+  - name: "Cambio de Cerraduras"
+    slug: "cambio-cerraduras"
+  - name: "Cambio de Bombín"
+    slug: "cambio-bombin"

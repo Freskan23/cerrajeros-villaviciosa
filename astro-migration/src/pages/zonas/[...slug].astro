@@ -1,0 +1,15 @@
+---
+import { getCollection } from 'astro:content';
+import ZoneLayout from '../../layouts/ZoneLayout.astro';
+
+export async function getStaticPaths() {
+  const zones = await getCollection('zones');
+  return zones.map(zone => ({
+    params: { slug: zone.data.slug },
+    props: { zone: zone.data },
+  }));
+}
+
+const { zone } = Astro.props;
+---
+<ZoneLayout {...zone} />

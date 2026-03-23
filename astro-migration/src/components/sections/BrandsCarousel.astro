@@ -1,0 +1,15 @@
+---
+const brands = ['Tesa', 'FAC', 'Mottura', 'Keso', 'Yale', 'Ezcurra', 'Azbe', 'Iseo'];
+---
+<section class="py-12 bg-bg-alt overflow-hidden">
+  <div class="container mb-8">
+    <h2 class="text-2xl font-bold text-center">Trabajamos con las mejores marcas</h2>
+  </div>
+  <div class="flex flex-wrap justify-center gap-8 px-4">
+    {brands.map(b => (
+      <div class="flex items-center justify-center px-6 py-3 bg-white rounded-xl shadow-sm">
+        <span class="text-lg font-bold text-text-muted">{b}</span>
+      </div>
+    ))}
+  </div>
+</section>

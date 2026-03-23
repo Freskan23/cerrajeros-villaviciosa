@@ -1,0 +1,33 @@
+title: "Cierres Metálicos"
+slug: "cierres-metalicos"
+description: "Instalación y reparación de cierres metálicos en Villaviciosa del Odón. Persianas de seguridad para comercios. Desde 100€."
+heroImage: "/cierres_metalicos_modernos_1769424953010.png"
+price: "Desde 100€"
+keywords: "cierres metalicos villaviciosa, persiana metalica comercio, reparar cierre metalico"
+longDescription: |
+  <h2>Cierres metálicos en Villaviciosa del Odón</h2>
+  <p>Somos especialistas en <strong>instalación, reparación y mantenimiento de cierres metálicos</strong> para comercios, garajes y naves industriales en Villaviciosa del Odón. Atendemos urgencias 24 horas cuando tu persiana metálica se queda bloqueada.</p>
+  <h3>Servicios de cierres metálicos</h3>
+  <ul>
+    <li><strong>Reparación urgente</strong>: Persianas atascadas, descarriladas o con motor averiado.</li>
+    <li><strong>Instalación nueva</strong>: Cierres enrollables, de lamas o de ballesta.</li>
+    <li><strong>Motorización</strong>: Automatización de persianas manuales existentes.</li>
+    <li><strong>Refuerzo de seguridad</strong>: Cerraduras antirrobo y anclajes reforzados.</li>
+  </ul>
+  <p>Trabajamos con persianas de todos los tipos: <strong>enrollables, plegables, de lamas microperforadas y de seguridad reforzada</strong>. Servicio rápido para que tu negocio no pierda ni un día de actividad.</p>
+features:
+  - "Reparación urgente 24h"
+  - "Instalación de cierres nuevos"
+  - "Motorización de persianas"
+  - "Refuerzo antirrobo"
+  - "Mantenimiento preventivo"
+faqs:
+  - question: "¿Reparáis persianas metálicas de comercios?"
+    answer: "Sí, reparamos todo tipo de persianas y cierres metálicos comerciales e industriales."
+  - question: "¿Cuánto cuesta reparar un cierre metálico?"
+    answer: "Desde 100€ dependiendo de la avería. Presupuesto cerrado por teléfono."
+relatedServices:
+  - name: "Apertura de Puertas"
+    slug: "apertura-puertas"
+  - name: "Cerrojos de Seguridad"
+    slug: "cerrojos-seguridad"

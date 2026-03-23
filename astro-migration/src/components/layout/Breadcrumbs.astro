@@ -1,0 +1,21 @@
+---
+import { buildBreadcrumbSchema } from '../../utils/schema';
+interface Props { items: { name: string; url: string }[]; }
+const { items } = Astro.props;
+const fullItems = [{ name: 'Inicio', url: '/' }, ...items];
+---
+<nav aria-label="Breadcrumb" class="container py-4">
+  <ol class="flex flex-wrap items-center gap-1.5 text-sm text-text-muted">
+    {fullItems.map((item, index) => (
+      <li class="flex items-center gap-1.5">
+        {index > 0 && <span class="text-border">/</span>}
+        {index < fullItems.length - 1 ? (
+          <a href={item.url} class="hover:text-primary transition-colors">{item.name}</a>
+        ) : (
+          <span class="text-text font-medium">{item.name}</span>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(buildBreadcrumbSchema(fullItems))} />

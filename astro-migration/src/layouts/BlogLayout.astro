@@ -1,0 +1,34 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
+import { buildArticleSchema } from '../utils/schema';
+import { SITE_URL, APP_PHONE_DISPLAY, APP_PHONE_HREF } from '../data/business';
+
+interface Props { title: string; slug: string; date: string; category: string; image: string; description: string; }
+const { title, slug, date, category, image, description } = Astro.props;
+const pageTitle = `${title} | Blog Cerrajería Villaviciosa 24h`;
+const articleSchema = buildArticleSchema({ title, slug, date, image, description });
+const formattedDate = new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+<BaseLayout title={pageTitle} description={description} ogImage={image} canonicalUrl={`${SITE_URL}/blog/${slug}`}>
+  <div class="w-full h-[300px] md:h-[400px] overflow-hidden">
+    <img src={image} alt={title} class="w-full h-full object-cover" loading="eager" />
+  </div>
+  <Breadcrumbs items={[{ name: 'Blog', url: '/blog' }, { name: title, url: `/blog/${slug}` }]} />
+  <article class="section">
+    <div class="container max-w-4xl">
+      <div class="flex items-center gap-4 text-text-muted text-sm mb-6">
+        <time datetime={date}>{formattedDate}</time>
+        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">{category}</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-10 text-text leading-tight">{title}</h1>
+      <div class="prose"><slot /></div>
+      <div class="mt-12 bg-gradient-to-br from-danger/10 to-danger/5 border-l-4 border-danger rounded-r-2xl p-8">
+        <p class="text-xl font-bold text-text mb-4">¿Necesitas un cerrajero en Villaviciosa del Odón?</p>
+        <p class="text-text-light mb-6">Disponibles 24 horas. Llegamos en 20 minutos con precio cerrado.</p>
+        <a href={APP_PHONE_HREF} class="cta-button">📞 Llamar: {APP_PHONE_DISPLAY}</a>
+      </div>
+    </div>
+  </article>
+  <script type="application/ld+json" slot="schema" set:html={JSON.stringify(articleSchema)} />
+</BaseLayout>

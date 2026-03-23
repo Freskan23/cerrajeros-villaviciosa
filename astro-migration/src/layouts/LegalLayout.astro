@@ -1,0 +1,10 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
+interface Props { title: string; slug: string; }
+const { title, slug } = Astro.props;
+---
+<BaseLayout title={`${title} | Cerrajeros Villaviciosa 24h`} description={`${title} de Cerrajeros Villaviciosa 24h`} noindex={true}>
+  <Breadcrumbs items={[{ name: title, url: `/${slug}` }]} />
+  <article class="section"><div class="container max-w-4xl"><h1 class="text-3xl font-bold mb-8">{title}</h1><div class="prose"><slot /></div></div></article>
+</BaseLayout>

@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
+import { APP_PHONE_DISPLAY, APP_PHONE_HREF, APP_PHONE_SECONDARY_DISPLAY, APP_PHONE_SECONDARY_HREF, APP_EMAIL, APP_FULL_ADDRESS, SITE_URL } from '../data/business';
+---
+<BaseLayout title="Contacto | Cerrajeros Villaviciosa 24h" description="Contacta con Cerrajeros Villaviciosa 24h. Teléfono 915 27 00 49. Disponibles 24 horas. Presupuesto sin compromiso." canonicalUrl={`${SITE_URL}/contacto`}>
+  <Breadcrumbs items={[{ name: 'Contacto', url: '/contacto' }]} />
+  <section class="section">
+    <div class="container">
+      <h1 class="text-4xl font-bold text-center mb-4">Contacto</h1>
+      <p class="text-text-muted text-center mb-12 max-w-2xl mx-auto">Estamos disponibles 24 horas para atenderte. Llámanos o envíanos un mensaje.</p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <!-- Info de contacto -->
+        <div>
+          <h2 class="text-2xl font-bold mb-6">Datos de contacto</h2>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <span class="text-2xl">📞</span>
+              <div>
+                <p class="font-bold text-text">Teléfono principal</p>
+                <a href={APP_PHONE_HREF} class="text-primary font-bold text-lg hover:underline">{APP_PHONE_DISPLAY}</a>
+                <p class="text-text-muted text-sm">Disponible 24h — Urgencias</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="text-2xl">📱</span>
+              <div>
+                <p class="font-bold text-text">WhatsApp / Móvil</p>
+                <a href={APP_PHONE_SECONDARY_HREF} class="text-primary font-bold text-lg hover:underline">{APP_PHONE_SECONDARY_DISPLAY}</a>
+                <p class="text-text-muted text-sm">WhatsApp y presupuestos</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="text-2xl">✉️</span>
+              <div>
+                <p class="font-bold text-text">Email</p>
+                <a href={`mailto:${APP_EMAIL}`} class="text-primary hover:underline">{APP_EMAIL}</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="text-2xl">📍</span>
+              <div>
+                <p class="font-bold text-text">Dirección</p>
+                <p class="text-text-muted">{APP_FULL_ADDRESS}</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="text-2xl">🕐</span>
+              <div>
+                <p class="font-bold text-text">Horario</p>
+                <p class="text-text-muted">24 horas, 365 días al año</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div>
+          <h2 class="text-2xl font-bold mb-6">Envíanos un mensaje</h2>
+          <form class="space-y-4" action="#" method="POST">
+            <div>
+              <label for="name" class="block text-sm font-medium text-text mb-1">Nombre</label>
+              <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-border-light rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none" placeholder="Tu nombre" />
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-medium text-text mb-1">Teléfono</label>
+              <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-border-light rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none" placeholder="Tu teléfono" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-text mb-1">Email (opcional)</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-border-light rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none" placeholder="tu@email.com" />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-text mb-1">Mensaje</label>
+              <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-border-light rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none" placeholder="Describe tu problema o consulta..."></textarea>
+            </div>
+            <button type="submit" class="cta-button w-full text-center">Enviar mensaje</button>
+            <p class="text-xs text-text-muted text-center">Al enviar aceptas nuestra <a href="/politica-privacidad" class="underline">política de privacidad</a>.</p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Mapa placeholder -->
+      <div class="mt-16 max-w-5xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-center">Nuestra ubicación</h2>
+        <div class="w-full h-[400px] bg-bg-alt rounded-2xl flex items-center justify-center border border-border-light">
+          <div class="text-center text-text-muted">
+            <p class="text-lg font-medium mb-2">📍 Villaviciosa del Odón, Madrid</p>
+            <p class="text-sm">Cobertura en todo el municipio y zona oeste de Madrid</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

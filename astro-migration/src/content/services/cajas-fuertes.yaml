@@ -1,0 +1,36 @@
+title: "Apertura de Cajas Fuertes"
+slug: "cajas-fuertes"
+description: "Apertura y reparación de cajas fuertes en Villaviciosa del Odón. Todas las marcas. Servicio urgente. Desde 150€."
+heroImage: "/cajas_fuertes_premium_1769424937717.png"
+price: "Desde 150€"
+keywords: "apertura cajas fuertes villaviciosa, cerrajero cajas fuertes, abrir caja fuerte"
+longDescription: |
+  <h2>Apertura de cajas fuertes en Villaviciosa del Odón</h2>
+  <p>¿Has perdido la combinación o la llave de tu caja fuerte? Nuestros <strong>cerrajeros especializados</strong> abren cualquier tipo de caja fuerte sin daños en la mayoría de los casos. Servicio disponible en Villaviciosa del Odón y alrededores.</p>
+  <h3>Tipos de cajas fuertes que abrimos</h3>
+  <ul>
+    <li><strong>Combinación mecánica</strong>: Cajas fuertes clásicas con dial rotativo.</li>
+    <li><strong>Electrónicas</strong>: Con teclado digital, incluyendo fallos de batería.</li>
+    <li><strong>De llave</strong>: Pérdida o rotura de llave.</li>
+    <li><strong>Empotradas</strong>: En pared o suelo.</li>
+    <li><strong>Ignífugas</strong>: Cajas fuertes resistentes al fuego.</li>
+  </ul>
+  <p>Tras la apertura podemos <strong>reparar, reconfigurar o sustituir</strong> el mecanismo de cierre para que tu caja fuerte vuelva a funcionar con total seguridad.</p>
+features:
+  - "Apertura sin daños en el 90% de casos"
+  - "Todas las marcas y modelos"
+  - "Reconfiguración de combinación"
+  - "Servicio urgente disponible"
+  - "Presupuesto cerrado"
+faqs:
+  - question: "¿Se puede abrir una caja fuerte sin romperla?"
+    answer: "En el 90% de los casos sí. Utilizamos técnicas no destructivas especializadas."
+  - question: "¿Cuánto cuesta abrir una caja fuerte?"
+    answer: "Desde 150€ dependiendo del tipo y complejidad del mecanismo."
+  - question: "¿Abrís cajas fuertes de empresas?"
+    answer: "Sí, atendemos tanto a particulares como a empresas con total confidencialidad."
+relatedServices:
+  - name: "Apertura de Puertas"
+    slug: "apertura-puertas"
+  - name: "Cambio de Cerraduras"
+    slug: "cambio-cerraduras"

@@ -1,0 +1,37 @@
+title: "Cerrojos de Seguridad"
+slug: "cerrojos-seguridad"
+description: "Instalación de cerrojos de seguridad en Villaviciosa del Odón. FAC, Lince, Ucem. Refuerza tu puerta. Desde 110€."
+heroImage: "/cerraduras-seguridad.jpg"
+price: "Desde 110€"
+keywords: "cerrojo seguridad villaviciosa, instalar cerrojo FAC, cerrojo antibumping"
+longDescription: |
+  <h2>Cerrojos de seguridad en Villaviciosa del Odón</h2>
+  <p>El <strong>cerrojo de seguridad</strong> es el complemento perfecto para reforzar tu puerta. Añade un segundo punto de cierre independiente que dificulta enormemente el apalancamiento y la entrada forzada. Nuestros cerrajeros instalan cerrojos de las mejores marcas en Villaviciosa del Odón.</p>
+  <h3>Marcas y modelos recomendados</h3>
+  <ul>
+    <li><strong>FAC 946 RP/80</strong>: El cerrojo más vendido en España. Antibumping y antiganzúa.</li>
+    <li><strong>Lince 7930R</strong>: Alta resistencia al apalancamiento.</li>
+    <li><strong>Ucem</strong>: Cerrojos con doble cilindro para máxima seguridad.</li>
+  </ul>
+  <p>La instalación es rápida, limpia y no requiere obras. En <strong>30-45 minutos</strong> tu puerta tiene un nivel de seguridad muy superior. Ideal tras un robo o intento de robo, o simplemente para dormir más tranquilo.</p>
+features:
+  - "Instalación en 30-45 minutos"
+  - "Marcas: FAC, Lince, Ucem"
+  - "Antibumping y antiganzúa"
+  - "Sin obras ni desperfectos"
+  - "Garantía de instalación"
+  - "Asesoramiento gratuito"
+faqs:
+  - question: "¿Merece la pena instalar un cerrojo?"
+    answer: "Sí. Un cerrojo de calidad multiplica la resistencia de tu puerta contra el apalancamiento."
+  - question: "¿Se puede instalar en cualquier puerta?"
+    answer: "En la gran mayoría de puertas sí. Evaluamos tu puerta antes de la instalación."
+  - question: "¿Cuánto cuesta instalar un cerrojo?"
+    answer: "Desde 110€ con cerrojo incluido e instalación profesional."
+relatedServices:
+  - name: "Cambio de Cerraduras"
+    slug: "cambio-cerraduras"
+  - name: "Cambio de Bombín"
+    slug: "cambio-bombin"
+  - name: "Apertura de Puertas"
+    slug: "apertura-puertas"

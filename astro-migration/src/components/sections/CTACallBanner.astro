@@ -1,0 +1,18 @@
+---
+import { APP_PHONE_DISPLAY, APP_PHONE_HREF } from '../../data/business';
+---
+<section class="py-16 md:py-24 bg-gradient-to-br from-primary-dark to-primary text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute -top-20 -right-20 w-80 h-80 bg-secondary rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-danger rounded-full blur-3xl"></div>
+  </div>
+  <div class="container text-center relative z-10">
+    <h2 class="text-3xl md:text-5xl font-black mb-6">¿Necesitas un cerrajero ahora?</h2>
+    <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">Disponibles 24 horas, los 365 días del año. Llegamos a Villaviciosa del Odón en 20 minutos con precio cerrado.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href={APP_PHONE_HREF} class="cta-button text-lg px-10 py-5">📞 Llamar: {APP_PHONE_DISPLAY}</a>
+      <a href="/contacto" class="inline-flex items-center justify-center gap-2 px-8 py-5 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold rounded-xl hover:bg-white hover:text-primary-dark transition-all text-lg">Pedir presupuesto gratuito</a>
+    </div>
+    <p class="mt-8 text-sm text-gray-400">Sin compromiso · Presupuesto en el acto · Factura para el seguro</p>
+  </div>
+</section>

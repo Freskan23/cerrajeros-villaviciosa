@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
+import TestimonialsGrid from '../components/sections/TestimonialsGrid.astro';
+import CTACallBanner from '../components/sections/CTACallBanner.astro';
+import { testimonials } from '../data/testimonials';
+import { SITE_URL } from '../data/business';
+---
+<BaseLayout title="Opiniones y Testimonios | Cerrajeros Villaviciosa 24h" description="Más de 95 opiniones verificadas de clientes de Cerrajeros Villaviciosa 24h. Lee las experiencias reales de nuestros clientes." canonicalUrl={`${SITE_URL}/testimonios`}>
+  <Breadcrumbs items={[{ name: 'Testimonios', url: '/testimonios' }]} />
+  <TestimonialsGrid testimonials={testimonials} limit={100} />
+  <CTACallBanner />
+</BaseLayout>

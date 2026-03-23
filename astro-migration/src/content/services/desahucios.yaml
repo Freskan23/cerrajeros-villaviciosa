@@ -1,0 +1,36 @@
+title: "Servicio de Desahucios"
+slug: "desahucios"
+description: "Servicio de cerrajería para desahucios judiciales en Villaviciosa del Odón. Actuamos con orden judicial. Consultar precio."
+heroImage: "/desahucios_profesionales_1769424982476.png"
+price: "Consultar"
+keywords: "cerrajero desahucio villaviciosa, apertura judicial, cerrajero lanzamiento judicial"
+longDescription: |
+  <h2>Servicio de cerrajería para desahucios en Villaviciosa del Odón</h2>
+  <p>Ofrecemos <strong>servicio profesional de cerrajería para desahucios y lanzamientos judiciales</strong> en Villaviciosa del Odón y municipios limítrofes. Actuamos exclusivamente con orden judicial, acompañando al comité judicial durante todo el proceso.</p>
+  <h3>¿Cómo funciona el servicio?</h3>
+  <p>El cerrajero acude al inmueble junto con la comitiva judicial (secretario judicial, procurador y fuerzas de seguridad). Realizamos la <strong>apertura de la puerta</strong> y, una vez completado el procedimiento, procedemos al <strong>cambio de cerradura</strong> para entregar las llaves nuevas al propietario legítimo.</p>
+  <h3>Nuestro compromiso</h3>
+  <ul>
+    <li><strong>Puntualidad</strong>: Acudimos a la hora exacta indicada por el juzgado.</li>
+    <li><strong>Discreción</strong>: Actuamos con total profesionalidad y respeto.</li>
+    <li><strong>Documentación</strong>: Factura detallada para aportar al procedimiento judicial.</li>
+  </ul>
+features:
+  - "Solo con orden judicial"
+  - "Puntualidad garantizada"
+  - "Cambio de cerradura incluido"
+  - "Factura para el juzgado"
+  - "Discreción total"
+  - "Experiencia en procedimientos judiciales"
+faqs:
+  - question: "¿Hacéis desahucios sin orden judicial?"
+    answer: "No. Solo actuamos con orden judicial vigente para garantizar la legalidad del procedimiento."
+  - question: "¿Incluye el cambio de cerradura?"
+    answer: "Sí, tras el desahucio realizamos el cambio de cerradura y entregamos las llaves nuevas al propietario."
+  - question: "¿En qué zonas ofrecéis este servicio?"
+    answer: "Villaviciosa del Odón y municipios limítrofes: Boadilla, Brunete, Móstoles, Alcorcón."
+relatedServices:
+  - name: "Apertura de Puertas"
+    slug: "apertura-puertas"
+  - name: "Cambio de Cerraduras"
+    slug: "cambio-cerraduras"
