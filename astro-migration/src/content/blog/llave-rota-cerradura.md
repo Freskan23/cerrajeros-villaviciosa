@@ -2,7 +2,7 @@
 title: "Se me ha roto la llave dentro de la cerradura: qué hago"
 date: "2026-03-10"
 category: "Emergencias"
-image: "/blog-llaves-coche.webp"
+image: "/blog-llave-rota.webp"
 description: "Tu llave se ha partido dentro de la cerradura y no sabes qué hacer. Te explicamos las causas, los errores a evitar y cómo un cerrajero profesional puede solucionarlo rápidamente."
 keywords: "llave rota cerradura, extraer llave rota, llave partida bombín, cerrajero llave rota, sacar llave rota cerradura"
 ---

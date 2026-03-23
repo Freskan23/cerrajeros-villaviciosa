@@ -2,7 +2,7 @@
 title: "Cerrajero 24 horas en zona oeste de Madrid: cuándo llamar"
 date: "2026-03-15"
 category: "Emergencias"
-image: "/hero-cerrajero-villaviciosa.webp"
+image: "/servicio-apertura-puertas-new.webp"
 description: "Descubre cuándo necesitas un cerrajero 24 horas en la zona oeste de Madrid. Cobertura en Villaviciosa del Odón, Boadilla, Alcorcón y Móstoles con precios transparentes."
 keywords: "cerrajero 24 horas Madrid, cerrajero zona oeste Madrid, cerrajero Boadilla, cerrajero Alcorcón, cerrajero urgente noche"
 ---

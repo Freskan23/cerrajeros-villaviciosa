@@ -2,7 +2,7 @@
 title: "Puerta blindada vs puerta acorazada: diferencias y cuál elegir"
 date: "2026-02-15"
 category: "Productos"
-image: "/cerraduras-seguridad.webp"
+image: "/blog-puerta-acorazada.webp"
 description: "Diferencias reales entre puertas blindadas y acorazadas: materiales, precios, niveles de seguridad y cuál es la mejor opción para pisos y chalets en Villaviciosa del Odón."
 keywords: "puerta blindada, puerta acorazada, diferencia blindada acorazada, puerta seguridad precio, instalar puerta blindada"
 ---

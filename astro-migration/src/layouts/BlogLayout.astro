@@ -9,26 +9,84 @@ const { title, slug, date, category, image, description } = Astro.props;
 const pageTitle = `${title} | Blog Cerrajería Villaviciosa 24h`;
 const articleSchema = buildArticleSchema({ title, slug, date, image, description });
 const formattedDate = new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' });
+
+// Detect if image is a Gemini/unique image or a recycled one
+const uniqueImages = [
+  '/hero-cerrajero-villaviciosa.webp',
+  '/servicio-apertura-puertas-new.webp',
+  '/blog-cerradura-inteligente-new.webp',
+  '/blog-puerta-acorazada.webp',
+  '/blog-llave-rota.webp',
+  '/blog-seguridad-nocturna.webp',
+];
+const hasUniqueImage = uniqueImages.includes(image);
+
+// Category color map
+const categoryColors: Record<string, string> = {
+  'Emergencias': 'bg-red-100 text-red-700',
+  'Seguridad': 'bg-blue-100 text-blue-700',
+  'Prevención': 'bg-amber-100 text-amber-700',
+  'Productos': 'bg-emerald-100 text-emerald-700',
+  'Consejos': 'bg-purple-100 text-purple-700',
+  'Local': 'bg-cyan-100 text-cyan-700',
+  'Noticias': 'bg-orange-100 text-orange-700',
+};
+const catColor = categoryColors[category] || 'bg-primary/10 text-primary';
 ---
+
 <BaseLayout title={pageTitle} description={description} ogImage={image} canonicalUrl={`${SITE_URL}/blog/${slug}`}>
-  <div class="w-full h-[300px] md:h-[400px] overflow-hidden">
-    <img src={image} alt={title} class="w-full h-full object-cover" loading="eager" />
-  </div>
-  <Breadcrumbs items={[{ name: 'Blog', url: '/blog' }, { name: title, url: `/blog/${slug}` }]} />
-  <article class="section">
-    <div class="container max-w-4xl">
-      <div class="flex items-center gap-4 text-text-muted text-sm mb-6">
-        <time datetime={date}>{formattedDate}</time>
-        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">{category}</span>
+
+  {hasUniqueImage ? (
+    <!-- Hero con imagen Gemini -->
+    <div class="w-full h-[300px] md:h-[400px] overflow-hidden relative">
+      <img src={image} alt={title} class="w-full h-full object-cover" loading="eager" width="1920" height="1080" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+    </div>
+  ) : (
+    <!-- Hero tipográfico (sin foto genérica) -->
+    <div class="relative bg-[#0a1628] py-16 md:py-24 overflow-hidden">
+      <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot; fill-rule=&quot;evenodd&quot;%3E%3Cpath d=&quot;M0 40L40 0H20L0 20M40 40V20L20 40&quot;/%3E%3C/g%3E%3C/svg%3E')"></div>
+      <div class="absolute -top-20 -right-20 w-80 h-80 bg-primary/20 rounded-full blur-3xl"></div>
+      <div class="container relative z-10">
+        <div class="flex items-center gap-3 mb-6">
+          <span class={`text-xs font-bold px-3 py-1 rounded-full ${catColor}`}>{category}</span>
+          <time class="text-sm text-white/50" datetime={date}>{formattedDate}</time>
+        </div>
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] max-w-4xl">{title}</h1>
+        <p class="text-lg text-white/50 max-w-2xl mt-6">{description}</p>
       </div>
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-10 text-text leading-tight">{title}</h1>
-      <div class="prose"><slot /></div>
-      <div class="mt-12 bg-gradient-to-br from-danger/10 to-danger/5 border-l-4 border-danger rounded-r-2xl p-8">
-        <p class="text-xl font-bold text-text mb-4">¿Necesitas un cerrajero en Villaviciosa del Odón?</p>
-        <p class="text-text-light mb-6">Disponibles 24 horas. Llegamos en 20 minutos con precio cerrado.</p>
-        <a href={APP_PHONE_HREF} class="cta-button">📞 Llamar: {APP_PHONE_DISPLAY}</a>
+    </div>
+  )}
+
+  <Breadcrumbs items={[{ name: 'Blog', url: '/blog' }, { name: title, url: `/blog/${slug}` }]} />
+
+  <article class="py-12 md:py-16">
+    <div class="container max-w-3xl">
+      {hasUniqueImage && (
+        <div class="mb-8">
+          <div class="flex items-center gap-3 mb-6">
+            <span class={`text-xs font-bold px-3 py-1 rounded-full ${catColor}`}>{category}</span>
+            <time class="text-sm text-text-muted" datetime={date}>{formattedDate}</time>
+          </div>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-black text-text leading-tight">{title}</h1>
+        </div>
+      )}
+
+      <div class="prose">
+        <slot />
+      </div>
+
+      <!-- CTA Box -->
+      <div class="mt-14 bg-[#0a1628] rounded-2xl p-8 md:p-10">
+        <p class="text-xl font-bold text-white mb-3">¿Necesitas un cerrajero en Villaviciosa del Odón?</p>
+        <p class="text-white/60 mb-6">Disponibles 24 horas. Llegamos en 20 minutos con precio cerrado.</p>
+        <a href={APP_PHONE_HREF} class="inline-flex items-center gap-3 bg-white text-[#0a1628] font-bold px-8 py-3 rounded-xl hover:bg-gray-100 transition-all">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          Llamar: {APP_PHONE_DISPLAY}
+        </a>
       </div>
     </div>
   </article>
+
   <script type="application/ld+json" slot="schema" set:html={JSON.stringify(articleSchema)} />
 </BaseLayout>

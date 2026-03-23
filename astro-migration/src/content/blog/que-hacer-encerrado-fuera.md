@@ -2,7 +2,7 @@
 title: "Qué hacer si te quedas fuera de casa en Villaviciosa del Odón"
 date: "2026-03-20"
 category: "Emergencias"
-image: "/cerrajero-emergencia.webp"
+image: "/hero-cerrajero-villaviciosa.webp"
 description: "Guía paso a paso sobre qué hacer si te quedas encerrado fuera de casa en Villaviciosa del Odón. No fuerces la puerta: llama a un cerrajero profesional con respuesta en 20 minutos."
 keywords: "encerrado fuera de casa, cerrajero Villaviciosa del Odón, cerrajero urgente, apertura de puerta, cerrajero 24 horas"
 ---
