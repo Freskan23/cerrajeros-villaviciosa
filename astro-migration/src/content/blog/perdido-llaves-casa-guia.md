@@ -2,7 +2,7 @@
 title: "He perdido las llaves de casa: guía completa de actuación"
 date: "2025-10-20"
 category: "Emergencias"
-image: "/blog-robos-trasteros.webp"
+image: "/cerraduras-seguridad.webp"
 description: "Guía paso a paso de qué hacer si pierdes las llaves de casa: denuncia policial, llamar al cerrajero, cambiar la cerradura y reclamar al seguro del hogar."
 keywords: "perder llaves casa, perdido llaves qué hacer, denuncia pérdida llaves, seguro hogar llaves perdidas, cerrajero apertura puerta Villaviciosa"
 ---

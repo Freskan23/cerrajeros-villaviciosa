@@ -2,7 +2,7 @@
 title: "Cerraduras inteligentes: guía completa para tu hogar en 2026"
 date: "2026-02-10"
 category: "Productos"
-image: "/blog-cerradura-inteligente-new.webp"
+image: "/blog-puerta-acorazada.webp"
 description: "Guía completa de cerraduras inteligentes en 2026: modelos Nuki, Tesa ENTR, opciones biométricas, protocolo Matter y todo lo que necesitas saber antes de instalar una."
 keywords: "cerradura inteligente, cerradura smart, Nuki cerradura, Tesa ENTR, cerradura biométrica, cerradura Matter"
 ---

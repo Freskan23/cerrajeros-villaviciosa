@@ -2,7 +2,7 @@
 title: "Robos en Navidad: por qué aumentan y cómo prevenirlos"
 date: "2025-10-25"
 category: "Prevención"
-image: "/blog-llaves-coche.webp"
+image: "/blog-llave-rota.webp"
 description: "Los robos aumentan en Navidad por las ausencias del hogar, los paquetes en la puerta y las publicaciones en redes sociales. Aprende a proteger tu casa durante las fiestas."
 keywords: "robos Navidad, prevenir robos fiestas, seguridad hogar Navidad, robos vivienda diciembre, proteger casa vacaciones Navidad"
 ---
