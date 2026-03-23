@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
@@ -7,7 +6,6 @@ export default defineConfig({
   site: 'https://cerrajerosvillaviciosadeodon.madrid',
   output: 'static',
   integrations: [
-    react(),
     sitemap({
       changefreq: 'weekly',
       priority: 0.7,
@@ -48,7 +46,7 @@ export default defineConfig({
     '/cookies': '/politica-cookies',
   },
   build: {
-    inlineStylesheets: 'auto',
+    inlineStylesheets: 'always',
   },
   compressHTML: true,
 });
