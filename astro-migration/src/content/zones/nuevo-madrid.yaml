@@ -1,0 +1,27 @@
+name: "Nuevo Madrid"
+slug: "nuevo-madrid"
+type: "barrio"
+description: "Cerrajeros en Nuevo Madrid, Villaviciosa del Odón. Servicio urgente 24h para viviendas unifamiliares. Apertura de puertas y cambio de cerraduras."
+keywords: "cerrajero nuevo madrid villaviciosa, cerrajero urgente nuevo madrid, cerrajero viviendas unifamiliares villaviciosa"
+longDescription: |
+  <h2>Cerrajeros en Nuevo Madrid — Villaviciosa del Odón</h2>
+  <p><strong>Nuevo Madrid</strong> es una urbanización residencial de Villaviciosa del Odón compuesta principalmente por <strong>viviendas unifamiliares, pareados y adosados</strong>. Nuestro servicio de cerrajería cubre toda la urbanización con asistencia de urgencia las 24 horas del día, los 365 días del año. Un cerrajero profesional estará en tu puerta en <strong>menos de 15 minutos</strong>.</p>
+  <p>Las viviendas unifamiliares de Nuevo Madrid presentan necesidades de seguridad específicas: <strong>puertas principales blindadas o acorazadas</strong>, accesos de garaje, puertas de jardín y ventanas en planta baja. Nuestros cerrajeros realizan una valoración integral de seguridad para proteger todos los puntos vulnerables de la vivienda, instalando cerraduras de alta seguridad, cerrojos adicionales y sistemas antibumping.</p>
+
+  <h3>Seguridad integral para viviendas familiares en Nuevo Madrid</h3>
+  <ul>
+    <li>Apertura urgente de puertas blindadas y acorazadas</li>
+    <li>Cambio de bombines antibumping y antiextracción</li>
+    <li>Instalación de cerrojos de seguridad FAC y similares</li>
+    <li>Refuerzo de puertas de acceso al garaje</li>
+    <li>Protección de ventanas en planta baja con rejas y cierres de seguridad</li>
+  </ul>
+
+  <p>En Nuevo Madrid trabajamos habitualmente con familias que quieren <strong>mejorar la seguridad de su hogar</strong> sin renunciar a la estética. Instalamos cerraduras de diseño que combinan la máxima protección con un acabado elegante. Llama al <strong>915 27 00 49</strong> para un presupuesto sin compromiso.</p>
+faqs:
+  - question: "¿Qué tipo de cerraduras recomendáis para los chalets de Nuevo Madrid?"
+    answer: "Recomendamos cerraduras antibumping de gama alta con cilindros de seguridad reforzados. Para las puertas principales, las cerraduras multipunto ofrecen la mejor protección."
+  - question: "¿Podéis reforzar la seguridad de las ventanas en planta baja?"
+    answer: "Sí, instalamos cierres de seguridad, rejas decorativas y sistemas antirrobo para ventanas accesibles desde el exterior."
+  - question: "¿Cuánto cuesta cambiar el bombín en Nuevo Madrid?"
+    answer: "El cambio de bombín antibumping parte desde 90€ con IVA incluido. Te damos precio cerrado por teléfono antes de acudir."

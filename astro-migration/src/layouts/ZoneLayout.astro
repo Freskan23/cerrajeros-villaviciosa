@@ -11,34 +11,77 @@ interface Props {
   heroImage?: string; faqs?: { question: string; answer: string }[];
   keywords?: string;
 }
-const { name, slug, type, description, longDescription, heroImage = '/hero-cerrajero.webp', faqs, keywords } = Astro.props;
+const { name, slug, type, description, longDescription, heroImage, faqs, keywords } = Astro.props;
 const pageTitle = `Cerrajeros en ${name} | 24h Urgencias | Cerrajeros Villaviciosa 24h`;
+const isBarrio = type === 'barrio';
+const locationLabel = isBarrio ? 'Barrio' : 'Municipio';
 ---
-<BaseLayout title={pageTitle} description={description} keywords={keywords} ogImage={heroImage} canonicalUrl={`${SITE_URL}/zonas/${slug}`}>
-  <section class="hero-section" style={`background-image: url('${heroImage}')`}>
-    <div class="hero-overlay"></div>
-    <div class="relative z-10 container text-center text-white py-20">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in-up">Cerrajeros en {name}</h1>
-      <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8">{description}</p>
-      <a href={APP_PHONE_HREF} class="cta-button text-lg">📞 Llamar: {APP_PHONE_DISPLAY}</a>
+
+<BaseLayout title={pageTitle} description={description} keywords={keywords} canonicalUrl={`${SITE_URL}/zonas/${slug}`}>
+
+  <!-- Hero con nombre de zona como elemento principal -->
+  <section class="relative bg-[#0a1628] overflow-hidden py-20 md:py-28">
+    <!-- Decorative grid pattern -->
+    <div class="absolute inset-0 opacity-[0.04]" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot; fill-rule=&quot;evenodd&quot;%3E%3Cpath d=&quot;M0 40L40 0H20L0 20M40 40V20L20 40&quot;/%3E%3C/g%3E%3C/svg%3E')"></div>
+    <!-- Accent circle -->
+    <div class="absolute -top-20 -right-20 w-80 h-80 bg-primary/20 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-secondary/10 rounded-full blur-3xl"></div>
+
+    <div class="container relative z-10">
+      <div class="flex items-center gap-2 mb-6">
+        <svg class="w-5 h-5 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+        <span class="text-sm font-semibold text-secondary uppercase tracking-widest">{locationLabel}</span>
+      </div>
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tight mb-6">
+        Cerrajeros en<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary via-secondary-light to-secondary">{name}</span>
+      </h1>
+      <p class="text-lg text-white/60 max-w-xl mb-10 leading-relaxed">{description}</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href={APP_PHONE_HREF} class="inline-flex items-center justify-center gap-3 bg-white text-[#0a1628] font-bold text-lg px-8 py-4 rounded-xl hover:bg-gray-100 transition-all">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          {APP_PHONE_DISPLAY}
+        </a>
+        <a href="/contacto" class="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/20 text-white font-semibold rounded-xl hover:bg-white/10 transition-all">
+          Pedir presupuesto
+        </a>
+      </div>
     </div>
   </section>
+
   <Breadcrumbs items={[{ name: 'Zonas', url: '/zonas/centro' }, { name, url: `/zonas/${slug}` }]} />
-  <section class="section"><div class="container max-w-4xl"><div class="prose" set:html={longDescription} /></div></section>
-  <section class="section-alt">
+
+  <!-- Content -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container max-w-4xl">
+      <div class="prose" set:html={longDescription} />
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="py-16 md:py-24 bg-gray-50">
     <div class="container">
-      <h2 class="text-3xl font-bold text-center mb-12">Servicios de cerrajería en {name}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="max-w-2xl mb-12">
+        <p class="text-sm font-semibold text-primary uppercase tracking-widest mb-3">Servicios</p>
+        <h2 class="text-3xl font-black text-text">Servicios de cerrajería en {name}</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {SERVICES.map(s => (
-          <a href={`/servicios/${s.slug}`} class="bg-white p-6 rounded-2xl shadow-sm card-hover block">
-            <h3 class="text-lg font-bold text-text mb-2">{s.name}</h3>
-            <p class="text-sm text-text-muted mb-3">Servicio profesional en {name}</p>
-            <span class="text-danger font-bold text-sm">{s.price} →</span>
+          <a href={`/servicios/${s.slug}`} class="group flex items-center gap-4 p-5 rounded-2xl bg-white border border-gray-100 hover:border-primary/20 hover:shadow-sm transition-all">
+            <div class="flex-shrink-0 w-12 h-12 bg-gray-50 group-hover:bg-primary/10 rounded-xl flex items-center justify-center transition-colors">
+              <svg class="w-5 h-5 text-gray-400 group-hover:text-primary transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z"/></svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-semibold text-text group-hover:text-primary transition-colors">{s.name}</h3>
+              <span class="text-sm text-danger font-semibold">{s.price}</span>
+            </div>
+            <svg class="w-4 h-4 text-gray-300 group-hover:text-primary transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
           </a>
         ))}
       </div>
     </div>
   </section>
-  {faqs?.length > 0 && <FAQSection faqs={faqs} title={`Preguntas frecuentes — Cerrajeros en ${name}`} />}
+
+  {faqs && faqs.length > 0 && <FAQSection faqs={faqs} title={`Preguntas frecuentes — Cerrajeros en ${name}`} />}
+
   <CTACallBanner />
 </BaseLayout>
