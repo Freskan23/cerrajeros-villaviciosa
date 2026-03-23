@@ -2,7 +2,7 @@
 title: "¿El seguro de hogar cubre al cerrajero? Lo que necesitas saber"
 date: "2025-12-10"
 category: "Consejos"
-image: "/cerrajero-emergencia.webp"
+image: "/servicio-apertura-puertas-new.webp"
 description: "Descubre si tu seguro de hogar cubre los servicios de cerrajería: aperturas, cambio de cerradura tras robo, qué necesitas para reclamar y cómo funciona el proceso paso a paso."
 keywords: "seguro hogar cerrajero, seguro cubre cerradura, denuncia robo cerradura, reclamar seguro cerrajería, parte policial cerrajero, Villaviciosa de Odón"
 ---

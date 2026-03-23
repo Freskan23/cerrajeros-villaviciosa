@@ -2,7 +2,7 @@
 title: "Qué es el amaestramiento de cerraduras y por qué lo necesita tu comunidad"
 date: "2026-01-10"
 category: "Productos"
-image: "/instalacion-cerraduras.webp"
+image: "/blog-cerradura-inteligente-new.webp"
 description: "Descubre qué es el amaestramiento de cerraduras, cómo funciona la jerarquía de llaves, cuánto cuesta por vecino y por qué es ideal para comunidades de nueva construcción en Villaviciosa de Odón."
 keywords: "amaestramiento cerraduras, llave maestra, jerarquía llaves, cerraduras comunidad, una llave para todo, cerrajero Villaviciosa de Odón"
 ---

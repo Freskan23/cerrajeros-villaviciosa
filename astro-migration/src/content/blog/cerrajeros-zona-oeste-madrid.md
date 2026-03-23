@@ -2,7 +2,7 @@
 title: "Cerrajeros en la zona oeste de Madrid: cobertura completa"
 date: "2025-11-15"
 category: "Local"
-image: "/cerrajero-emergencia.webp"
+image: "/hero-cerrajero-villaviciosa.webp"
 description: "Servicio de cerrajería profesional en toda la zona oeste de Madrid. Cobertura en Boadilla, Alcorcón, Móstoles, Brunete, Majadahonda y más con tiempos de respuesta rápidos."
 keywords: "cerrajero zona oeste Madrid, cerrajero Boadilla del Monte, cerrajero Alcorcón, cerrajero Móstoles, cerrajero Brunete, cerrajeros Madrid oeste"
 ---

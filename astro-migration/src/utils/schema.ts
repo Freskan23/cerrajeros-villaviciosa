@@ -15,7 +15,7 @@ export function buildLocalBusinessSchema() {
     legalName: APP_BUSINESS_LEGAL_NAME,
     url: SITE_URL,
     logo: `${SITE_URL}${APP_LOGO}`,
-    image: `${SITE_URL}/hero-cerrajero.webp`,
+    image: `${SITE_URL}/hero-cerrajero-villaviciosa.webp`,
     description: 'Cerrajeros profesionales en Villaviciosa del Odón disponibles 24/7. Apertura de puertas desde 90€, cambio de cerraduras, bombines antibumping y amaestramiento.',
     telephone: APP_PHONE,
     email: APP_EMAIL,
