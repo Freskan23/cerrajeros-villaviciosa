@@ -109,4 +109,4 @@ Villaviciosa del Odón no es un municipio especialmente afectado por la ocupaci�
 
 No esperes a tener un problema para actuar. En **Cerrajeros Villaviciosa 24h** te asesoramos sobre la solución más adecuada para tu vivienda, ya sea una puerta antiokupa, un refuerzo de cerraduras o un sistema de seguridad integral.
 
-Llama al **915 27 00 49** y solicita una valoración sin compromiso. Tu tranquilidad no tiene precio.
+Llama al **692 19 29 90** y solicita una valoración sin compromiso. Tu tranquilidad no tiene precio.

@@ -97,4 +97,4 @@ Además del cambio de cerradura, aprovecha la mudanza para revisar estos puntos 
 
 Cada día que pasas en tu nueva vivienda sin cambiar la cerradura es un día en el que personas desconocidas pueden tener acceso a tu hogar. Es una inversión pequeña comparada con la tranquilidad que proporciona.
 
-Llama al **915 27 00 49** y en **Cerrajeros Villaviciosa 24h** te cambiaremos el bombín el mismo día de tu mudanza. Servicio disponible en todo Villaviciosa del Odón.
+Llama al **692 19 29 90** y en **Cerrajeros Villaviciosa 24h** te cambiaremos el bombín el mismo día de tu mudanza. Servicio disponible en todo Villaviciosa del Odón.

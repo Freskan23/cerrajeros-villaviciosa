@@ -89,4 +89,4 @@ En **Cerrajeros Villaviciosa 24h** cumplimos todos los criterios de un cerrajero
 
 El mejor momento para buscar un cerrajero de confianza no es cuando estás fuera de casa a las tres de la madrugada, sino ahora, con calma y capacidad de comparar.
 
-Guarda el **915 27 00 49** en tu teléfono como "Cerrajero Villaviciosa". El día que lo necesites, no tendrás que arriesgarte con el primer resultado de Google. Estamos disponibles las 24 horas, los 365 días del año, en Villaviciosa de Odón y toda la zona oeste de Madrid.
+Guarda el **692 19 29 90** en tu teléfono como "Cerrajero Villaviciosa". El día que lo necesites, no tendrás que arriesgarte con el primer resultado de Google. Estamos disponibles las 24 horas, los 365 días del año, en Villaviciosa de Odón y toda la zona oeste de Madrid.

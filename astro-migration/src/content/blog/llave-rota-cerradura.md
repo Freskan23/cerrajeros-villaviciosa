@@ -44,7 +44,7 @@ Si la cerradura ha quedado en una posición intermedia (ni abierta ni cerrada), 
 
 Un cerrajero con experiencia dispone de **herramientas de extracción específicas** diseñadas para sacar fragmentos de llave sin dañar el bombín. En la mayoría de los casos, la extracción se realiza en pocos minutos y el bombín queda perfectamente funcional.
 
-En **Cerrajeros Villaviciosa 24h** atendemos este tipo de incidencias a diario. Llámanos al **[915 27 00 49](tel:915270049)** y estaremos contigo en aproximadamente 20 minutos.
+En **Cerrajeros Villaviciosa 24h** atendemos este tipo de incidencias a diario. Llámanos al **[692 19 29 90](tel:692192990)** y estaremos contigo en aproximadamente 20 minutos.
 
 ### 4. Conserva todos los trozos
 
@@ -75,4 +75,4 @@ La prevención es sencilla y económica:
 
 Una llave rota en la cerradura no es el fin del mundo, pero sí una situación que conviene resolver cuanto antes para **no comprometer la seguridad de tu vivienda**. Una puerta que no cierra correctamente es una invitación abierta para los amigos de lo ajeno.
 
-Si te encuentras en esta situación en **Villaviciosa del Odón** o alrededores, llama al **[915 27 00 49](tel:915270049)**. Nuestro equipo resolverá el problema con la mayor rapidez y el mínimo coste posible.
+Si te encuentras en esta situación en **Villaviciosa del Odón** o alrededores, llama al **[692 19 29 90](tel:692192990)**. Nuestro equipo resolverá el problema con la mayor rapidez y el mínimo coste posible.

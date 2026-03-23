@@ -109,4 +109,4 @@ En **Cerrajeros Villaviciosa 24h** instalamos y configuramos cerraduras intelige
 - **Configuración de la app** y conexión con tu sistema domótico si lo tienes.
 - **Garantía** tanto del producto como de la instalación.
 
-¿Listo para dar el salto a la cerradura inteligente? Llámanos al **[915 27 00 49](tel:915270049)** y resolvemos todas tus dudas.
+¿Listo para dar el salto a la cerradura inteligente? Llámanos al **[692 19 29 90](tel:692192990)** y resolvemos todas tus dudas.

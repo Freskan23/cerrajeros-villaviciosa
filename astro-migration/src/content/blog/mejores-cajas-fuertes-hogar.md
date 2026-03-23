@@ -117,4 +117,4 @@ En **Cerrajeros Villaviciosa 24h** realizamos la instalación completa:
 
 Cada hogar tiene necesidades diferentes. El valor de lo que guardas, el espacio disponible, el tipo de construcción de tu vivienda y tu presupuesto determinan la caja fuerte ideal para ti.
 
-Llama al **915 27 00 49** y te asesoramos sin compromiso. Visitamos tu domicilio en Villaviciosa de Odón, evaluamos las opciones y te presentamos un presupuesto cerrado con instalación incluida.
+Llama al **692 19 29 90** y te asesoramos sin compromiso. Visitamos tu domicilio en Villaviciosa de Odón, evaluamos las opciones y te presentamos un presupuesto cerrado con instalación incluida.

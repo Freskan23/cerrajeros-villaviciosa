@@ -86,7 +86,7 @@ Una buena prevención puede ahorrarte muchos disgustos:
 - **Instala un [bombín antibumping](/blog/bombin-antibumping-guia)** de calidad. Es la inversión más rentable en seguridad para tu hogar.
 - **Revisa tus cerraduras** al menos una vez al año. Un mantenimiento básico previene la mayoría de bloqueos.
 - **Ten siempre copias de llaves** en lugares accesibles pero seguros.
-- **Guarda nuestro número** en el móvil: **[915 27 00 49](tel:915270049)**. En una emergencia, cada minuto cuenta y no querrás perder tiempo buscando cerrajeros online.
+- **Guarda nuestro número** en el móvil: **[692 19 29 90](tel:692192990)**. En una emergencia, cada minuto cuenta y no querrás perder tiempo buscando cerrajeros online.
 - Considera la instalación de una **[cerradura inteligente](/blog/cerraduras-inteligentes-2026)** como respaldo.
 
 ## Llámanos cuando nos necesites
@@ -98,4 +98,4 @@ En **Cerrajeros Villaviciosa 24h** entendemos que una emergencia de cerrajería 
 - **Llegar lo antes posible** con todo el material necesario.
 - **Trabajar con limpieza y profesionalidad**, minimizando daños en tu puerta.
 
-No dejes tu seguridad en manos de cualquiera. Llama al **[915 27 00 49](tel:915270049)** y un cerrajero profesional estará contigo en minutos.
+No dejes tu seguridad en manos de cualquiera. Llama al **[692 19 29 90](tel:692192990)** y un cerrajero profesional estará contigo en minutos.

@@ -131,4 +131,4 @@ Para evitar que esta situación se repita:
 
 ## Estamos aquí cuando nos necesites
 
-Si has perdido las llaves y necesitas ayuda inmediata, llama al **915 27 00 49**. En **Cerrajeros Villaviciosa 24h** atendemos tu emergencia las 24 horas del día, los 365 días del año, con servicio de apertura y cambio de cerradura en el mismo acto. Villaviciosa del Odón y toda la zona oeste de Madrid.
+Si has perdido las llaves y necesitas ayuda inmediata, llama al **692 19 29 90**. En **Cerrajeros Villaviciosa 24h** atendemos tu emergencia las 24 horas del día, los 365 días del año, con servicio de apertura y cambio de cerradura en el mismo acto. Villaviciosa del Odón y toda la zona oeste de Madrid.

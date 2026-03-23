@@ -97,10 +97,10 @@ Si al volver de vacaciones encuentras señales de intrusión (puerta forzada, ve
 1. **No entres en la vivienda**. El intruso podría seguir dentro.
 2. **Llama al 112** inmediatamente desde un lugar seguro.
 3. **No toques nada** para no contaminar posibles pruebas.
-4. Una vez la policía confirme que es seguro, **llámanos al [915 27 00 49](tel:915270049)** para reparar o sustituir cerraduras y asegurar tu vivienda de nuevo.
+4. Una vez la policía confirme que es seguro, **llámanos al [692 19 29 90](tel:692192990)** para reparar o sustituir cerraduras y asegurar tu vivienda de nuevo.
 
 ## La tranquilidad de unas vacaciones bien preparadas
 
 Invertir unas horas en preparar la seguridad de tu vivienda antes de las vacaciones puede ahorrarte un disgusto enorme. La combinación de **buenas cerraduras, hábitos inteligentes y apoyo vecinal** es la fórmula más efectiva para mantener tu hogar protegido.
 
-Si necesitas reforzar la seguridad de tu casa antes del verano, llámanos al **[915 27 00 49](tel:915270049)**. Te asesoramos sin compromiso.
+Si necesitas reforzar la seguridad de tu casa antes del verano, llámanos al **[692 19 29 90](tel:692192990)**. Te asesoramos sin compromiso.

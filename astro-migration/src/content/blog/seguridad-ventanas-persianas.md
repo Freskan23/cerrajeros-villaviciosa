@@ -71,4 +71,4 @@ En Cerrajeros Villaviciosa 24h podemos asesorarte sobre la combinación ideal de
 
 Cada vivienda tiene puntos débiles distintos. Un chalet con jardín requiere soluciones diferentes a un piso en planta baja de un bloque de apartamentos. Por eso ofrecemos un servicio de **auditoría de seguridad gratuita** en el que evaluamos todos los accesos y te proponemos las mejoras más adecuadas a tu presupuesto.
 
-No esperes a que sea demasiado tarde. Llama al **915 27 00 49** y consulta sin compromiso. Estamos disponibles en Villaviciosa de Odón y alrededores las 24 horas, los 365 días del año.
+No esperes a que sea demasiado tarde. Llama al **692 19 29 90** y consulta sin compromiso. Estamos disponibles en Villaviciosa de Odón y alrededores las 24 horas, los 365 días del año.

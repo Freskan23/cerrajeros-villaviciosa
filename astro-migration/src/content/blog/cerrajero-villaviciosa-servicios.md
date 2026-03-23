@@ -138,6 +138,6 @@ Disponemos de servicio de urgencias 24 horas, los 7 días de la semana, incluido
 
 Para servicios programados (cambio de cerraduras, instalaciones, mantenimiento), te ofrecemos cita con horario flexible de lunes a sábado.
 
-**Teléfono:** 915 27 00 49
+**Teléfono:** 692 19 29 90
 
 No dudes en llamarnos para cualquier consulta o solicitar presupuesto sin compromiso. En **Cerrajeros Villaviciosa 24h** estamos para ayudarte.

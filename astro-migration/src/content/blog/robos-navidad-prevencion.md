@@ -111,4 +111,4 @@ En caso de que, a pesar de las precauciones, sufras un robo:
 
 No dejes la seguridad para última hora. En **Cerrajeros Villaviciosa 24h** te ofrecemos un servicio de revisión de seguridad pre-navideña que incluye comprobación de cerraduras, puertas, ventanas y accesos.
 
-Llama al **915 27 00 49** y programa tu revisión antes de las fiestas. Tu tranquilidad durante las vacaciones no tiene precio.
+Llama al **692 19 29 90** y programa tu revisión antes de las fiestas. Tu tranquilidad durante las vacaciones no tiene precio.

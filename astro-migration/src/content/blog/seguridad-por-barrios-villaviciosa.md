@@ -112,4 +112,4 @@ Los periodos de mayor riesgo coinciden con:
 
 En **Cerrajeros Villaviciosa 24h** ofrecemos un servicio de evaluación de seguridad de tu vivienda o negocio. Analizamos tus cerraduras, puertas, ventanas y accesos, y te proporcionamos un informe con recomendaciones priorizadas según urgencia y presupuesto.
 
-Llama al **915 27 00 49** y solicita tu evaluación sin compromiso. Conocemos cada barrio de Villaviciosa del Odón y sabemos exactamente qué necesita tu hogar.
+Llama al **692 19 29 90** y solicita tu evaluación sin compromiso. Conocemos cada barrio de Villaviciosa del Odón y sabemos exactamente qué necesita tu hogar.

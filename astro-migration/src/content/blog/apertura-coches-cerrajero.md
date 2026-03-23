@@ -103,4 +103,4 @@ Los precios varían según la marca y el modelo del vehículo. Siempre proporcio
 
 En **Cerrajeros Villaviciosa 24h** ofrecemos servicio de cerrajería del automóvil con desplazamiento al lugar donde se encuentra el vehículo. No necesitas llevar el coche a ningún taller: nosotros vamos donde tú estés.
 
-Llama al **915 27 00 49** para asistencia inmediata. Disponibles 24 horas, todos los días del año, en Villaviciosa del Odón y toda la zona oeste de Madrid.
+Llama al **692 19 29 90** para asistencia inmediata. Disponibles 24 horas, todos los días del año, en Villaviciosa del Odón y toda la zona oeste de Madrid.

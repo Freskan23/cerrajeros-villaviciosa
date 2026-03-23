@@ -105,4 +105,4 @@ La diferencia entre una vivienda protegida y una vulnerable suele ser una invers
 
 En **Cerrajeros Villaviciosa 24h** somos especialistas en protección de viviendas vacías. Instalamos **puertas antiokupa, cerrojos de alta seguridad y sistemas de protección integral** adaptados a cada situación y presupuesto.
 
-Llámanos al **[915 27 00 49](tel:915270049)** y protege tu propiedad antes de que sea tarde.
+Llámanos al **[692 19 29 90](tel:692192990)** y protege tu propiedad antes de que sea tarde.

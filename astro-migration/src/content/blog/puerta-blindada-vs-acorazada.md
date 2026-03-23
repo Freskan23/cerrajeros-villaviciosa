@@ -101,4 +101,4 @@ La instalación de una puerta de seguridad no es un trabajo de bricolaje. Requie
 
 En **Cerrajeros Villaviciosa 24h** nos encargamos de todo el proceso, desde el asesoramiento inicial hasta la instalación final con garantía. Trabajamos con las mejores marcas del mercado y adaptamos la solución a tu presupuesto y necesidades.
 
-Solicita presupuesto sin compromiso llamando al **[915 27 00 49](tel:915270049)**.
+Solicita presupuesto sin compromiso llamando al **[692 19 29 90](tel:692192990)**.

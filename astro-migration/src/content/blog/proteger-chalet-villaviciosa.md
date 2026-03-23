@@ -98,4 +98,4 @@ Lo más importante es que **cualquier mejora, por pequeña que sea, reduce signi
 
 En **Cerrajeros Villaviciosa 24h** ofrecemos un servicio de **evaluación de seguridad para chalets** en Villaviciosa del Odón. Visitamos tu vivienda, identificamos los puntos vulnerables y te proponemos soluciones adaptadas a tu presupuesto.
 
-Llámanos al **[915 27 00 49](tel:915270049)** y protege lo que más importa.
+Llámanos al **[692 19 29 90](tel:692192990)** y protege lo que más importa.

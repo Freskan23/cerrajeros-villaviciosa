@@ -103,4 +103,4 @@ Depende de tu situación:
 - **Sí**, si ya tienes un ecosistema domótico y quieres integrarlo todo.
 - **No necesariamente**, si vives solo y simplemente quieres seguridad. Un buen bombín mecánico sigue siendo difícil de superar en relación calidad-precio.
 
-Sea cual sea tu elección, en **Cerrajeros Villaviciosa 24h** te asesoramos e instalamos tanto sistemas mecánicos como electrónicos. Llama al **915 27 00 49** para una consulta sin compromiso.
+Sea cual sea tu elección, en **Cerrajeros Villaviciosa 24h** te asesoramos e instalamos tanto sistemas mecánicos como electrónicos. Llama al **692 19 29 90** para una consulta sin compromiso.

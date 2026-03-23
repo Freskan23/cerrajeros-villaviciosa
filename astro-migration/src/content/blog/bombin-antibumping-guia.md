@@ -97,4 +97,4 @@ En **Cerrajeros Villaviciosa 24h** no solo instalamos el bombín, sino que:
 - **Ajustamos el mecanismo** para un funcionamiento óptimo.
 - **Te asesoramos** sobre el modelo más adecuado para tu situación.
 
-¿Quieres mejorar la seguridad de tu cerradura? Llámanos al **[915 27 00 49](tel:915270049)** y te asesoramos sin compromiso.
+¿Quieres mejorar la seguridad de tu cerradura? Llámanos al **[692 19 29 90](tel:692192990)** y te asesoramos sin compromiso.

@@ -93,4 +93,4 @@ Evitar que tu cerradura se atasque es sencillo si sigues estas pautas:
 
 Una cerradura que empieza a atascarse es una cerradura que pide atención. Ignorar los síntomas puede llevarte a un **bloqueo completo en el peor momento** o, peor aún, a una [llave rota dentro del bombín](/blog/llave-rota-cerradura).
 
-Si tu cerradura no funciona como debería, llámanos al **[915 27 00 49](tel:915270049)**. En **Cerrajeros Villaviciosa 24h** diagnosticamos el problema y te ofrecemos la solución más adecuada y económica.
+Si tu cerradura no funciona como debería, llámanos al **[692 19 29 90](tel:692192990)**. En **Cerrajeros Villaviciosa 24h** diagnosticamos el problema y te ofrecemos la solución más adecuada y económica.

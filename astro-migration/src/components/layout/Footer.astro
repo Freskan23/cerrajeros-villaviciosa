@@ -1,5 +1,5 @@
 ---
-import { APP_BUSINESS_NAME, APP_FULL_ADDRESS, APP_PHONE_DISPLAY, APP_PHONE_HREF, APP_PHONE_SECONDARY_DISPLAY, APP_PHONE_SECONDARY_HREF, APP_EMAIL, SERVICES, ZONES } from '../../data/business';
+import { APP_BUSINESS_NAME, APP_FULL_ADDRESS, APP_PHONE_DISPLAY, APP_PHONE_HREF, APP_EMAIL, SERVICES, ZONES } from '../../data/business';
 const currentYear = new Date().getFullYear();
 ---
 
@@ -12,7 +12,7 @@ const currentYear = new Date().getFullYear();
         <address class="not-italic text-sm text-gray-400 space-y-1">
           <p>{APP_FULL_ADDRESS}</p>
           <p><a href={APP_PHONE_HREF} class="text-secondary hover:text-secondary-light transition-colors font-semibold">{APP_PHONE_DISPLAY}</a></p>
-          <p><a href={APP_PHONE_SECONDARY_HREF} class="text-gray-400 hover:text-white transition-colors">{APP_PHONE_SECONDARY_DISPLAY}</a></p>
+
           <p><a href={`mailto:${APP_EMAIL}`} class="text-gray-400 hover:text-white transition-colors">{APP_EMAIL}</a></p>
         </address>
       </div>

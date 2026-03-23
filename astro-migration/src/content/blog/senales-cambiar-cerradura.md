@@ -52,7 +52,7 @@ Tras un intento de robo, debes actuar con rapidez:
 - Valora instalar un escudo de seguridad que proteja el cilindro frente a futuros ataques.
 - Refuerza el cerco de la puerta si presenta signos de deformación.
 
-En **Cerrajeros Villaviciosa 24h** ofrecemos servicio de urgencia 24 horas para estos casos. Llama al **915 27 00 49** y acudimos en el menor tiempo posible.
+En **Cerrajeros Villaviciosa 24h** ofrecemos servicio de urgencia 24 horas para estos casos. Llama al **692 19 29 90** y acudimos en el menor tiempo posible.
 
 ## 6. Separación o divorcio
 
@@ -72,4 +72,4 @@ Cambiar la cerradura a tiempo es una de esas decisiones que nunca lamentas. Es u
 
 En **Cerrajeros Villaviciosa 24h** te asesoramos sin compromiso sobre la mejor cerradura para tu puerta y tu presupuesto. Atendemos en Villaviciosa de Odón y localidades cercanas las 24 horas del día.
 
-Llama al **915 27 00 49** y resuelve cualquier duda.
+Llama al **692 19 29 90** y resuelve cualquier duda.

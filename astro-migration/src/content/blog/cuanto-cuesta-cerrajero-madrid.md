@@ -99,4 +99,4 @@ Hay situaciones en las que recomendamos optar por la gama alta, aunque el coste 
 
 En **Cerrajeros Villaviciosa 24h** creemos que el mejor precio es el precio justo: ni inflado para aprovecharse de una urgencia, ni tan bajo que comprometa la calidad del servicio y los materiales.
 
-Llama al **915 27 00 49** y te informamos de forma clara y transparente. Atendemos en Villaviciosa de Odón, Boadilla del Monte, Brunete, Sevilla la Nueva y toda la zona oeste de Madrid. Disponibles las 24 horas, todos los días del año.
+Llama al **692 19 29 90** y te informamos de forma clara y transparente. Atendemos en Villaviciosa de Odón, Boadilla del Monte, Brunete, Sevilla la Nueva y toda la zona oeste de Madrid. Disponibles las 24 horas, todos los días del año.

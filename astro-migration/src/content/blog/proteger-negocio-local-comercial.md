@@ -81,4 +81,4 @@ El mantenimiento periódico de cierres metálicos y cerraduras es una inversión
 
 ## Protege tu inversión
 
-Tu negocio es tu medio de vida. Protegerlo no es un gasto, es una inversión en tranquilidad. Llama al **915 27 00 49** y solicita una evaluación de seguridad gratuita para tu local, oficina o nave en Villaviciosa de Odón y alrededores. En **Cerrajeros Villaviciosa 24h** estamos disponibles las 24 horas para cualquier urgencia.
+Tu negocio es tu medio de vida. Protegerlo no es un gasto, es una inversión en tranquilidad. Llama al **692 19 29 90** y solicita una evaluación de seguridad gratuita para tu local, oficina o nave en Villaviciosa de Odón y alrededores. En **Cerrajeros Villaviciosa 24h** estamos disponibles las 24 horas para cualquier urgencia.

@@ -110,4 +110,4 @@ En **Cerrajeros Villaviciosa 24h** la instalación del escudo incluye:
 
 Instalar un escudo de seguridad es una de las mejoras con mejor relación coste-beneficio en seguridad del hogar. Por una inversión de entre 30 y 120 euros consigues una protección que disuade a la inmensa mayoría de ladrones.
 
-Llama al **915 27 00 49** y te asesoramos sobre el escudo más adecuado para tu puerta. Estamos en Villaviciosa de Odón y atendemos las 24 horas.
+Llama al **692 19 29 90** y te asesoramos sobre el escudo más adecuado para tu puerta. Estamos en Villaviciosa de Odón y atendemos las 24 horas.

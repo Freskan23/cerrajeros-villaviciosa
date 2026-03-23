@@ -115,4 +115,4 @@ Todos los precios incluyen IVA y se confirman mediante presupuesto previo.
 
 ## Contacto
 
-¿Necesitas un cerrajero en la zona oeste de Madrid? Llama al **915 27 00 49**. Atendemos urgencias 24 horas y servicios programados de lunes a sábado. **Cerrajeros Villaviciosa 24h**, tu cerrajero de confianza en el oeste de Madrid.
+¿Necesitas un cerrajero en la zona oeste de Madrid? Llama al **692 19 29 90**. Atendemos urgencias 24 horas y servicios programados de lunes a sábado. **Cerrajeros Villaviciosa 24h**, tu cerrajero de confianza en el oeste de Madrid.

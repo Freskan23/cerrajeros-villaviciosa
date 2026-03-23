@@ -116,4 +116,4 @@ No siempre basta con cambiar el bombín. Deberías considerar sustituir la cerra
 
 Un problema pequeño hoy puede convertirse en una emergencia mañana. Si tu puerta empieza a dar señales de que algo no va bien, actúa pronto.
 
-En **Cerrajeros Villaviciosa 24h** diagnosticamos el problema y te ofrecemos la solución más adecuada y económica. Llama al **915 27 00 49** para consulta o cita. Servicio en Villaviciosa del Odón y alrededores.
+En **Cerrajeros Villaviciosa 24h** diagnosticamos el problema y te ofrecemos la solución más adecuada y económica. Llama al **692 19 29 90** para consulta o cita. Servicio en Villaviciosa del Odón y alrededores.

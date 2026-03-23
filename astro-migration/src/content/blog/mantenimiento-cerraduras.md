@@ -99,4 +99,4 @@ El mantenimiento tiene sus límites. Estos son los signos de que una cerradura n
 
 Una cerradura de alta seguridad puede costar entre 80 y 250 euros. Con un mantenimiento adecuado, esa inversión puede protegerte durante más de una década. Sin mantenimiento, incluso la mejor cerradura acabará fallando en cinco o seis años.
 
-¿Necesitas una revisión de tus cerraduras? Llama al **915 27 00 49** y programa tu revisión anual con **Cerrajeros Villaviciosa 24h**. Servicio a domicilio en Villaviciosa del Odón y alrededores.
+¿Necesitas una revisión de tus cerraduras? Llama al **692 19 29 90** y programa tu revisión anual con **Cerrajeros Villaviciosa 24h**. Servicio a domicilio en Villaviciosa del Odón y alrededores.

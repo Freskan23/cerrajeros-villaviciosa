@@ -81,7 +81,7 @@ Antes de que el cerrajero repare nada, haz fotografías de todos los daños: cer
 
 ### Paso 4: Solicita el servicio de cerrajería
 
-Si la aseguradora te permite elegir cerrajero, llama al **915 27 00 49**. En **Cerrajeros Villaviciosa 24h** conocemos los procedimientos de las principales aseguradoras y emitimos la documentación necesaria para que la reclamación se tramite sin problemas.
+Si la aseguradora te permite elegir cerrajero, llama al **692 19 29 90**. En **Cerrajeros Villaviciosa 24h** conocemos los procedimientos de las principales aseguradoras y emitimos la documentación necesaria para que la reclamación se tramite sin problemas.
 
 ### Paso 5: Guarda toda la documentación
 
@@ -119,4 +119,4 @@ Muchas aseguradoras ofrecen la opción de **libre elección de profesional con r
 
 En **Cerrajeros Villaviciosa 24h** te ayudamos con todo el proceso: desde la reparación urgente de la puerta hasta la emisión de la documentación necesaria para tu aseguradora. Conocemos los procedimientos de las principales compañías y facilitamos que la tramitación sea rápida y sin complicaciones.
 
-Llama al **915 27 00 49** ante cualquier urgencia. Estamos en Villaviciosa de Odón y atendemos las 24 horas del día, los 365 días del año.
+Llama al **692 19 29 90** ante cualquier urgencia. Estamos en Villaviciosa de Odón y atendemos las 24 horas del día, los 365 días del año.

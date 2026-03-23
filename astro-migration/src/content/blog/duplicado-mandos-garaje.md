@@ -108,4 +108,4 @@ Además del duplicado de mandos, en nuestro taller y servicio a domicilio ofrece
 
 En **Cerrajeros Villaviciosa 24h** trabajamos con todas las marcas del mercado: FAAC, Nice, BFT, Hörmann, CAME, Clemsa, JCM, Erreka, Ditec y muchas más. Disponemos de equipos de clonación de última generación y un amplio stock de mandos universales y originales.
 
-Llámanos al **915 27 00 49** y te asesoraremos sin compromiso. Servicio a domicilio en Villaviciosa del Odón y toda la zona oeste de Madrid.
+Llámanos al **692 19 29 90** y te asesoraremos sin compromiso. Servicio a domicilio en Villaviciosa del Odón y toda la zona oeste de Madrid.

@@ -36,7 +36,7 @@ Si alguien de tu entorno tiene una copia de tus llaves, esta es la solución má
 
 Si no hay alternativa, es momento de contactar con un **cerrajero profesional de Villaviciosa del Odón**. En **Cerrajeros Villaviciosa 24h** ofrecemos un tiempo de respuesta de **aproximadamente 20 minutos** en todo el municipio y zonas limítrofes.
 
-Puedes llamarnos en cualquier momento al **[915 27 00 49](tel:915270049)**, las 24 horas del día, los 365 días del año.
+Puedes llamarnos en cualquier momento al **[692 19 29 90](tel:692192990)**, las 24 horas del día, los 365 días del año.
 
 ### 4. Espera en un lugar seguro
 
@@ -75,4 +75,4 @@ Somos un equipo de **cerrajeros locales** con años de experiencia en Villavicio
 - **Presupuesto sin compromiso** antes de cualquier intervención
 - **Factura oficial** y garantía por escrito en todos los trabajos
 
-Si te has quedado fuera de casa o necesitas cualquier servicio de cerrajería urgente, no dudes en llamarnos al **[915 27 00 49](tel:915270049)**. Estamos aquí para ayudarte.
+Si te has quedado fuera de casa o necesitas cualquier servicio de cerrajería urgente, no dudes en llamarnos al **[692 19 29 90](tel:692192990)**. Estamos aquí para ayudarte.

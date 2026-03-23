@@ -99,4 +99,4 @@ Nuestra respuesta a esta nueva situación ha sido reforzar lo que siempre hemos 
 
 La prohibición de Google es un parche necesario, pero no suficiente. La verdadera solución es que el consumidor esté informado y sepa distinguir un profesional serio de un estafador. Esperamos que este artículo te ayude a hacerlo.
 
-Si necesitas un cerrajero en Villaviciosa del Odón o la zona oeste de Madrid, llámanos al **915 27 00 49**. En **Cerrajeros Villaviciosa 24h** trabajamos con la transparencia que este sector necesita.
+Si necesitas un cerrajero en Villaviciosa del Odón o la zona oeste de Madrid, llámanos al **692 19 29 90**. En **Cerrajeros Villaviciosa 24h** trabajamos con la transparencia que este sector necesita.

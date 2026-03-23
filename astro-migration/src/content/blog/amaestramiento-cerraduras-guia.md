@@ -109,4 +109,4 @@ Cada marca ofrece distintos niveles de seguridad y presupuesto. Nuestro equipo t
 
 ## Solicita presupuesto para tu comunidad
 
-Si eres presidente de comunidad, administrador de fincas o promotor en Villaviciosa de Odón, llámanos al **915 27 00 49** y te preparamos un presupuesto personalizado sin compromiso. En **Cerrajeros Villaviciosa 24h** hacemos que la seguridad de tu edificio sea sencilla, cómoda y profesional.
+Si eres presidente de comunidad, administrador de fincas o promotor en Villaviciosa de Odón, llámanos al **692 19 29 90** y te preparamos un presupuesto personalizado sin compromiso. En **Cerrajeros Villaviciosa 24h** hacemos que la seguridad de tu edificio sea sencilla, cómoda y profesional.

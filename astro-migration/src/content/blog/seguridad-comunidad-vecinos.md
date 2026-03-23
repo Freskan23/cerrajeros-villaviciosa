@@ -86,4 +86,4 @@ Si eres administrador de fincas en Villaviciosa de Odón, estas son nuestras rec
 
 En **Cerrajeros Villaviciosa 24h** ofrecemos servicio integral para comunidades de vecinos: desde la sustitución de un simple muelle cierrapuertas hasta la implantación de un sistema completo de control de accesos.
 
-Solicita un presupuesto sin compromiso llamando al **915 27 00 49**. Trabajamos con administradores de fincas de toda la zona de Villaviciosa de Odón, Boadilla del Monte, Brunete y alrededores.
+Solicita un presupuesto sin compromiso llamando al **692 19 29 90**. Trabajamos con administradores de fincas de toda la zona de Villaviciosa de Odón, Boadilla del Monte, Brunete y alrededores.
