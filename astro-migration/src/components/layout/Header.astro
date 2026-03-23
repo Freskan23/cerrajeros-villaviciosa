@@ -29,7 +29,7 @@ import { APP_BUSINESS_NAME, APP_PHONE_DISPLAY, APP_PHONE_HREF, APP_LOGO, SERVICE
         </div>
       </div>
 
-      <a href="/urgencias-24h" class="px-3 py-2 text-sm font-bold text-danger hover:text-danger-dark transition-colors rounded-lg hover:bg-red-50">🚨 Urgencias 24h</a>
+      <a href="/urgencias-24h" class="px-3 py-2 text-sm font-bold text-danger hover:text-danger-dark transition-colors rounded-lg hover:bg-red-50">Urgencias 24h</a>
 
       <div class="relative group">
         <button class="px-3 py-2 text-sm font-medium text-text hover:text-primary transition-colors rounded-lg hover:bg-bg-alt flex items-center gap-1">
@@ -72,7 +72,7 @@ import { APP_BUSINESS_NAME, APP_PHONE_DISPLAY, APP_PHONE_HREF, APP_LOGO, SERVICE
         {SERVICES.map(s => (
           <a href={`/servicios/${s.slug}`} class="px-6 py-2 text-sm text-text-light hover:text-primary hover:bg-bg-alt rounded-lg">{s.name}</a>
         ))}
-        <a href="/urgencias-24h" class="px-4 py-3 text-lg font-bold text-danger">🚨 Urgencias 24h</a>
+        <a href="/urgencias-24h" class="px-4 py-3 text-lg font-bold text-danger">Urgencias 24h</a>
         <p class="px-4 pt-4 pb-1 text-xs font-bold text-text-muted uppercase tracking-wider">Zonas</p>
         {ZONES.filter(z => z.type === 'barrio').map(z => (
           <a href={`/zonas/${z.slug}`} class="px-6 py-2 text-sm text-text-light hover:text-primary hover:bg-bg-alt rounded-lg">{z.name}</a>
@@ -80,7 +80,7 @@ import { APP_BUSINESS_NAME, APP_PHONE_DISPLAY, APP_PHONE_HREF, APP_LOGO, SERVICE
         <a href="/blog" class="px-4 py-3 text-lg font-medium text-text hover:bg-bg-alt rounded-lg">Blog</a>
         <a href="/contacto" class="px-4 py-3 text-lg font-medium text-text hover:bg-bg-alt rounded-lg">Contacto</a>
         <a href={APP_PHONE_HREF} class="mx-4 mt-4 flex items-center justify-center gap-2 bg-danger text-white px-6 py-4 rounded-xl font-bold text-lg">
-          📞 Llamar: {APP_PHONE_DISPLAY}
+          Llamar: {APP_PHONE_DISPLAY}
         </a>
       </nav>
     </div>
