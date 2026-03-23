@@ -2,7 +2,7 @@
 title: "Tendencias en seguridad del hogar 2026: del bombín al smartphone"
 date: "2025-10-28"
 category: "Noticias"
-image: "/blog-puerta-antiokupa.webp"
+image: "/cerraduras-seguridad.webp"
 description: "Las tendencias en seguridad del hogar para 2026: cerraduras inteligentes, biometría, protocolo Matter, integración con domótica y la convivencia con cerraduras mecánicas tradicionales."
 keywords: "tendencias seguridad hogar 2026, cerradura inteligente, smart lock, cerradura biométrica, protocolo Matter cerradura"
 ---

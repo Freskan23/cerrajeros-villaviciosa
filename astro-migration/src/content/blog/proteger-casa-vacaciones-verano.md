@@ -2,7 +2,7 @@
 title: "Cómo proteger tu casa en vacaciones: 10 consejos de cerrajero"
 date: "2026-02-25"
 category: "Prevención"
-image: "/cambio-bombin.webp"
+image: "/blog-seguridad-chalets.webp"
 description: "El 27% de los robos en viviendas se producen en verano. Descubre 10 consejos profesionales de cerrajero para proteger tu casa durante las vacaciones y evitar disgustos."
 keywords: "proteger casa vacaciones, seguridad casa verano, evitar robos vacaciones, consejos cerrajero vacaciones, seguridad vivienda ausencia"
 ---

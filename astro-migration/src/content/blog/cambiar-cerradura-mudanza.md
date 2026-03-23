@@ -2,7 +2,7 @@
 title: "Cambiar la cerradura después de mudarte: por qué es imprescindible"
 date: "2025-11-25"
 category: "Consejos"
-image: "/blog-puerta-acorazada.webp"
+image: "/blog-llave-rota.webp"
 description: "Descubre por qué cambiar la cerradura al mudarte es una medida de seguridad esencial. Copias descontroladas, viviendas de segunda mano, alquileres y cómo hacer un cambio económico."
 keywords: "cambiar cerradura mudanza, cambiar bombín al mudarse, cerradura piso nuevo, seguridad mudanza, cerrajero cambio cerradura Villaviciosa"
 ---

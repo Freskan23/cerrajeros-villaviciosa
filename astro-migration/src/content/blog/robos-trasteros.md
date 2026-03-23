@@ -2,7 +2,7 @@
 title: "Oleada de robos en trasteros de Villaviciosa del Odón"
 date: "2026-02-20"
 category: "Seguridad"
-image: "/blog-puerta-antiokupa.webp"
+image: "/cambio-bombin.webp"
 description: "Cómo proteger tu trastero de los robos. Consejos profesionales sobre escudos, cerraduras y bombines antibumping."
 ---
 

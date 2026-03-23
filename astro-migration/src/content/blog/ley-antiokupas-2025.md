@@ -2,7 +2,7 @@
 title: "Ley Antiokupas 2025: cambios legales y cómo proteger tu propiedad"
 date: "2025-11-01"
 category: "Noticias"
-image: "/blog-cerradura-antibumping.webp"
+image: "/blog-puerta-antiokupa.webp"
 description: "Análisis de la ley antiokupas 2025: juicios rápidos, desahucio en 15 días, medidas de prevención y cerraduras antiokupa para proteger tu vivienda en Villaviciosa del Odón."
 keywords: "ley antiokupas 2025, desahucio okupas, cerradura antiokupa, proteger vivienda okupas, puerta antiokupa Villaviciosa"
 ---

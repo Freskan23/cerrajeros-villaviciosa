@@ -2,7 +2,7 @@
 title: "La puerta no cierra bien: diagnóstico y reparación"
 date: "2025-10-15"
 category: "Consejos"
-image: "/cajas_fuertes_premium_1769424937717.webp"
+image: "/cambio-bombin.webp"
 description: "Tu puerta no cierra bien: diagnóstico de las causas más comunes como desalineación, bisagras desgastadas, pestillo atascado o marco hinchado, y cuándo cambiar la cerradura."
 keywords: "puerta no cierra bien, puerta atascada, reparar puerta que no cierra, cerradura atascada, cerrajero reparación puerta Villaviciosa"
 ---

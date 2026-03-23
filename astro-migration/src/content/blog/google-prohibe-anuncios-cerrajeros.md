@@ -2,7 +2,7 @@
 title: "Google prohíbe los anuncios de cerrajeros en España: qué significa para ti"
 date: "2025-11-05"
 category: "Noticias"
-image: "/blog-seguridad-chalets.webp"
+image: "/hero-cerrajero-villaviciosa.webp"
 description: "Google ha prohibido los anuncios de cerrajeros en España para proteger a los consumidores del fraude. Te explicamos qué ha pasado y cómo encontrar un cerrajero de confianza."
 keywords: "Google prohíbe anuncios cerrajeros, fraude cerrajeros, cerrajero de confianza, estafas cerrajeros España, cómo encontrar cerrajero fiable"
 ---

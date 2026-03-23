@@ -2,7 +2,7 @@
 title: "Seguridad en ventanas y persianas: refuerza los puntos débiles"
 date: "2026-01-30"
 category: "Seguridad"
-image: "/cerraduras-seguridad.webp"
+image: "/cierres_metalicos_modernos_1769424953010.webp"
 description: "Descubre cómo reforzar la seguridad de ventanas y persianas con rejas, persianas autoblocantes, cristales laminados y cerraduras multipunto. Protege tu hogar en Villaviciosa de Odón."
 keywords: "seguridad ventanas, persianas seguridad, rejas ventanas, cristal laminado, cerraduras multipunto ventanas, cerrajero Villaviciosa de Odón"
 ---

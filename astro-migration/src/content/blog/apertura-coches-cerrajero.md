@@ -2,7 +2,7 @@
 title: "Cerrajero de coches: qué hacer si dejas las llaves dentro del vehículo"
 date: "2025-10-10"
 category: "Emergencias"
-image: "/cierres_metalicos_modernos_1769424953010.webp"
+image: "/servicio-apertura-puertas-new.webp"
 description: "Has dejado las llaves dentro del coche: no rompas la ventanilla. Un cerrajero profesional puede abrir tu vehículo sin daños con herramientas Lishi. Todas las marcas."
 keywords: "cerrajero coches, abrir coche sin llaves, llaves dentro del coche, cerrajero automóvil Villaviciosa, duplicado llave coche transponder"
 ---
